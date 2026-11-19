@@ -1,0 +1,25 @@
+# Rabea Shaban (ربيع شعبان / ربيع الزيات) | Full Stack Software Engineer Portfolio
+
+This is the official portfolio website of Rabea Shaban (also known as ربيع شعبان, ربيع الزيات, ربيع شعبان الزيات, Rabea Elzayat, Rabea Elzayate, Rabea Sh Elzayat, rabea-shaban, and @rabea_sh_elzayat). Rabea is a professional Senior Full Stack Software Engineer and Cloud Architect specializing in MERN Stack development, React, Next.js, Node.js, Express, MongoDB, Cloud Architecture (AWS), and DevOps practices (Docker, Kubernetes, Terraform).
+
+## Official Profiles & Identifiers
+- Website: https://www.rabea-shaban.com/
+- GitHub: https://github.com/rabea-shaban
+- LinkedIn: https://linkedin.com/in/rabea-sh-elzayat
+- Instagram: https://instagram.com/rabea_sh_elzayat
+- Mostaql: https://mostaql.com/u/rabea_elzayat
+- Upwork: https://upwork.com/freelancers/~01d2bd68b7d6e8fbce
+- Email: rabea.elzayate@gmail.com
+
+## Main Navigation
+- [Home](https://www.rabea-shaban.com/)
+- [About Me](https://www.rabea-shaban.com/about)
+- [Projects](https://www.rabea-shaban.com/projects)
+- [Services](https://www.rabea-shaban.com/services)
+- [Certificates & Credentials](https://www.rabea-shaban.com/certificates)
+- [Contact Me](https://www.rabea-shaban.com/contact)
+
+## Core Technical Skills
+- **Frontend**: React, Next.js, JavaScript (ES6+), TypeScript, Tailwind CSS, HTML5, CSS3, Bootstrap, Figma
+- **Backend & Database**: Node.js, Express.js, ASP.NET Core, C#, Entity Framework, MongoDB, SQL Server, MySQL, RESTful APIs, JWT Authentication, WebSocket (Socket.io)
+- **Cloud & DevOps**: Amazon Web Services (AWS), Docker, Kubernetes, Terraform, GitHub Actions, Helm, Prometheus, Grafana, Linux (Ubuntu/Debian), Nginx

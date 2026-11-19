@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   Base Theme Variables (Light by default, Dark via .dark)
+   ========================================================================== */
+
+:root {
+  /* Default Light: Crisp Bento Light */
+  --background: 220 20% 97%; /* #F1F3F7 */
+  --foreground: 222 47% 11%; /* #0F172A */
+  
+  --card: 0 0% 100%; /* #FFFFFF */
+  --card-foreground: 222 47% 11%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  
+  /* Default Accent: Royal Blue (228 92% 58%) */
+  --primary: 228 92% 58%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 59, 102, 245;
+  
+  --secondary: 220 14% 94%;
+  --secondary-foreground: 222 47% 11%;
+  
+  --muted: 220 14% 94%;
+  --muted-foreground: 215 16% 47%;
+  
+  --accent: 228 92% 58%;
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 20% 98%;
+  
+  --border: 220 13% 90%;
+  --input: 220 13% 90%;
+  --ring: 228 92% 58%;
+  
+  --radius: 9999px;
+}
+
+.dark {
+  /* Default Dark: Deep Rich Charcoal & Black */
+  --background: 0 0% 7%; /* #111111 */
+  --foreground: 0 0% 98%; /* #FAFAFA */
+  
+  --card: 0 0% 12%; /* #1E1E1E */
+  --card-foreground: 0 0% 98%;
+  
+  --popover: 0 0% 12%;
+  --popover-foreground: 0 0% 98%;
+  
+  /* Default Dark Accent: Blue */
+  --primary: 217 91% 60%; /* #3B82F6 */
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 59, 130, 246;
+  
+  --secondary: 0 0% 15%;
+  --secondary-foreground: 0 0% 98%;
+  
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 65%;
+  
+  --accent: 217 91% 60%;
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 0 0% 18%;
+  --input: 0 0% 18%;
+  --ring: 217 91% 60%;
+}
+
+/* ==========================================================================
+   Dynamic Accent Colors (Blue, Cyan, Green, Orange, Red, Yellow)
+   ========================================================================== */
+
+/* 1. BLUE */
+[data-accent="blue"] {
+  --primary: 228 92% 58%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 59, 102, 245;
+  --accent: 228 92% 58%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 228 92% 58%;
+}
+.dark[data-accent="blue"], [data-theme="dark"][data-accent="blue"] {
+  --primary: 217 91% 60%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 59, 130, 246;
+  --accent: 217 91% 60%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 217 91% 60%;
+}
+
+/* 2. CYAN */
+[data-accent="cyan"], [data-accent="purple"] {
+  --primary: 189 94% 43%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 6, 182, 212;
+  --accent: 189 94% 43%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 189 94% 43%;
+}
+.dark[data-accent="cyan"], [data-theme="dark"][data-accent="cyan"],
+.dark[data-accent="purple"], [data-theme="dark"][data-accent="purple"] {
+  --primary: 189 94% 48%;
+  --primary-foreground: 0 0% 7%;
+  --primary-rgb: 6, 182, 212;
+  --accent: 189 94% 48%;
+  --accent-foreground: 0 0% 7%;
+  --ring: 189 94% 48%;
+}
+
+/* 3. GREEN */
+[data-accent="green"] {
+  --primary: 158 64% 45%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 16, 185, 129;
+  --accent: 158 64% 45%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 158 64% 45%;
+}
+.dark[data-accent="green"], [data-theme="dark"][data-accent="green"] {
+  --primary: 150 100% 45%;
+  --primary-foreground: 0 0% 7%;
+  --primary-rgb: 0, 229, 153;
+  --accent: 150 100% 45%;
+  --accent-foreground: 0 0% 7%;
+  --ring: 150 100% 45%;
+}
+
+/* 4. ORANGE */
+[data-accent="orange"] {
+  --primary: 25 95% 53%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 249, 115, 22;
+  --accent: 25 95% 53%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 25 95% 53%;
+}
+.dark[data-accent="orange"], [data-theme="dark"][data-accent="orange"] {
+  --primary: 27 96% 55%;
+  --primary-foreground: 0 0% 7%;
+  --primary-rgb: 251, 146, 60;
+  --accent: 27 96% 55%;
+  --accent-foreground: 0 0% 7%;
+  --ring: 27 96% 55%;
+}
+
+/* 5. RED */
+[data-accent="red"] {
+  --primary: 350 89% 55%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 244, 63, 94;
+  --accent: 350 89% 55%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 350 89% 55%;
+}
+.dark[data-accent="red"], [data-theme="dark"][data-accent="red"] {
+  --primary: 350 92% 60%;
+  --primary-foreground: 0 0% 100%;
+  --primary-rgb: 251, 113, 133;
+  --accent: 350 92% 60%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 350 92% 60%;
+}
+
+/* 6. YELLOW / GOLD */
+[data-accent="yellow"] {
+  --primary: 43 100% 48%;
+  --primary-foreground: 0 0% 7%;
+  --primary-rgb: 255, 180, 0;
+  --accent: 43 100% 48%;
+  --accent-foreground: 0 0% 7%;
+  --ring: 43 100% 48%;
+}
+.dark[data-accent="yellow"], [data-theme="dark"][data-accent="yellow"] {
+  --primary: 43 100% 50%;
+  --primary-foreground: 0 0% 7%;
+  --primary-rgb: 255, 180, 0;
+  --accent: 43 100% 50%;
+  --accent-foreground: 0 0% 7%;
+  --ring: 43 100% 50%;
+}
+
+/* ==========================================================================
+   Typography Scale (Small, Medium, Large)
+   ========================================================================== */
+
+html[data-font-size="small"] {
+  font-size: 14.5px;
+}
+html[data-font-size="medium"] {
+  font-size: 16px;
+}
+html[data-font-size="large"] {
+  font-size: 17.5px;
+}
+
+/* ==========================================================================
+   Button Corner Radius Styles (Rounded, Medium, Sharp)
+   ========================================================================== */
+
+[data-button-style="rounded"] {
+  --radius: 9999px;
+}
+[data-button-style="medium"] {
+  --radius: 0.5rem;
+}
+[data-button-style="sharp"] {
+  --radius: 0.125rem;
+}
+
+[data-button-style="rounded"] button:not(.rounded-none):not(.rounded-sm),
+[data-button-style="rounded"] .btn,
+[data-button-style="rounded"] a.inline-flex:not(.rounded-none) {
+  border-radius: 9999px !important;
+}
+
+[data-button-style="medium"] button:not(.rounded-none):not(.rounded-sm),
+[data-button-style="medium"] .btn,
+[data-button-style="medium"] a.inline-flex:not(.rounded-none) {
+  border-radius: 0.5rem !important;
+}
+
+[data-button-style="sharp"] button:not(.rounded-none):not(.rounded-sm),
+[data-button-style="sharp"] .btn,
+[data-button-style="sharp"] a.inline-flex:not(.rounded-none) {
+  border-radius: 0.125rem !important;
+}
+
+/* ==========================================================================
+   RTL Typography & Direction Support
+   ========================================================================== */
+
+html[dir="rtl"] body {
+  font-family: 'Cairo', 'Outfit', sans-serif;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[dir="rtl"] .font-display {
+  font-family: 'Cairo', 'Space Grotesk', sans-serif;
+}
+
+/* ==========================================================================
+   Animation Toggle (Off / Reduced Motion)
+   ========================================================================== */
+
+[data-animations="false"] *,
+[data-animations="false"] *::before,
+[data-animations="false"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* ==========================================================================
+   Global Base Typography & Layout
+   ========================================================================== */
+
+* {
+  border-color: hsl(var(--border));
+  font-family: 'Outfit', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Scrollbar & Selection
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 5px;
+  border: 2px solid hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.85;
+}
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: hsl(var(--primary)) !important;
+  transform-origin: 0%;
+  z-index: 100;
+}
+
+::selection {
+  background-color: hsla(var(--primary) / 0.3);
+  color: hsl(var(--foreground));
+}
+
+/* ==========================================================================
+   Gradients, Glass & Overrides
+   ========================================================================== */
+
+.gradient-text {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--foreground)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .gradient-text {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 10px 30px 0 rgba(15, 23, 42, 0.05);
+}
+
+.dark .glass-effect {
+  background: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, hsl(var(--border) / 0.3) 1px, transparent 1px),
+                    linear-gradient(to bottom, hsl(var(--border) / 0.3) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Button & interactive accent styles */
+button.bg-primary, a.bg-primary, .bg-primary {
+  background-color: hsl(var(--primary)) !important;
+  background-image: linear-gradient(135deg, hsl(var(--primary)), hsla(var(--primary) / 0.88)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+  font-weight: 700 !important;
+}
+
+button.bg-primary:hover, a.bg-primary:hover {
+  opacity: 0.95;
+  box-shadow: 0 8px 25px hsla(var(--primary) / 0.35) !important;
+}
+
+/* Animations */
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
+}
+
+.glow-on-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-on-hover::after {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(circle, hsla(var(--primary) / 0.2) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.glow-on-hover:hover::after {
+  opacity: 1;
+}
+
+.typing-cursor::after {
+  content: '|';
+  margin-left: 2px;
+  color: hsl(var(--primary));
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Glass Card Gradient Border */
+.gradient-border-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.dark .gradient-border-card {
+  background: rgba(30, 30, 30, 0.75);
+}
+
+.gradient-border-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  padding: 1.5px;
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--border)));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   3D Layered Section Heading Typography
+   ========================================================================== */
+
+.floating-heading-text {
+  color: #0f172a;
+  text-shadow: 
+    0 2px 4px rgba(15, 23, 42, 0.05),
+    0 10px 24px rgba(59, 130, 246, 0.12),
+    0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.dark .floating-heading-text,
+[data-theme="dark"] .floating-heading-text {
+  color: #ffffff;
+  text-shadow: 
+    0 2px 10px rgba(0, 0, 0, 0.9),
+    0 12px 30px rgba(0, 0, 0, 0.75),
+    0 0 35px hsla(var(--primary) / 0.25);
+}
+
+.watermark-backdrop-text {
+  color: hsla(var(--primary) / 0.08);
+  user-select: none;
+  pointer-events: none;
+  letter-spacing: -0.04em;
+  transform: translateZ(0);
+}
+
+.dark .watermark-backdrop-text,
+[data-theme="dark"] .watermark-backdrop-text {
+  color: rgba(255, 255, 255, 0.04);
+}
+
