@@ -30,6 +30,8 @@ const ProjectsView = () => {
     { id: "all", label: isAr ? "جميع المشروعات" : "All Projects" },
     { id: "Backend", label: isAr ? "أنظمة خلفية" : "Backend" },
     { id: "Full Stack", label: isAr ? "تطوير شامل" : "Full Stack" },
+    { id: "Cloud & DevOps", label: isAr ? "سحابي وديف أوبس" : "Cloud & DevOps" },
+    { id: "AI", label: isAr ? "ذكاء اصطناعي" : "AI" },
     { id: "web-app", label: isAr ? "تطبيقات ويب" : "Web Apps" },
   ];
 
@@ -198,15 +200,22 @@ const ProjectsView = () => {
                     </div>
 
                     {/* Actions Footer */}
-                    <div className="px-6 pb-6 pt-0 flex items-center gap-3 border-t border-border/20 pt-4 mt-auto">
+                    <div className="px-6 pb-6 pt-0 flex flex-wrap items-center gap-2.5 border-t border-border/20 pt-4 mt-auto">
+                      {project.demo && project.demo !== "#" && project.demo !== "Unavailable" && (
+                        <Button size="sm" asChild className="flex-1 text-xs bg-primary text-primary-foreground font-semibold shadow-sm">
+                          <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                            {isAr ? "معاينة حية" : "Live Demo"} <ExternalLink className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
+                          </a>
+                        </Button>
+                      )}
                       {project.github && project.github !== "#" && (
-                        <Button variant="outline" size="sm" asChild className="flex-1 glass-effect text-xs">
+                        <Button variant="outline" size="sm" asChild className="flex-1 glass-effect text-xs border-border/60">
                           <a href={project.github} target="_blank" rel="noopener noreferrer">
                             {t.common.sourceCode} <Github className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
                           </a>
                         </Button>
                       )}
-                      <Button size="sm" onClick={() => setActiveProject(project)} className="flex-1 text-xs">
+                      <Button variant="secondary" size="sm" onClick={() => setActiveProject(project)} className="text-xs">
                         {isAr ? "التفاصيل" : "Details"}
                       </Button>
                     </div>
@@ -267,9 +276,16 @@ const ProjectsView = () => {
                     </div>
                   )}
 
-                  <div className="flex gap-4 pt-4 border-t border-border/30">
+                  <div className="flex flex-wrap gap-3 pt-4 border-t border-border/30">
+                    {activeProject.demo && activeProject.demo !== "#" && activeProject.demo !== "Unavailable" && (
+                      <Button size="lg" asChild className="flex-1 shadow-lg bg-primary text-primary-foreground">
+                        <a href={activeProject.demo} target="_blank" rel="noopener noreferrer">
+                          {isAr ? "زيارة المنصة الحية" : "Visit Live Platform"} <ExternalLink className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
+                        </a>
+                      </Button>
+                    )}
                     {activeProject.github && activeProject.github !== "#" && (
-                      <Button size="lg" asChild className="flex-1">
+                      <Button size="lg" variant="outline" asChild className="flex-1 glass-effect">
                         <a href={activeProject.github} target="_blank" rel="noopener noreferrer">
                           {t.common.sourceCode} <Github className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
                         </a>

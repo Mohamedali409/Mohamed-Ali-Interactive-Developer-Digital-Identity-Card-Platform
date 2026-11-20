@@ -11,64 +11,87 @@ import {
   Anchor,
   Terminal,
   Infinity,
-  GitFork
+  GitFork,
+  Radio,
+  Activity,
+  ShieldCheck,
+  Bot
 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { useSettings } from "@/context/SettingsContext";
 
 const learningItems = [
   { 
-    name: "AWS Cloud", 
-    icon: Cloud, 
-    desc: "Acquiring fundamental concepts of cloud computing, VPC networking, IAM security, EC2, S3, and RDS through hands-on coursework.", 
-    color: "from-orange-500/20 to-amber-500/10 text-orange-400" 
-  },
-  { 
-    name: "Docker", 
-    icon: Layers, 
-    desc: "Learning containerization concepts, writing Dockerfiles, creating lightweight images, and managing local container storage.", 
-    color: "from-blue-500/20 to-sky-500/10 text-blue-400" 
-  },
-  { 
-    name: "Kubernetes", 
+    name: "Kubernetes & GitOps", 
+    nameAr: "كوبرنيتس وأتمتة GitOps",
     icon: Network, 
-    desc: "Studying container orchestration, microservices scheduling, service load balancing, and configuration management in sandbox clusters.", 
+    desc: "Production container orchestration, ingress controllers, pod horizontal autoscaling (HPA), and declarative deployments.", 
+    descAr: "إدارة الحاويات الإنتاجية بكوبرنيتس، وموازنة الأحمال، والتوسع التلقائي، والنشر التوضيحي الموثوق.",
     color: "from-blue-600/20 to-sky-600/10 text-blue-400" 
   },
   { 
-    name: "Helm", 
-    icon: Anchor, 
-    desc: "Exploring Kubernetes package management, editing values.yaml files, and structuring chart templates for easier cluster installs.", 
-    color: "from-cyan-500/20 to-teal-600/10 text-cyan-400" 
+    name: "Distributed Event Queues", 
+    nameAr: "الأنظمة الموزعة وطوابير الرسائل",
+    icon: Radio, 
+    desc: "Event-driven architecture with Kafka and RabbitMQ, idempotent consumer patterns, and dead-letter queue resilience.", 
+    descAr: "المعمارية المعتمدة على الأحداث باستخدام Kafka وRabbitMQ، ومعالجة الرسائل المقاومة للتكرار والأعطال.",
+    color: "from-amber-500/20 to-orange-500/10 text-amber-400" 
   },
   { 
-    name: "Terraform", 
+    name: "Infrastructure as Code (Terraform)", 
+    nameAr: "البنية التحتية كبرمجيات (Terraform)",
     icon: Cpu, 
-    desc: "Understanding Infrastructure as Code (IaC) syntax, state management, provider settings, and modular setups for cloud provisioning.", 
+    desc: "Modular AWS cloud provisioning, state management, security boundaries, and repeatable multi-environment setups.", 
+    descAr: "بناء وإدارة الموارد السحابية في AWS برمجياً عبر Terraform مع إدارة الحالات وفصل البيئات.",
     color: "from-teal-500/20 to-emerald-600/10 text-teal-400" 
   },
   { 
-    name: "GitHub Actions", 
-    icon: Play, 
-    desc: "Practicing workflow automation, syntax for jobs/steps, integrating unit testing triggers, and setting up simple CI pipelines.", 
-    color: "from-neutral-500/20 to-gray-600/10 text-neutral-300" 
+    name: "DevSecOps & Policy as Code", 
+    nameAr: "أمان البرمجيات وسياسات الأمان الآلية",
+    icon: ShieldCheck, 
+    desc: "Automated container scanning (Trivy), static analysis (CodeQL, Semgrep), secret detection, and non-root runtime environments.", 
+    descAr: "الفحص الأمني المؤتمت للحاويات وفحص الكود الثابت وكشف الأسرار، وتأمين بيئات التشغيل الإنتاجية.",
+    color: "from-red-500/20 to-rose-600/10 text-red-400" 
   },
   { 
-    name: "Linux", 
-    icon: Terminal, 
-    desc: "Mastering terminal commands, file system permissions, package management, bash scripting, and server configurations.", 
-    color: "from-red-500/20 to-orange-600/10 text-red-400" 
+    name: "Observability & Telemetry", 
+    nameAr: "مراقبة الأداء والقياس عن بُعد",
+    icon: Activity, 
+    desc: "Distributed tracing with OpenTelemetry, Prometheus metrics collection, Grafana dashboards, and structured JSON logs.", 
+    descAr: "التتبع الموزع للطلبات، وجمع المقاييس بـ Prometheus، ولوحات التحكم التفاعلية على Grafana.",
+    color: "from-cyan-500/20 to-teal-600/10 text-cyan-400" 
   },
   { 
-    name: "DevOps", 
-    icon: Infinity, 
-    desc: "Adopting standard deployment practices, clean release cycles, logging integrations, and infrastructure monitoring concepts.", 
-    color: "from-yellow-500/20 to-amber-600/10 text-yellow-400" 
+    name: "Agentic AI & Vector Search", 
+    nameAr: "أنظمة الذكاء الاصطناعي والبحث المتجهي",
+    icon: Bot, 
+    desc: "Building production RAG pipelines, Qdrant vector databases, semantic embeddings, and LLM agent orchestration.", 
+    descAr: "تطوير سلاسل RAG المتطورة، وقواعد البيانات المتجهية كـ Qdrant، وربط الوكلاء الذكية بالأنظمة البرمجية.",
+    color: "from-purple-500/20 to-violet-600/10 text-purple-400" 
   },
   { 
-    name: "System Design", 
+    name: "Helm Packaging", 
+    nameAr: "حزم Helm للخدمات المصغرة",
+    icon: Anchor, 
+    desc: "Authoring parameterized Kubernetes charts, configuration values hierarchies, and automated CI/CD release hooks.", 
+    descAr: "بناء وتوزيع مخططات Helm المعيارية لتسهيل نشر الخدمات المصغرة على البيئات السحابية المختلفة.",
+    color: "from-sky-500/20 to-blue-600/10 text-sky-400" 
+  },
+  { 
+    name: "High-Throughput System Design", 
+    nameAr: "تصميم الأنظمة عالية التحمل",
     icon: GitFork, 
-    desc: "Learning microservices architecture patterns, load balancers, caching layers, database indexing, and scaling practices.", 
+    desc: "Multi-tier caching strategies, connection pooling, database read-replicas, rate limiting, and microservice boundaries.", 
+    descAr: "استراتيجيات التخزين المؤقت متعددة المستويات، ومجموعات الاتصال، وتقييم الأحمال والخدمات المستقلة.",
     color: "from-emerald-500/20 to-teal-500/10 text-emerald-400" 
+  },
+  { 
+    name: "Linux Hardening & Shell Scripting", 
+    nameAr: "تقوية أنظمة لينكس والبرمجة النصية",
+    icon: Terminal, 
+    desc: "Linux server security, systemd services, automated bash health-checks, network sockets, and container storage tuning.", 
+    descAr: "إدارة الخوادم، وخدمات systemd، وبرمجة نصوص Bash الآلية لفحص الأنظمة وتأمين الشبكات.",
+    color: "from-orange-500/20 to-amber-600/10 text-orange-400" 
   }
 ];
 
@@ -87,7 +110,12 @@ const cardVariants = {
 };
 
 const CurrentlyLearning = () => {
-  const statusBadges = ["Learning", "Hands-on Labs", "In Progress"];
+  const { settings } = useSettings();
+  const isAr = settings.language === 'ar';
+
+  const statusBadges = isAr
+    ? ["تطوير مستمر", "مختبرات عملية", "قيد التطبيق"]
+    : ["Continuous Growth", "Hands-on Labs", "In Progress"];
 
   return (
     <section className="py-24 relative overflow-hidden bg-background">
@@ -96,10 +124,14 @@ const CurrentlyLearning = () => {
 
       <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <SectionHeading
-          badge="GROWTH MINDSET"
-          title="Currently Learning"
-          watermark="SKILLS"
-          subtitle="Technologies I'm actively learning and applying through labs, coursework, and hands-on practice."
+          badge={isAr ? "عقلية التطور المستمر" : "GROWTH MINDSET"}
+          title={isAr ? "الاهتمامات الهندسية والتقنيات قيد التوسع" : "Engineering Focus & Continuous Learning"}
+          watermark={isAr ? "تطوير" : "GROWTH"}
+          subtitle={
+            isAr
+              ? "تقنيات ومعايير معمارية متقدمة أعمل على تعميق تطبيقها العملي وممارستها في المختبرات والمشروعات السحابية."
+              : "Advanced architectural patterns, cloud-native tools, and engineering practices I actively explore and practice in production-like labs."
+          }
           size="normal"
         />
 
@@ -112,12 +144,15 @@ const CurrentlyLearning = () => {
         >
           {learningItems.map((item, index) => {
             const IconComponent = item.icon;
+            const title = isAr ? item.nameAr : item.name;
+            const desc = isAr ? item.descAr : item.desc;
+
             return (
               <motion.div
                 key={index}
                 variants={cardVariants}
                 whileHover={{ y: -6, scale: 1.02 }}
-                className="group relative p-6 rounded-xl glass-effect border border-border/50 hover:border-primary/40 hover:shadow-[0_8px_30px_rgba(255,180,0,0.12)] transition-all overflow-hidden flex flex-col justify-between"
+                className="group relative p-6 rounded-xl glass-effect border border-border/50 hover:border-primary/40 hover:shadow-[0_8px_30px_rgba(37,99,235,0.12)] transition-all overflow-hidden flex flex-col justify-between"
               >
                 {/* Background Gradient Hover glow */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -128,9 +163,9 @@ const CurrentlyLearning = () => {
                       <IconComponent className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold group-hover:text-primary transition-colors font-display">{item.name}</h3>
+                      <h3 className="text-xl font-bold group-hover:text-primary transition-colors font-display">{title}</h3>
                       <p className="mt-2 text-xs leading-relaxed text-muted-foreground group-hover:text-foreground/80 transition-colors">
-                        {item.desc}
+                        {desc}
                       </p>
                     </div>
                   </div>

@@ -96,6 +96,34 @@ const HomeView = () => {
             {t.home.bio}
           </motion.p>
 
+          {/* Core Technical Highlights */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.22 }}
+            className="flex flex-wrap items-center justify-center gap-2 max-w-2xl mx-auto pt-1"
+          >
+            {[
+              "Node.js",
+              "Express.js",
+              "TypeScript",
+              "PostgreSQL",
+              "MongoDB",
+              "Redis",
+              "Docker",
+              "AWS Cloud",
+              "CI/CD",
+              "AI Integration"
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="px-2.5 py-1 text-xs font-semibold rounded-full bg-card/80 border border-border/60 text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors cursor-default"
+              >
+                {skill}
+              </span>
+            ))}
+          </motion.div>
+
           {/* Core Page CTA Actions */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -222,11 +250,32 @@ const HomeView = () => {
                         </span>
                       ))}
                     </div>
-                    {project.github && (
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 text-primary hover:scale-110 transition-transform" aria-label="GitHub Repository">
-                        <Github className="w-4 h-4" />
-                      </a>
-                    )}
+                    <div className="flex items-center gap-1.5">
+                      {project.demo && project.demo !== "#" && project.demo !== "Unavailable" && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 text-primary hover:scale-110 transition-transform"
+                          aria-label="Live Demo"
+                          title="Live Demo"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      )}
+                      {project.github && project.github !== "#" && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 text-primary hover:scale-110 transition-transform"
+                          aria-label="GitHub Repository"
+                          title="GitHub Source"
+                        >
+                          <Github className="w-4 h-4" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </motion.div>
               );

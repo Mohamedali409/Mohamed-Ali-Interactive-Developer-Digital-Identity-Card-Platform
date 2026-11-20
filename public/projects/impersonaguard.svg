@@ -1,83 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f0c1b" />
-      <stop offset="50%" stop-color="#18112d" />
-      <stop offset="100%" stop-color="#08070f" />
+    <linearGradient id="ig-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#071929"/>
+      <stop offset="100%" stop-color="#030712"/>
     </linearGradient>
-    <linearGradient id="purpleRed" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8b5cf6" />
-      <stop offset="50%" stop-color="#ec4899" />
-      <stop offset="100%" stop-color="#f43f5e" />
+    <linearGradient id="ig-shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
-    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.05" />
+    <linearGradient id="ig-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f2238" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#081423" stop-opacity="0.95"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <linearGradient id="ig-alert" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="ig-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
   </defs>
 
-  <rect width="1200" height="675" fill="url(#bg)" />
+  <rect width="800" height="450" fill="url(#ig-bg)"/>
 
-  <!-- Security Grid -->
-  <g opacity="0.06" stroke="#8b5cf6" stroke-width="1">
-    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" />
-    </pattern>
-    <rect width="1200" height="675" fill="url(#grid3)" />
+  <!-- Radar background grids -->
+  <g stroke="#0e3654" stroke-width="0.6" stroke-opacity="0.5">
+    <circle cx="270" cy="250" r="40" fill="none"/>
+    <circle cx="270" cy="250" r="90" fill="none"/>
+    <circle cx="270" cy="250" r="140" fill="none"/>
+    <line x1="270" y1="90" x2="270" y2="410"/>
+    <line x1="110" y1="250" x2="430" y2="250"/>
+    <line x1="150" y1="130" x2="390" y2="370"/>
+    <line x1="150" y1="370" x2="390" y2="130"/>
   </g>
 
-  <!-- Ambient Light Orbs -->
-  <circle cx="260" cy="190" r="220" fill="url(#accentGlow)" filter="url(#glow)" />
-  <circle cx="940" cy="490" r="240" fill="url(#accentGlow)" filter="url(#glow)" />
-
-  <!-- Center Security Shield Graphic -->
-  <g transform="translate(600, 220)">
-    <!-- Hexagonal Security Perimeter -->
-    <polygon points="0,-130 112,-65 112,65 0,130 -112,65 -112,-65" 
-             fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.3" stroke-dasharray="10 8" />
-    
-    <!-- Central Badge -->
-    <rect x="-60" y="-60" width="120" height="120" rx="30" fill="#0f172a" stroke="#8b5cf6" stroke-width="3" filter="url(#glow)" />
-    
-    <!-- Shield & Check / Keyhole -->
-    <path d="M 0 -36 Q 30 -36 30 -6 Q 30 32 0 44 Q -30 32 -30 -6 Q -30 -36 0 -36 Z" 
-          fill="none" stroke="url(#purpleRed)" stroke-width="4" filter="url(#glow)" />
-    <path d="M -10 -2 L -2 6 L 12 -8" 
-          fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Header Bar -->
+  <rect x="40" y="30" width="720" height="44" rx="8" fill="url(#ig-card)" stroke="#164e63" stroke-width="1"/>
+  <circle cx="65" cy="52" r="5" fill="#ef4444"/>
+  <circle cx="82" cy="52" r="5" fill="#f59e0b"/>
+  <circle cx="99" cy="52" r="5" fill="#10b981"/>
+  <text x="125" y="57" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1">IMPERSONAGUARD — BRAND IMPERSONATION &amp; PHISHING DETECTION ENGINE</text>
+  
+  <!-- Security Status Pill -->
+  <g transform="translate(605, 42)">
+    <rect width="140" height="20" rx="10" fill="#164e63" stroke="#06b6d4" stroke-width="0.8"/>
+    <circle cx="12" cy="10" r="3.5" fill="#06b6d4" filter="url(#ig-glow)"/>
+    <text x="24" y="14" fill="#cffafe" font-family="system-ui, sans-serif" font-size="9" font-weight="600" letter-spacing="0.5">HEURISTIC SCANNER</text>
   </g>
 
-  <!-- Title & Details -->
-  <text x="600" y="380" font-family="'Segoe UI', -apple-system, sans-serif" font-size="64" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-1">
-    IMPERSONAGUARD
-  </text>
-  <text x="600" y="425" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#ec4899" text-anchor="middle" letter-spacing="3">
-    AI SECURITY • BRAND IMPERSONATION • PHISHING DETECTION
-  </text>
-  <text x="600" y="470" font-family="'Segoe UI', sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle" letter-spacing="0.5">
-    Automated Threat Detection Engine • Heuristic Analysis • Secure RESTful APIs • Redis • Docker
-  </text>
+  <!-- Left Main Panel: Threat Detection & Radar -->
+  <rect x="40" y="90" width="450" height="325" rx="12" fill="url(#ig-card)" stroke="#164e63" stroke-width="1.2"/>
+  <text x="65" y="125" fill="#22d3ee" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">REAL-TIME THREAT SCANNING RADAR</text>
 
-  <!-- Feature Badges -->
-  <g transform="translate(600, 540)">
-    <g transform="translate(-240, 0)">
-      <rect x="-70" y="-18" width="140" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
-      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#8b5cf6" text-anchor="middle">Threat Scoring</text>
-    </g>
-    <g transform="translate(-80, 0)">
-      <rect x="-65" y="-18" width="130" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
-      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#ec4899" text-anchor="middle">Brand Guard</text>
-    </g>
-    <g transform="translate(80, 0)">
-      <rect x="-65" y="-18" width="130" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
-      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#f43f5e" text-anchor="middle">Anti-Phishing</text>
-    </g>
-    <g transform="translate(240, 0)">
-      <rect x="-70" y="-18" width="140" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
-      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle">Secure Backend</text>
-    </g>
+  <!-- Threat Score Banner -->
+  <g transform="translate(65, 140)">
+    <rect width="400" height="46" rx="8" fill="#112942" stroke="#164e63" stroke-width="1"/>
+    <text x="14" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">TARGET DOMAIN:</text>
+    <text x="125" y="28" fill="#e2e8f0" font-family="monospace" font-size="11">auth-secure-verify.app-login.com</text>
+    <rect x="300" y="12" width="88" height="22" rx="4" fill="#7f1d1d" stroke="#ef4444" stroke-width="0.8"/>
+    <text x="312" y="27" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="9" font-weight="700">HIGH RISK: 94%</text>
+  </g>
+
+  <!-- Radar Detection Sweep -->
+  <g transform="translate(65, 200)">
+    <rect width="400" height="195" rx="8" fill="#071524" stroke="#0e3654" stroke-width="1"/>
+    
+    <!-- Blip 1: Phishing Domain -->
+    <circle cx="120" cy="90" r="6" fill="#ef4444" filter="url(#ig-glow)"/>
+    <circle cx="120" cy="90" r="14" fill="none" stroke="#ef4444" stroke-width="0.8" opacity="0.6"/>
+    <text x="135" y="94" fill="#f87171" font-family="system-ui, sans-serif" font-size="9" font-weight="600">Typosquatting Detected</text>
+
+    <!-- Blip 2: SSL Mismatch -->
+    <circle cx="280" cy="65" r="5" fill="#f59e0b" filter="url(#ig-glow)"/>
+    <text x="295" y="69" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="9" font-weight="600">Invalid SSL Fingerprint</text>
+
+    <!-- Blip 3: Verified Node -->
+    <circle cx="220" cy="140" r="4.5" fill="#10b981" filter="url(#ig-glow)"/>
+    <text x="235" y="144" fill="#34d399" font-family="system-ui, sans-serif" font-size="9" font-weight="600">Official Brand Origin</text>
+
+    <!-- Radar Line Indicator -->
+    <path d="M200 100 L270 25 M200 100 L340 120" stroke="#06b6d4" stroke-width="1" stroke-dasharray="3 3"/>
+    
+    <text x="14" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Heuristic Analysis: Lexical similarity, entropy calculation, and DNS record anomaly detection.</text>
+  </g>
+
+  <!-- Right Panel: Backend Security Architecture -->
+  <rect x="510" y="90" width="250" height="325" rx="12" fill="url(#ig-card)" stroke="#164e63" stroke-width="1.2"/>
+  <text x="530" y="125" fill="#22d3ee" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">SECURITY CONTROLS</text>
+
+  <!-- Node 1: Strict Auth & Tokens -->
+  <g transform="translate(530, 145)">
+    <rect width="210" height="48" rx="6" fill="#0c2338" stroke="#0891b2" stroke-width="1"/>
+    <text x="12" y="20" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Authentication &amp; Sessions</text>
+    <text x="12" y="36" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Secure HttpOnly Cookies • JWT • Redis</text>
+  </g>
+
+  <!-- Node 2: Headers & Middleware -->
+  <g transform="translate(530, 205)">
+    <rect width="210" height="48" rx="6" fill="#0c2338" stroke="#0891b2" stroke-width="1"/>
+    <text x="12" y="20" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Defense-in-Depth Middleware</text>
+    <text x="12" y="36" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Helmet Headers • CORS • Rate Limiter</text>
+  </g>
+
+  <!-- Node 3: Heuristic Engine -->
+  <g transform="translate(530, 265)">
+    <rect width="210" height="48" rx="6" fill="#0c2338" stroke="#0891b2" stroke-width="1"/>
+    <text x="12" y="20" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Heuristic Risk Scoring</text>
+    <text x="12" y="36" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Entropy • Levenshtein Distance</text>
+  </g>
+
+  <!-- Node 4: Testing & Verification -->
+  <g transform="translate(530, 325)">
+    <rect width="210" height="70" rx="6" fill="#071626" stroke="#164e63" stroke-width="1"/>
+    <text x="12" y="20" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="700">AUTOMATED TEST SUITE</text>
+    <text x="12" y="36" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="9">• Vitest Security Endpoint Tests</text>
+    <text x="12" y="52" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="9">• Payload Sanitization Tests</text>
   </g>
 </svg>

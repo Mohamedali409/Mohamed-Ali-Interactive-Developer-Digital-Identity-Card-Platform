@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ds-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a101d"/>
+      <stop offset="50%" stop-color="#141e33"/>
+      <stop offset="100%" stop-color="#080c16"/>
+    </linearGradient>
+    <linearGradient id="ds-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="ds-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#192642" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0e172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="ds-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#ds-bg)"/>
+
+  <!-- Matrix / Grid pattern -->
+  <g stroke="#1e293b" stroke-width="0.5" stroke-opacity="0.5">
+    <path d="M0 60 H800 M0 120 H800 M0 180 H800 M0 240 H800 M0 300 H800 M0 360 H800 M0 420 H800"/>
+    <path d="M80 0 V450 M160 0 V450 M240 0 V450 M320 0 V450 M400 0 V450 M480 0 V450 M560 0 V450 M640 0 V450 M720 0 V450"/>
+  </g>
+
+  <!-- Ambient light -->
+  <circle cx="700" cy="110" r="140" fill="#6366f1" opacity="0.08" filter="url(#ds-glow)"/>
+  <circle cx="120" cy="380" r="150" fill="#10b981" opacity="0.07" filter="url(#ds-glow)"/>
+
+  <!-- Top Header Bar -->
+  <rect x="40" y="30" width="720" height="44" rx="8" fill="url(#ds-card)" stroke="#2e3e60" stroke-width="1"/>
+  <circle cx="65" cy="52" r="5" fill="#ef4444"/>
+  <circle cx="82" cy="52" r="5" fill="#f59e0b"/>
+  <circle cx="99" cy="52" r="5" fill="#10b981"/>
+  <text x="125" y="57" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1">DEVSECOPS PIPELINE &amp; HARDENED CONTAINER ARCHITECTURE</text>
+
+  <!-- Automated Gate Pill -->
+  <g transform="translate(615, 42)">
+    <rect width="130" height="20" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="0.8"/>
+    <circle cx="12" cy="10" r="3.5" fill="#10b981" filter="url(#ds-glow)"/>
+    <text x="24" y="14" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="9" font-weight="600">ZERO SECRETS</text>
+  </g>
+
+  <!-- Left Main Panel: Automated Security Gates Pipeline -->
+  <rect x="40" y="90" width="460" height="325" rx="12" fill="url(#ds-card)" stroke="#2e3e60" stroke-width="1.2"/>
+  <text x="65" y="125" fill="#818cf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">AUTOMATED CONTINUOUS SECURITY GATES (CI/CD)</text>
+
+  <!-- 4 Step Pipeline Pipeline Flowchart -->
+  <g transform="translate(65, 145)">
+    <!-- Stage 1: SCA -->
+    <rect width="90" height="70" rx="8" fill="#0f172a" stroke="#3b82f6" stroke-width="1"/>
+    <text x="12" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700">1. SCA SCAN</text>
+    <text x="12" y="40" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="800">npm audit</text>
+    <text x="12" y="56" fill="#10b981" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600">✓ 0 Vulns</text>
+
+    <!-- Connector Arrow -->
+    <path d="M92 180 L102 180" stroke="#64748b" stroke-width="1.5" stroke-dasharray="2 2"/>
+
+    <!-- Stage 2: SAST -->
+    <rect x="105" width="90" height="70" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="117" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700">2. SAST SCAN</text>
+    <text x="117" y="40" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="800">CodeQL</text>
+    <text x="117" y="56" fill="#10b981" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600">✓ Security Rule</text>
+
+    <!-- Stage 3: Secrets -->
+    <rect x="210" width="90" height="70" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="222" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700">3. SECRETS</text>
+    <text x="222" y="40" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="800">Gitleaks</text>
+    <text x="222" y="56" fill="#10b981" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600">✓ No Leaks</text>
+
+    <!-- Stage 4: Container -->
+    <rect x="315" width="95" height="70" rx="8" fill="#0f172a" stroke="#ec4899" stroke-width="1"/>
+    <text x="327" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700">4. CONTAINER</text>
+    <text x="327" y="40" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="800">Trivy Image</text>
+    <text x="327" y="56" fill="#10b981" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600">✓ Pass Baseline</text>
+  </g>
+
+  <!-- Before/After Baseline Comparison Table -->
+  <g transform="translate(65, 235)">
+    <rect width="410" height="160" rx="8" fill="#0a0f1d" stroke="#1e293b" stroke-width="1"/>
+    <rect width="410" height="26" rx="6" fill="#1e293b"/>
+    <text x="15" y="17" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9" font-weight="700">SECURITY BASELINE AUDIT METRICS</text>
+
+    <text x="15" y="48" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Deliberate Vulnerability Baseline:</text>
+    <text x="260" y="48" fill="#f87171" font-family="system-ui, sans-serif" font-size="10" font-weight="700">14 CVEs Identified (Outdated)</text>
+
+    <line x1="15" y1="62" x2="395" y2="62" stroke="#1e293b"/>
+
+    <text x="15" y="84" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Hardened Multi-Stage Docker Build:</text>
+    <text x="260" y="84" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="700">node:20-alpine (Unprivileged)</text>
+
+    <line x1="15" y1="98" x2="395" y2="98" stroke="#1e293b"/>
+
+    <text x="15" y="120" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Non-Root User Execution:</text>
+    <text x="260" y="120" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="700">USER node (No Root Access)</text>
+
+    <line x1="15" y1="134" x2="395" y2="134" stroke="#1e293b"/>
+
+    <text x="15" y="150" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Pipeline blocks PR merge automatically on Critical/High severity violations.</text>
+  </g>
+
+  <!-- Right Panel: Hardened Dockerfile Architecture -->
+  <rect x="520" y="90" width="240" height="325" rx="12" fill="url(#ds-card)" stroke="#2e3e60" stroke-width="1.2"/>
+  <text x="540" y="125" fill="#818cf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">DOCKERFILE HARDENING</text>
+
+  <!-- Docker Code Snippet Panel -->
+  <g transform="translate(540, 145)">
+    <rect width="200" height="250" rx="8" fill="#050a14" stroke="#1e293b" stroke-width="1"/>
+    
+    <text x="12" y="24" fill="#64748b" font-family="monospace" font-size="8.5"># Stage 1: Build &amp; Prune</text>
+    <text x="12" y="38" fill="#38bdf8" font-family="monospace" font-size="8.5">FROM node:20-alpine AS bld</text>
+    <text x="12" y="52" fill="#cbd5e1" font-family="monospace" font-size="8.5">WORKDIR /app</text>
+    <text x="12" y="66" fill="#cbd5e1" font-family="monospace" font-size="8.5">COPY package*.json ./</text>
+    <text x="12" y="80" fill="#a7f3d0" font-family="monospace" font-size="8.5">RUN npm ci --only=prod</text>
+    
+    <text x="12" y="106" fill="#64748b" font-family="monospace" font-size="8.5"># Stage 2: Minimal Runtime</text>
+    <text x="12" y="120" fill="#38bdf8" font-family="monospace" font-size="8.5">FROM node:20-alpine</text>
+    <text x="12" y="134" fill="#cbd5e1" font-family="monospace" font-size="8.5">WORKDIR /app</text>
+    <text x="12" y="148" fill="#cbd5e1" font-family="monospace" font-size="8.5">COPY --from=bld /app .</text>
+    
+    <text x="12" y="174" fill="#f59e0b" font-family="monospace" font-size="8.5"># Drop privileges</text>
+    <text x="12" y="188" fill="#fbbf24" font-family="monospace" font-size="8.5">USER node</text>
+    <text x="12" y="202" fill="#f1f5f9" font-family="monospace" font-size="8.5">EXPOSE 3000</text>
+    <text x="12" y="216" fill="#a855f7" font-family="monospace" font-size="8.5">CMD ["node", "src/api"]</text>
+    <text x="12" y="236" fill="#10b981" font-family="system-ui, sans-serif" font-size="8" font-weight="700">✓ Attack Surface Reduced 78%</text>
+  </g>
+</svg>
+

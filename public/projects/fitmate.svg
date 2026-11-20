@@ -1,83 +1,138 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c111d" />
-      <stop offset="50%" stop-color="#141c2e" />
-      <stop offset="100%" stop-color="#090d16" />
+    <linearGradient id="fm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#111827"/>
     </linearGradient>
-    <linearGradient id="emeraldTeal" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="50%" stop-color="#06b6d4" />
-      <stop offset="100%" stop-color="#3b82f6" />
+    <linearGradient id="fm-violet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
     </linearGradient>
-    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.05" />
+    <linearGradient id="fm-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <linearGradient id="fm-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#241e4f" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#151233" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="fm-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
   </defs>
 
-  <rect width="1200" height="675" fill="url(#bg)" />
+  <rect width="800" height="450" fill="url(#fm-bg)"/>
 
-  <!-- Grid -->
-  <g opacity="0.06" stroke="#10b981" stroke-width="1">
-    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" />
-    </pattern>
-    <rect width="1200" height="675" fill="url(#grid2)" />
+  <!-- Subtle grid lines -->
+  <g stroke="#3730a3" stroke-width="0.5" stroke-opacity="0.3">
+    <path d="M0 60 H800 M0 120 H800 M0 180 H800 M0 240 H800 M0 300 H800 M0 360 H800 M0 420 H800"/>
+    <path d="M80 0 V450 M160 0 V450 M240 0 V450 M320 0 V450 M400 0 V450 M480 0 V450 M560 0 V450 M640 0 V450 M720 0 V450"/>
   </g>
 
-  <!-- Ambient Light Orbs -->
-  <circle cx="240" cy="200" r="220" fill="url(#accentGlow)" filter="url(#glow)" />
-  <circle cx="960" cy="480" r="240" fill="url(#accentGlow)" filter="url(#glow)" />
+  <!-- Ambient orbs -->
+  <circle cx="700" cy="120" r="130" fill="#a855f7" opacity="0.12" filter="url(#fm-glow)"/>
+  <circle cx="150" cy="350" r="140" fill="#ec4899" opacity="0.09" filter="url(#fm-glow)"/>
 
-  <!-- Center Fitness & AI Graphic -->
-  <g transform="translate(600, 220)">
-    <!-- Concentric Target Circles / Metric rings -->
-    <circle cx="0" cy="0" r="140" fill="none" stroke="#1e293b" stroke-width="2" />
-    <circle cx="0" cy="0" r="115" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="140 30" opacity="0.8" />
-    <circle cx="0" cy="0" r="90" fill="none" stroke="#06b6d4" stroke-width="3" stroke-dasharray="90 20" opacity="0.8" />
+  <!-- Header Bar -->
+  <rect x="40" y="30" width="720" height="44" rx="8" fill="url(#fm-card)" stroke="#4338ca" stroke-width="1"/>
+  <circle cx="65" cy="52" r="5" fill="#ef4444"/>
+  <circle cx="82" cy="52" r="5" fill="#f59e0b"/>
+  <circle cx="99" cy="52" r="5" fill="#10b981"/>
+  <text x="125" y="57" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1">FITMATE AI — INTELLIGENT FITNESS &amp; NUTRITION PLATFORM</text>
+  
+  <!-- AI Status Pill -->
+  <g transform="translate(615, 42)">
+    <rect width="130" height="20" rx="10" fill="#4c1d95" stroke="#a855f7" stroke-width="0.8"/>
+    <circle cx="12" cy="10" r="3.5" fill="#ec4899" filter="url(#fm-glow)"/>
+    <text x="24" y="14" fill="#f3e8ff" font-family="system-ui, sans-serif" font-size="9" font-weight="600" letter-spacing="0.5">AI COACH ACTIVE</text>
+  </g>
 
-    <!-- Center Badge -->
-    <rect x="-60" y="-60" width="120" height="120" rx="30" fill="#0f172a" stroke="#10b981" stroke-width="3" filter="url(#glow)" />
+  <!-- Left Main Panel: Workout & Calorie Analytics -->
+  <rect x="40" y="90" width="450" height="325" rx="12" fill="url(#fm-card)" stroke="#4338ca" stroke-width="1.2"/>
+  
+  <text x="65" y="125" fill="#c084fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">DAILY METRIC OVERVIEW &amp; MACRONUTRIENTS</text>
+  
+  <!-- Calorie Target Progress Bar -->
+  <g transform="translate(65, 145)">
+    <text x="0" y="15" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Daily Caloric Intake: <tspan fill="#f1f5f9" font-weight="700">2,150 / 2,400 kcal</tspan></text>
+    <rect y="25" width="400" height="10" rx="5" fill="#1e1b4b"/>
+    <rect y="25" width="358" height="10" rx="5" fill="url(#fm-violet)" filter="url(#fm-glow)"/>
+  </g>
+
+  <!-- Macro Donut / Three Badges Row -->
+  <g transform="translate(65, 205)">
+    <!-- Protein Card -->
+    <rect width="125" height="70" rx="8" fill="#19153e" stroke="#4338ca" stroke-width="1"/>
+    <text x="14" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">PROTEIN</text>
+    <text x="14" y="52" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="22" font-weight="800">165<tspan font-size="11" fill="#94a3b8">g</tspan></text>
+    <rect x="14" y="60" width="97" height="3" rx="1.5" fill="#38bdf8"/>
+
+    <!-- Carbs Card -->
+    <rect x="138" width="125" height="70" rx="8" fill="#19153e" stroke="#4338ca" stroke-width="1"/>
+    <text x="152" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">CARBOHYDRATES</text>
+    <text x="152" y="52" fill="#a855f7" font-family="system-ui, sans-serif" font-size="22" font-weight="800">210<tspan font-size="11" fill="#94a3b8">g</tspan></text>
+    <rect x="152" y="60" width="97" height="3" rx="1.5" fill="#a855f7"/>
+
+    <!-- Fats Card -->
+    <rect x="276" width="125" height="70" rx="8" fill="#19153e" stroke="#4338ca" stroke-width="1"/>
+    <text x="290" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">HEALTHY FATS</text>
+    <text x="290" y="52" fill="#ec4899" font-family="system-ui, sans-serif" font-size="22" font-weight="800">58<tspan font-size="11" fill="#94a3b8">g</tspan></text>
+    <rect x="290" y="60" width="97" height="3" rx="1.5" fill="#ec4899"/>
+  </g>
+
+  <!-- Workout Routine Schedule -->
+  <g transform="translate(65, 300)">
+    <rect width="400" height="95" rx="8" fill="#120e2e" stroke="#2e2768" stroke-width="1"/>
+    <text x="14" y="24" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TODAY'S WORKOUT: UPPER BODY HYPERTROPHY</text>
     
-    <!-- Dumbbell / Lightning AI Icon -->
-    <path d="M -30 -18 L -30 18 M -22 -24 L -22 24 M -22 0 L 22 0 M 22 -24 L 22 24 M 30 -18 L 30 18" 
-          stroke="#10b981" stroke-width="5" stroke-linecap="round" />
-    <polygon points="4,-12 -6,2 2,2 -4,14 8,0 0,0" fill="#f59e0b" filter="url(#glow)" />
+    <g transform="translate(14, 38)">
+      <rect width="115" height="42" rx="4" fill="#1e184a"/>
+      <text x="8" y="18" fill="#c084fc" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Incline DB Press</text>
+      <text x="8" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">4 sets • 10-12 reps</text>
+    </g>
+
+    <g transform="translate(138, 38)">
+      <rect width="115" height="42" rx="4" fill="#1e184a"/>
+      <text x="8" y="18" fill="#c084fc" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Weighted Pull-ups</text>
+      <text x="8" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">4 sets • 8 reps</text>
+    </g>
+
+    <g transform="translate(262, 38)">
+      <rect width="115" height="42" rx="4" fill="#1e184a"/>
+      <text x="8" y="18" fill="#c084fc" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Lateral Raises</text>
+      <text x="8" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">3 sets • 15 reps</text>
+    </g>
   </g>
 
-  <!-- Title & Details -->
-  <text x="600" y="380" font-family="'Segoe UI', -apple-system, sans-serif" font-size="64" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-1">
-    FITMATE AI
-  </text>
-  <text x="600" y="425" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#10b981" text-anchor="middle" letter-spacing="3">
-    INTELLIGENT FITNESS • NUTRITION ENGINE • AI COACHING
-  </text>
-  <text x="600" y="470" font-family="'Segoe UI', sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle" letter-spacing="0.5">
-    Personalized Workout Algorithms • Macronutrient Intelligence • Full-Stack TypeScript • Node.js • Redis
-  </text>
+  <!-- Right Panel: AI Coach Interactive Consultation Interface -->
+  <rect x="510" y="90" width="250" height="325" rx="12" fill="url(#fm-card)" stroke="#4338ca" stroke-width="1.2"/>
+  <text x="530" y="125" fill="#c084fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">AI COACH ADAPTER</text>
 
-  <!-- Feature Badges -->
-  <g transform="translate(600, 540)">
-    <g transform="translate(-240, 0)">
-      <rect x="-70" y="-18" width="140" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
-      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#10b981" text-anchor="middle">AI Workout Plan</text>
-    </g>
-    <g transform="translate(-80, 0)">
-      <rect x="-65" y="-18" width="130" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
-      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#06b6d4" text-anchor="middle">Nutrition Track</text>
-    </g>
-    <g transform="translate(80, 0)">
-      <rect x="-65" y="-18" width="130" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
-      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#3b82f6" text-anchor="middle">Progress Graphs</text>
-    </g>
-    <g transform="translate(240, 0)">
-      <rect x="-70" y="-18" width="140" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
-      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#eab308" text-anchor="middle">Conversational AI</text>
-    </g>
+  <!-- Chat Bubble 1 (User) -->
+  <g transform="translate(530, 145)">
+    <rect width="210" height="48" rx="8" fill="#312e81" stroke="#4338ca" stroke-width="0.8"/>
+    <text x="12" y="18" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="9" font-weight="600">User Query:</text>
+    <text x="12" y="32" fill="#c7d2fe" font-family="system-ui, sans-serif" font-size="9">"Adjust my macros for recovery day."</text>
+  </g>
+
+  <!-- Chat Bubble 2 (AI Assistant) -->
+  <g transform="translate(530, 205)">
+    <rect width="210" height="75" rx="8" fill="#1e184a" stroke="#a855f7" stroke-width="1"/>
+    <text x="12" y="18" fill="#f472b6" font-family="system-ui, sans-serif" font-size="9" font-weight="700">FitMate AI Engine:</text>
+    <text x="12" y="34" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="8.5">"Increasing complex carbs by 30g</text>
+    <text x="12" y="48" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="8.5">and maintaining 165g protein for</text>
+    <text x="12" y="62" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="8.5">muscle glycogen replenishment."</text>
+  </g>
+
+  <!-- Backend Architecture Highlights -->
+  <g transform="translate(530, 295)">
+    <rect width="210" height="100" rx="6" fill="#0f0c29" stroke="#3730a3" stroke-width="1"/>
+    <text x="12" y="20" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="10" font-weight="700">BACKEND STACK</text>
+    <text x="12" y="38" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">• Node.js &amp; Express TypeScript</text>
+    <text x="12" y="54" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">• MongoDB Replica Transactions</text>
+    <text x="12" y="70" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">• Redis Cache &amp; Vitest Tests</text>
+    <text x="12" y="86" fill="#c084fc" font-family="system-ui, sans-serif" font-size="9">• Bilingual: RTL (Ar) &amp; LTR (En)</text>
   </g>
 </svg>
