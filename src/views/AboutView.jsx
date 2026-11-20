@@ -93,7 +93,7 @@ const AboutView = () => {
                 <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-primary via-accent to-primary blur-lg opacity-40 group-hover:opacity-75 transition duration-500"></div>
                 <div className="relative rounded-2xl overflow-hidden border-2 border-border/50 bg-card shadow-2xl">
                   <img
-                    src="/mohamed-ali-avatar.svg"
+                    src="/mohamed.png"
                     alt="Mohamed Ali — Full-Stack Developer & Backend Software Engineer"
                     className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
                   />

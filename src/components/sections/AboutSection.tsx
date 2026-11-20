@@ -85,7 +85,7 @@ export const AboutSection: React.FC = () => {
               <div className="absolute -inset-2 rounded-3xl bg-gradient-to-r from-primary via-accent to-primary blur-xl opacity-30 group-hover:opacity-60 transition duration-500" />
               <div className="relative rounded-3xl overflow-hidden border-2 border-border/60 bg-card shadow-2xl">
                 <img
-                  src="/mohamed-ali-avatar.svg"
+                  src="/mohamed.png"
                   alt="Mohamed Ali — Full-Stack Developer & Backend Software Engineer"
                   className="w-full h-auto object-cover rounded-3xl group-hover:scale-105 transition-transform duration-500"
                 />

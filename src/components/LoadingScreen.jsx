@@ -58,7 +58,7 @@ const LoadingScreen = () => {
           >
             <div className="relative flex items-center justify-center w-24 h-24 rounded-2xl bg-gradient-to-br from-primary/30 to-amber-500/20 border border-primary/40 shadow-[0_0_50px_rgba(255,180,0,0.3)] p-4 overflow-hidden">
               <img
-                src="/logo.svg"
+                src="/mohamed.png"
                 alt="Mohamed Ali Logo"
                 className="w-full h-full object-contain animate-pulse"
               />

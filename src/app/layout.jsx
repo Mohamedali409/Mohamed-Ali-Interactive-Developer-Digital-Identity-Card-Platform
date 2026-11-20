@@ -50,9 +50,9 @@ export const metadata = {
     canonical: "https://mohamed-ali-portfolio.vercel.app",
   },
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: "/mohamed.png",
+    shortcut: "/mohamed.png",
+    apple: "/mohamed.png",
   },
   openGraph: {
     type: "website",
@@ -70,7 +70,7 @@ export const metadata = {
         alt: "Mohamed Ali (محمد علي) — Full-Stack Developer & Backend Software Engineer",
       },
       {
-        url: "/mohamed-ali-avatar.svg",
+        url: "/mohamed.png",
         width: 400,
         height: 400,
         alt: "Mohamed Ali (محمد علي) Profile Avatar",
@@ -96,7 +96,7 @@ const jsonLd = {
       "alternateName": "محمد علي",
       "jobTitle": "Full-Stack Developer | Backend-Focused Software Engineer",
       "url": "https://mohamed-ali-portfolio.vercel.app/",
-      "image": "https://mohamed-ali-portfolio.vercel.app/mohamed-ali-avatar.svg",
+      "image": "https://mohamed-ali-portfolio.vercel.app/mohamed.png",
       "description": "Mohamed Ali is a Full-Stack Developer and Backend-Focused Software Engineer specializing in Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, AWS, and AI integration.",
       "inLanguage": ["en", "ar"],
       "alumniOf": {

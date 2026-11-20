@@ -23,7 +23,7 @@ export const metadata = {
       "Verified specialized diplomas and academic qualifications earned by Mohamed Ali: Digilians AI Diploma and El Shorouk Academy MIS degree.",
     url: "https://mohamed-ali-portfolio.vercel.app/certificates",
     locale: "en_US",
-    images: ["/opengraph-image", "/mohamed-ali-avatar.svg"],
+    images: ["/opengraph-image", "/mohamed.png"],
   },
 };
 

@@ -28,7 +28,7 @@ export const metadata = {
       "Mohamed Ali (محمد علي) is a Full-Stack Developer and Backend-Focused Software Engineer with an MIS degree from El Shorouk Academy and specialized diploma from Digilians.",
     url: "https://mohamed-ali-portfolio.vercel.app/about",
     locale: "en_US",
-    images: ["/opengraph-image", "/mohamed-ali-avatar.svg"],
+    images: ["/opengraph-image", "/mohamed.png"],
   },
 };
 

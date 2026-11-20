@@ -25,7 +25,7 @@ export const metadata = {
       "Explore real-world software engineering projects built by Mohamed Ali: Avicena, FitMate AI, and ImpersonaGuard.",
     url: "https://mohamed-ali-portfolio.vercel.app/projects",
     locale: "en_US",
-    images: ["/opengraph-image", "/mohamed-ali-avatar.svg"],
+    images: ["/opengraph-image", "/mohamed.png"],
   },
 };
 

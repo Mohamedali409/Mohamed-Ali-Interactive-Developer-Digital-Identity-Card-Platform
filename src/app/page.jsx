@@ -32,7 +32,7 @@ export const metadata = {
       "Mohamed Ali — Full-Stack Developer and Backend-Focused Software Engineer specializing in Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, AWS, and AI integration.",
     url: "https://mohamed-ali-portfolio.vercel.app",
     locale: "en_US",
-    images: ["/opengraph-image", "/mohamed-ali-avatar.svg"],
+    images: ["/opengraph-image", "/mohamed.png"],
   },
 };
 

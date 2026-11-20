@@ -54,7 +54,7 @@ const HomeView = () => {
           >
             <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-accent to-primary blur-md opacity-75 group-hover:opacity-100 transition duration-500"></div>
             <img
-              src="/mohamed-ali-avatar.svg"
+              src="/mohamed.png"
               alt="Mohamed Ali — Full-Stack Developer & Backend Software Engineer"
               className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-background shadow-2xl"
             />

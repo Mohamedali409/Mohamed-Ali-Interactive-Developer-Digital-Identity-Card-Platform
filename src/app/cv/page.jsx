@@ -85,7 +85,7 @@ export default function CvPage() {
         <header className="cv-hero">
           <Image
             className="cv-portrait"
-            src="/mohamed-ali-avatar.svg"
+            src="/mohamed.png"
             alt="Mohamed Ali - Full-Stack Developer & Backend-Focused Software Engineer"
             width={184}
             height={184}

@@ -24,7 +24,7 @@ export const metadata = {
       "Professional software engineering services by Mohamed Ali: Backend Development, Full-Stack Apps, Database Modeling, Docker, and AI Integration.",
     url: "https://mohamed-ali-portfolio.vercel.app/services",
     locale: "en_US",
-    images: ["/opengraph-image", "/mohamed-ali-avatar.svg"],
+    images: ["/opengraph-image", "/mohamed.png"],
   },
 };
 
