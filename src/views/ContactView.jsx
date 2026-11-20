@@ -1,40 +1,36 @@
 'use client';
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import {
   Github,
   Linkedin,
   Mail,
   MapPin,
-  Phone,
   Send,
   Download,
-  Briefcase,
-  Globe,
-  Instagram,
   CheckCircle2,
   Loader2
 } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useSettings } from "@/context/SettingsContext";
 
 const ContactView = () => {
-  const { t, settings, isRtl } = useSettings();
+  const { t, settings } = useSettings();
   const isAr = settings.language === 'ar';
 
   useSEO({
     title: isAr 
-      ? "تواصل معي | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
-      : "Contact | Rabea Shaban — Full Stack Software Engineer",
+      ? "تواصل معي | محمد علي — مطور Full-Stack ومهندس برمجيات" 
+      : "Contact | Mohamed Ali — Full-Stack Developer & Backend Engineer",
     description: isAr
-      ? "تواصل مباشرة مع المهندس ربيع شعبان لطلب تطوير المشاريع البرمجية، عروض التوظيف، والاستشارات التقنية عبر الواتساب أو البريد الإلكتروني."
-      : "Get in touch with Rabea Shaban for full-stack software development projects, technical consulting, and engineering inquiries.",
+      ? "تواصل مع المهندس محمد علي لمناقشة المشروعات البرمجية، هندسة الأنظمة الخلفية، فرص العمل، والاستشارات التقنية."
+      : "Get in touch with Mohamed Ali for software development projects, backend engineering, RESTful APIs, and technical consulting.",
     keywords: isAr
-      ? "تواصل مع ربيع شعبان, توظيف مهندس برمجيات, ربيع شعبان, مهندس برمجيات"
-      : "Contact Rabea Shaban, Rabea Shaban, Hire Full Stack Engineer, Software Engineering Inquiries"
+      ? "تواصل مع محمد علي, توظيف مهندس برمجيات, محمد علي, مطور ويب, Backend Developer"
+      : "Contact Mohamed Ali, Mohamed Ali, Hire Backend Engineer, Software Engineering Inquiries, Full Stack Developer"
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -69,13 +65,8 @@ const ContactView = () => {
   };
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/rabea-shaban", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/rabea-sh-elzayat", label: "LinkedIn" },
-    { icon: Instagram, href: "https://instagram.com/rabea_sh_elzayat", label: "Instagram" },
-    { icon: Mail, href: "mailto:rabea.elzayate@gmail.com", label: "Email" },
-    { icon: Phone, href: "https://wa.me/201156807072", label: "WhatsApp" },
-    { icon: Briefcase, href: "https://upwork.com/freelancers/~01d2bd68b7d6e8fbce", label: "Upwork" },
-    { icon: Briefcase, href: "https://mostaql.com/u/rabea_elzayat", label: "Mostaql" },
+    { icon: Github, href: "https://github.com/Mohamedali409", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/mohamed-ali409", label: "LinkedIn" },
   ];
 
   return (
@@ -100,23 +91,33 @@ const ContactView = () => {
             <div className="glass-effect rounded-3xl p-8 border border-border/40 space-y-6">
               <h2 className="text-2xl font-bold font-display">{t.contact.detailsTitle}</h2>
               <div className="space-y-4">
-                <a href="mailto:rabea.elzayate@gmail.com" className="flex items-center gap-4 p-4 rounded-2xl bg-card/60 hover:bg-primary/10 transition-colors border border-border/30 group">
+                <a
+                  href="https://www.linkedin.com/in/mohamed-ali409"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-card/60 hover:bg-primary/10 transition-colors border border-border/30 group"
+                >
                   <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform">
-                    <Mail className="w-5 h-5" />
+                    <Linkedin className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-xs text-muted-foreground">{t.contact.emailLabel}</div>
-                    <div className="text-sm font-bold text-foreground">rabea.elzayate@gmail.com</div>
+                    <div className="text-xs text-muted-foreground">LinkedIn Profile</div>
+                    <div className="text-sm font-bold text-foreground">linkedin.com/in/mohamed-ali409</div>
                   </div>
                 </a>
 
-                <a href="https://wa.me/201156807072" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-card/60 hover:bg-primary/10 transition-colors border border-border/30 group">
+                <a
+                  href="https://github.com/Mohamedali409"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-card/60 hover:bg-primary/10 transition-colors border border-border/30 group"
+                >
                   <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform">
-                    <Phone className="w-5 h-5" />
+                    <Github className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-xs text-muted-foreground">{t.contact.phoneLabel}</div>
-                    <div className="text-sm font-bold text-foreground" dir="ltr">+20 115 680 7072</div>
+                    <div className="text-xs text-muted-foreground">GitHub Profile</div>
+                    <div className="text-sm font-bold text-foreground">github.com/Mohamedali409</div>
                   </div>
                 </a>
 
@@ -160,16 +161,16 @@ const ContactView = () => {
             <div className="glass-effect rounded-3xl p-6 border border-border/40 flex items-center justify-between">
               <div>
                 <h3 className="text-lg font-bold font-display">
-                  {isAr ? "هل تود تحميل السيرة الذاتية؟" : "Need my Resume?"}
+                  {isAr ? "هل تود استعراض السيرة الذاتية؟" : "Looking for my CV?"}
                 </h3>
                 <p className="text-xs text-muted-foreground">
-                  {isAr ? "حمّل أحدث نسخة محدثة من الـ CV بصيغة PDF" : "Download my latest CV in PDF format"}
+                  {isAr ? "استعرض السيرة الذاتية الرقمية المعتمدة" : "View verified digital credentials and profile"}
                 </p>
               </div>
               <Button asChild className="shadow-md text-xs">
-                <a href="https://flowcv.com/resume/a7n0o85l8o65" target="_blank" rel="noopener noreferrer">
+                <Link href="/cv">
                   {t.common.downloadResume} <Download className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
@@ -208,7 +209,7 @@ const ContactView = () => {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder={isAr ? "ربيع شعبان" : "Rabea Shaban"}
+                    placeholder={isAr ? "محمد علي" : "Mohamed Ali"}
                     className="w-full px-4 py-3 rounded-xl border border-border/60 bg-card/60 focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all text-sm"
                   />
                 </div>
@@ -222,7 +223,7 @@ const ContactView = () => {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="rabea@example.com"
+                    placeholder="name@example.com"
                     className="w-full px-4 py-3 rounded-xl border border-border/60 bg-card/60 focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all text-sm"
                   />
                 </div>

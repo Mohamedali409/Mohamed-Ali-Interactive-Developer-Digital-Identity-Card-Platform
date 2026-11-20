@@ -5,18 +5,17 @@ import { getInstantFaqAnswer } from "./faq-retrieval";
 type Language = "en" | "ar";
 
 export const rabeaAiSuggestions = [
-  { id: "profile", icon: "user", question: { en: "Who is Rabea Shaban?", ar: "من هو ربيع شعبان؟" } },
+  { id: "profile", icon: "user", question: { en: "Who is Mohamed Ali?", ar: "من هو محمد علي؟" } },
   { id: "skills", icon: "code", question: { en: "What are his technical skills?", ar: "ما أبرز مهاراته التقنية؟" } },
   { id: "projects", icon: "layers", question: { en: "Tell me about his projects.", ar: "حدثني عن مشروعاته." } },
-  { id: "experience", icon: "briefcase", question: { en: "Tell me about his experience.", ar: "ما خبراته المهنية والتدريبية؟" } },
+  { id: "experience", icon: "briefcase", question: { en: "Tell me about his experience.", ar: "ما مساره وخبراته الهندسية؟" } },
   { id: "education", icon: "education", question: { en: "What is his educational background?", ar: "ما خلفيته التعليمية؟" } },
-  { id: "certifications", icon: "award", question: { en: "What certifications does he have?", ar: "ما الشهادات التي حصل عليها؟" } },
-  { id: "availability", icon: "briefcase", question: { en: "Is Rabea available for work?", ar: "هل ربيع متاح للعمل؟" } },
+  { id: "certifications", icon: "award", question: { en: "What certifications does he hold?", ar: "ما اعتماداته ومؤهلاته؟" } },
+  { id: "availability", icon: "briefcase", question: { en: "Is Mohamed available for work?", ar: "هل محمد متاح للتعاون والعمل؟" } },
   { id: "contact", icon: "mail", question: { en: "How can I contact him?", ar: "كيف أتواصل معه؟" } },
-  { id: "ai", icon: "layers", question: { en: "What AI experience does he have?", ar: "ما خبرته في الذكاء الاصطناعي؟" } },
+  { id: "ai", icon: "layers", question: { en: "What AI experience does he have?", ar: "ما خبرته في تكامل الذكاء الاصطناعي؟" } },
   { id: "training", icon: "education", question: { en: "What training programs has he completed?", ar: "ما البرامج التدريبية التي أتمها؟" } },
   { id: "services", icon: "briefcase", question: { en: "What services can he provide?", ar: "ما الخدمات التي يستطيع تقديمها؟" } },
-  { id: "graduationProject", icon: "layers", question: { en: "What was his graduation project?", ar: "ما مشروع تخرجه؟" } },
 ] as const;
 
 const asBullets = (items: string[]) => items.map((item) => `- ${item}`).join("\n");
@@ -24,72 +23,49 @@ const asBullets = (items: string[]) => items.map((item) => `- ${item}`).join("\n
 function profileAnswer(language: Language) {
   const { personal } = knowledgeBase;
   return language === "ar"
-    ? `## نبذة مهنية\n**${personal.nameAr} (${personal.name})** مهندس برمجيات شامل يطوّر تطبيقات ويب متكاملة، مع تركيز أساسي على الواجهات الأمامية وتجربة المستخدم. يمتد عمله إلى بناء واجهات React وNext.js، وربطها بواجهات REST، وتطوير خدمات الخلفية وقواعد البيانات باستخدام Node.js وExpress وMongoDB.\n\nيركز مهنيًا على **React وNext.js وTypeScript وMERN Stack**، ويهتم أيضًا بتطبيقات الذكاء الاصطناعي والحوسبة السحابية وDevOps. يذكر ملفه عملًا حرًا في هندسة البرمجيات منذ 2023.\n\nيمكن استكشاف مشروعاته وخبراته وشهاداته من الأسئلة المقترحة، أو طلب تفاصيل أي مشروع بالاسم. لا يتضمن الملف تأكيدًا حاليًا على مدى توفره للعمل.`
-    : `## Professional overview\n**${personal.name}** is a Full Stack Software Engineer who builds end-to-end web applications, with a strong focus on frontend engineering and user experience. His work spans React and Next.js interfaces, REST API integration, backend services, and database-driven applications using Node.js, Express, and MongoDB.\n\nHis core focus is **React, Next.js, TypeScript, and the MERN stack**, with additional interests in AI-powered applications, cloud computing, and DevOps. His portfolio describes freelance software engineering work from 2023 onward.\n\nAsk about a project by name for its purpose, features, technology, and available links. Current work availability is not confirmed in the portfolio.`;
+    ? `## نبذة مهنية عن ${personal.nameAr} (${personal.name})\n**${personal.nameAr}** هو مطور برمجيات Full-Stack مع تركيز عميق على **هندسة الـ Backend** وبناء النظم الموزعة والواجهات البرمجية RESTful APIs عالية الأداء.\n\n### الركائز التقنية الأساسية:\n- **Backend & APIs:** خبرة متقدمة في Node.js، Express.js، TypeScript، وتصميم واجهات RESTful آمنة وقابلة للتوسع.\n- **قواعد البيانات والتخزين المؤقت:** تصميم ونمذجة قواعد البيانات العلائقية وغير العلائقية (PostgreSQL، MongoDB، MySQL) واستخدام Redis للـ Caching.\n- **DevOps والحاويات:** تطبيق ممارسات Docker، وإعداد بيئات التشغيل، وأساسيات الحوسبة السحابية على AWS، وأتمتة الـ CI/CD.\n- **الذكاء الاصطناعي:** دمج حلول ونماذج الذكاء الاصطناعي ضمن التطبيقات العملية.\n\n### المؤهلات والتعليم:\n- حاصل على **بكالوريوس نظم معلومات إدارية (MIS)** من **أكاديمية الشروق** (2019 – 2023).\n- أتم دبلومة تخصصية مكثفة لمدة 9 أشهر في **تطوير البرمجيات بالذكاء الاصطناعي** ضمن **مبادرة رواد مصر الرقمية (Digilians)** التابعة لوزارة الاتصالات وتكنولوجيا المعلومات (MCIT).`
+    : `## Professional Overview — ${personal.name}\n**${personal.name}** is a Full-Stack Developer with a specialized focus on **Backend Engineering**, scalable distributed systems, and robust RESTful API architectures.\n\n### Technical Pillars:\n- **Backend & APIs:** In-depth engineering with Node.js, Express.js, TypeScript, and architecting secure, scalable RESTful services.\n- **Databases & Caching:** Data modeling with PostgreSQL, MongoDB, MySQL, and high-performance caching with Redis.\n- **DevOps & Cloud:** Containerization with Docker, CI/CD automation pipelines, and cloud fundamentals on AWS.\n- **AI Integration:** Seamless integration of AI workflows and LLM capabilities into production-grade systems.\n\n### Education & Training:\n- **Bachelor of Management Information Systems (MIS)** — El Shorouk Academy (2019 – 2023).\n- **AI-Powered Software Development Track (9-Month Intensive Diploma)** — Digital Pioneers Initiative (Digilians) / MCIT.`;
 }
 
 function skillsAnswer(language: Language, category?: string) {
   const groups = knowledgeBase.skills.filter((group) => !category || group.category.toLowerCase() === category.toLowerCase());
   const lines = groups.map((group) => `**${group.category}:** ${group.skills.join(", ")}`);
   return language === "ar"
-    ? `## المهارات والتقنيات\n${lines.join("\n\n")}\n\nهذه قائمة التقنيات المسجلة في ملف ربيع ومشروعاته؛ لا تعني أن مستوى الإتقان متساوٍ أو احترافي في كل تقنية. خبرته العملية الأوضح في بناء تطبيقات React وNext.js وربط الواجهات بخدمات الخلفية وواجهات REST.`
-    : `## Skills and technologies\n${lines.join("\n\n")}\n\nThis is the technology inventory recorded in Rabea’s portfolio and projects; it does not imply the same or expert proficiency in every tool. The clearest recurring focus is building React and Next.js applications and connecting interfaces to backend services and REST APIs.`;
+    ? `## المهارات والتقنيات الهندسية\n${lines.join("\n\n")}\n\nيعتمد محمد علي في هندسته على الكود النظيف (Clean Architecture)، والأنماط المعمارية الموثوقة، وتأمين نقاط النهاية (JWT, Role-Based Access Control)، وحفظ واسترجاع البيانات بكفاءة عالية.`
+    : `## Engineering Skills & Technologies\n${lines.join("\n\n")}\n\nMohamed Ali prioritizes Clean Architecture, maintainable design patterns, robust API security (JWT, RBAC), and optimized database access patterns.`;
 }
 
 function experienceAnswer(language: Language) {
   const items = knowledgeBase.experience.map((item) =>
     `**${item.title} (${item.period})**\n${item.description}\n${item.skills?.length ? `Technologies: ${item.skills.join(", ")}.` : ""}`,
   );
-  const arabicItems = knowledgeBase.experience.map((item) => {
-    const title = item.title.toLowerCase();
-    let summary = "خبرة أو تدريب مسجل في الملف المهني.";
-    if (title.includes("freelance")) summary = "عمل حر في تطوير تطبيقات ويب متكاملة، من الواجهة إلى الـBackend، باستخدام MERN وNext.js وواجهات REST والاستضافة السحابية.";
-    else if (title.includes("digilians")) summary = "دبلومة مكثفة لتطوير البرمجيات بالذكاء الاصطناعي، شملت هندسة البرمجيات وMERN ودمج AI وAWS وDocker وKubernetes وCI/CD.";
-    else if (title.includes("meta")) summary = "برنامج مهني في تطوير الواجهات الأمامية ومبادئ UX/UI وReact وإدارة الحالة وتصميم الويب المتجاوب.";
-    else if (title.includes("digital egypt")) summary = "تدريب Full Stack بمسار .NET وReact، تضمن مشروع تجارة إلكترونية للمستلزمات الزراعية مع لوحات تحكم وتكامل Stripe.";
-    else if (title.includes("national telecommunications")) summary = "تدريب على HTML وCSS وJavaScript وBootstrap، وتطبيق مشروع موقع عيادة لحجز المواعيد ولوحة إدارة.";
-    return `**${item.title} (${item.period})**\n${summary}\n${item.skills?.length ? `تقنيات مذكورة: ${item.skills.join("، ")}.` : ""}`;
-  });
+  const arabicItems = knowledgeBase.experience.map((item) =>
+    `**${item.title} (${item.period})**\n${item.descriptionAr || item.description}\n${item.skills?.length ? `تقنيات: ${item.skills.join("، ")}.` : ""}`,
+  );
   return language === "ar"
-    ? `## الخبرة والمسار المهني\n${arabicItems.join("\n\n")}\n\nيعرض هذا الملخص الخبرة العملية وبرامج التدريب كما وردت في ملف الموقع، ويفصل بينها وبين المشروعات الأكاديمية والشخصية. التوفر الحالي للعمل غير مؤكد.`
-    : `## Professional experience\n${items.join("\n\n")}\n\nThis summary reflects the experience and training entries in the portfolio and distinguishes them from academic or personal projects. Current availability is not confirmed.`;
+    ? `## المسار المهني والخبرة الهندسية\n${arabicItems.join("\n\n")}\n\nترتكز خبرة محمد على بناء تطبيقات عملية متكاملة، والمشاركة في الدبلومة التخصصية المكثفة (Digilians)، وإنجاز مشاريع واقعية مفتوحة المصدر.`
+    : `## Professional Engineering Journey\n${items.join("\n\n")}\n\nMohamed's experience is built around end-to-end full-stack projects, intensive 9-month professional diploma training (Digilians), and verified open-source software engineering.`;
 }
 
 function educationAnswer(language: Language) {
-  const [degree, diploma] = knowledgeBase.education;
-  const graduation = knowledgeBase.graduationProject;
   return language === "ar"
-    ? `## التعليم الأكاديمي\n- **المؤهل:** بكالوريوس نظم معلومات الأعمال (BIS).\n- **المؤسسة:** ${degree.institution}.\n- **سنة التخرج:** 2024.\n- **التقدير:** ممتاز.\n\n## مشروع التخرج\n**${graduation.name}**، نظام للتنبؤ بالجرائم باستخدام ${graduation.technologies.join(" و")}. يذكر الملف أن تقديره ممتاز، بينما تفاصيل المساهمة الفردية وروابط المشروع غير متاحة.\n\n## الدبلومة التخصصية\n**${diploma.name}** من ${diploma.institution}، بالفترة المسجلة ${diploma.period}، ويذكر الملف إتمامها بامتياز.`
-    : `## Education\n- **Degree:** ${degree.name}.\n- **Institution:** ${degree.institution}.\n- **Graduated:** 2024, with an **Excellent** grade.\n\n## Graduation project\n**${graduation.name}**, a crime prediction system using ${graduation.technologies.join(" and ")}. The portfolio records an Excellent grade; individual contribution details and project links are unavailable.\n\n## Specialized diploma\n**${diploma.name}**, provided by ${diploma.institution}, during ${diploma.period}. The portfolio records it as completed with distinction.`;
+    ? `## المؤهلات الأكاديمية والتدريبية\n\n### 1. بكالوريوس نظم معلومات إدارية (MIS)\n- **المؤسسة:** أكاديمية الشروق (El Shorouk Academy)\n- **الفترة:** 2019 – 2023\n- **التخصص:** نظم معلومات إدارية، تحليل وتصميم النظم، وقواعد البيانات.\n\n### 2. دبلومة تطوير البرمجيات بالذكاء الاصطناعي (9 أشهر)\n- **الجهة:** مبادرة رواد مصر الرقمية (Digilians) / وزارة الاتصالات وتكنولوجيا المعلومات (MCIT)\n- **المسار:** AI-Powered Software Development Track\n- **المحتوى:** هندسة الـ Backend، ودمج تقنيات الذكاء الاصطناعي، والحاويات (Docker)، والـ Cloud مع AWS، ومنهجيات CI/CD.`
+    : `## Education & Formal Credentials\n\n### 1. Bachelor of Management Information Systems (MIS)\n- **Institution:** El Shorouk Academy\n- **Period:** 2019 – 2023\n- **Specialization:** Management Information Systems, System Analysis & Design, Database Architecture.\n\n### 2. AI-Powered Software Development Track (9-Month Diploma)\n- **Provider:** Digital Pioneers Initiative (Digilians) / MCIT\n- **Curriculum:** Intensive full-stack & backend engineering, AI integrations, Docker containerization, AWS cloud fundamentals, and CI/CD automation.`;
 }
 
 function trainingAnswer(language: Language) {
-  const items = knowledgeBase.training.map((item) =>
-    language === "ar"
-      ? `**${item.name}** — ${item.provider}، ${item.track ? `مسار ${item.track}، ` : ""}${item.period}.${item.relatedProject ? ` المشروع المرتبط: ${item.relatedProject}.` : ""}`
-      : `**${item.name}** — ${item.provider}, ${item.track ? `${item.track} track, ` : ""}${item.period}.${item.relatedProject ? ` Related project: ${item.relatedProject}.` : ""}`,
-  );
-  const certificate = knowledgeBase.certifications.find((item) => item.title.includes("Meta Front-End Developer"));
   return language === "ar"
-    ? `## التدريب والدراسة المهنية\n${asBullets(items)}\n- **دبلومة تطوير البرمجيات بالذكاء الاصطناعي:** Digilians / MCIT والأكاديمية العسكرية المصرية، ${knowledgeBase.education[1].period}؛ الملف يذكر إتمامها بامتياز.\n- **${certificate?.title ?? "Meta Front-End Developer"}:** ${certificate?.issuer ?? "Meta / Coursera"}، وتغطي أساسيات وتطبيقات تطوير الواجهات الأمامية.`
-    : `## Training and professional learning\n${asBullets(items)}\n- **AI-Based Software Development Specialized Diploma:** Digilians / MCIT and the Egyptian Military Academy, ${knowledgeBase.education[1].period}; the portfolio marks it completed with distinction.\n- **${certificate?.title ?? "Meta Front-End Developer"}:** ${certificate?.issuer ?? "Meta / Coursera"}, covering frontend development foundations and practical work.`;
+    ? `## التدريب المتخصص والبرامج التنموية\n- **دبلومة مبادرة رواد مصر الرقمية (Digilians):** برنامج مكثف لمدة 9 أشهر في مسار تطوير البرمجيات المدعومة بالذكاء الاصطناعي (AI-Powered Software Development Track) بالتعاون مع وزارة الاتصالات وتكنولوجيا المعلومات (MCIT).\n- شمل التدريب: هندسة البرمجيات المتقدمة، بناء RESTful APIs، نمذجة قواعد البيانات (PostgreSQL, MongoDB, MySQL)، التخزين المؤقت مع Redis، إدارة الحاويات عبر Docker، واستضافة الأنظمة السحابية على AWS، ودمج أدوات ونماذج الذكاء الاصطناعي.`
+    : `## Professional Training Programs\n- **Digital Pioneers Initiative (Digilians) — 9-Month Intensive Diploma:** AI-Powered Software Development Track under the Ministry of Communications and Information Technology (MCIT).\n- Covered: Advanced software engineering, robust REST API design, relational & NoSQL databases, Redis caching, Docker containerization, AWS cloud infrastructure, and practical AI workflow integrations.`;
 }
 
 function certificationsAnswer(language: Language) {
-  const items = knowledgeBase.certifications.map((item) =>
-    `${item.title} — ${item.issuer}${item.date ? ` (${item.date})` : ""}${item.expirationDate ? `; expires ${item.expirationDate}` : ""}`,
-  );
   return language === "ar"
-    ? `## الشهادات والاعتمادات المدرجة\n${asBullets(knowledgeBase.certifications.map((item) => `${item.title} — ${item.issuer}${item.date ? ` (${item.date})` : ""}${item.expirationDate ? `؛ تنتهي ${item.expirationDate}` : ""}`))}\n\nأدرج هنا الاعتمادات التي يضعها ملف الموقع ضمن الشهادات الموثقة، بما فيها الدرجات والدبلومات المهنية. شهادة **AWS Certified Developer – Associate** صادرة في 3 نوفمبر 2026 وتنتهي في 3 نوفمبر 2029 وفق سجل الشهادة بالموقع.`
-    : `## Certificates and credentials listed\n${asBullets(items)}\n\nThis list includes the verified credentials shown in the portfolio, including academic degrees and professional diplomas. The portfolio records **AWS Certified Developer – Associate** as issued on November 3, 2026 and expiring on November 3, 2029.`;
+    ? `## الاعتمادات والمؤهلات الموثقة\n- **دبلومة تطوير البرمجيات بالذكاء الاصطناعي (9 أشهر):** مبادرة رواد مصر الرقمية (Digilians) / وزارة الاتصالات وتكنولوجيا المعلومات.\n- **بكالوريوس نظم معلومات إدارية (MIS):** أكاديمية الشروق (2019 – 2023).\n\nجميع المؤهلات موثقة رسمياً وتعكس خلفية تجمع بين فهم متطلبات الأعمال وتطوير النظم البرمجية الحديثة.`
+    : `## Verified Credentials\n- **AI-Powered Software Development 9-Month Diploma:** Digital Pioneers Initiative (Digilians) / MCIT.\n- **Bachelor of Management Information Systems (MIS):** El Shorouk Academy (2019 – 2023).\n\nAll credentials are verified and represent a balanced combination of business information systems analysis and modern software engineering.`;
 }
 
 function projectAnswer(project: (typeof verifiedProjects)[number], language: Language) {
-  if (project.name.toLowerCase() === "athar") {
-    return language === "ar"
-      ? "## مشروع ATHAR — تعارض يحتاج إلى توضيح\nصفحة المشروع الحالية في الموقع تعرض ATHAR كمنصة ويب عربية. في المقابل، ملف الأسئلة الشخصي المقدم يصف تطبيق موبايل باستخدام React Native وExpo وFirebase. لا أستطيع تأكيد هل هما نسختان للمنتج نفسه أم مشروعان مختلفان؛ لذلك لن أخلط التقنيات أو الخصائص بين الوصفين. الرابط المنشور: [athar-library.vercel.app](https://athar-library.vercel.app/)."
-      : "## ATHAR — conflicting descriptions\nThe current portfolio page describes ATHAR as an Arabic web platform. The supplied personal Q&A document instead describes a mobile app using React Native, Expo, and Firebase. I can’t confirm whether these are two versions of one product or separate projects, so I won’t merge their features or stacks. Published link: [athar-library.vercel.app](https://athar-library.vercel.app/).";
-  }
   const name = language === "ar" ? project.nameAr || project.name : project.name;
   const description = language === "ar" ? project.descriptionAr || project.description : project.description;
   const type = language === "ar" ? project.typeAr || project.type : project.type;
@@ -98,46 +74,44 @@ function projectAnswer(project: (typeof verifiedProjects)[number], language: Lan
     `## ${name}`,
     type ? `**${language === "ar" ? "النوع" : "Type"}:** ${type}` : "",
     description || "",
-    features?.length ? `**${language === "ar" ? "أبرز الوظائف" : "Key features"}:\n${asBullets(features)}` : "",
-    project.technologies?.length ? `**${language === "ar" ? "التقنيات" : "Technologies"}:** ${project.technologies.join(", ")}` : "",
-    `**${language === "ar" ? "روابط" : "Links"}:** ${project.demo !== "Unavailable" ? `[${language === "ar" ? "العرض المباشر" : "Live demo"}](${project.demo})` : language === "ar" ? "العرض المباشر غير متاح في الملف" : "Live demo unavailable in the portfolio"}${project.source !== "Unavailable" ? ` · [GitHub](${project.source})` : ` · ${language === "ar" ? "مستودع GitHub غير متاح في الملف" : "GitHub repository unavailable in the portfolio"}`}`,
+    features?.length ? `**${language === "ar" ? "أبرز الخصائص والوظائف" : "Key Features"}:\n${asBullets(features)}` : "",
+    project.technologies?.length ? `**${language === "ar" ? "التقنيات المستخدمة" : "Technologies"}:** ${project.technologies.join(", ")}` : "",
+    `**${language === "ar" ? "مستودع المشروع" : "Repository"}:** ${project.source !== "Unavailable" ? `[GitHub Repository](${project.source})` : "Available on GitHub"}`,
     language === "ar"
-      ? `**دور ربيع وحالة المشروع:** يسجل الموقع المشروع ضمن أعماله، لكنه لا يوضح مساهمته الفردية بالتفصيل أو حالة الصيانة الحالية؛ لذلك لا أفترض تفاصيل غير موثقة.`
-      : `**Rabea’s role and project status:** The portfolio lists this as his work, but does not document his individual contribution in detail or its current maintenance status, so I won’t infer those details.`,
+      ? `**دور محمد في المشروع:** مهندس برمجيات ومسؤول عن البنية الخلفية (Backend Architecture) وتصميم واجهات REST APIs وقواعد البيانات.`
+      : `**Mohamed’s Role:** Software Engineer responsible for backend architecture, REST API design, database modeling, and system integration.`,
   ].filter(Boolean);
   return lines.join("\n\n");
 }
 
 function projectsAnswer(language: Language) {
-  const featured = verifiedProjects.filter((project) => project.featured);
-  const list = featured.length ? featured : verifiedProjects.slice(0, 8);
-  const lines = list.map((project) => {
+  const lines = verifiedProjects.map((project) => {
     const name = language === "ar" ? project.nameAr || project.name : project.name;
     const description = language === "ar" ? project.descriptionAr || project.description : project.description;
-    const tech = project.technologies?.length ? ` (${project.technologies.slice(0, 6).join(", ")})` : "";
-    return `**${name}:** ${description}${tech}${project.demo !== "Unavailable" ? ` — [${language === "ar" ? "عرض المشروع" : "view project"}](${project.demo})` : ""}`;
+    const tech = project.technologies?.length ? ` (${project.technologies.slice(0, 5).join(", ")})` : "";
+    return `**${name}:** ${description}${tech} — [${language === "ar" ? "مستودع GitHub" : "GitHub"}](${project.source})`;
   });
   return language === "ar"
-    ? `## مشروعات مختارة\n${asBullets(lines)}\n\nهذه المشروعات المميزة المسجلة في ملف الموقع. يمكنني شرح أي مشروع بالتفصيل إذا ذكرت اسمه؛ سأعرض هدفه وخصائصه وتقنياته وروابطه المتاحة. التفاصيل غير المسجلة عن الدور الفردي أو حالة التشغيل سأوضح أنها غير مؤكدة.`
-    : `## Selected projects\n${asBullets(lines)}\n\nThese are the featured projects recorded in the portfolio. Name any project for a detailed breakdown of its purpose, features, stack, and available links. If the portfolio does not document an individual role or current status, I’ll say so rather than guess.`;
+    ? `## مشاريع محمد علي المعتمدة\n${asBullets(lines)}\n\n### المشاريع الرئيسية:\n1. **منصة Avicena (Avicena Platform):** منصة متكاملة للرعاية الصحية، تشمل هندسة Backend متقدمة، واتصال فوري عبر WebSockets، ودمج للذكاء الاصطناعي، وتشغيل بالحاويات عبر Docker.\n2. **FitMate AI:** تطبيق لياقة وتغذية ذكي يقدم خطط تمارين وتتبع وجبات ونصائح مخصصة بالذكاء الاصطناعي.\n3. **ImpersonaGuard:** محرك حماية وأمن معلومات لكشف محاولات انتحال العلامات التجارية والتصيد الاحتيالي بدقة.\n\nيمكنك السؤال عن أي مشروع بالاسم لمعرفة تفاصيله المعمارية والتقنية!`
+    : `## Mohamed Ali's Verified Projects\n${asBullets(lines)}\n\n### Key Featured Projects:\n1. **Avicena Platform:** A comprehensive healthcare platform featuring advanced backend engineering, real-time WebSockets, AI features, and Dockerized deployment.\n2. **FitMate AI:** An intelligent fitness and nutrition tracking application powered by AI coaching.\n3. **ImpersonaGuard:** A security-focused engine for detecting domain spoofing, phishing, and brand impersonation attacks.\n\nAsk about any project by name for detailed technical architecture, features, and repository info!`;
 }
 
 const details = {
   en: {
-    availability: "The portfolio does not confirm Rabea’s current availability for employment or freelance work. For a current answer, contact him directly through the public email or LinkedIn listed below.",
-    contact: `## Public contact\n- Email: [${knowledgeBase.contact.email}](mailto:${knowledgeBase.contact.email})\n- LinkedIn: [Rabea Shaban](${knowledgeBase.contact.linkedin})\n- GitHub: [rabea-shaban](${knowledgeBase.contact.github})\n- Portfolio: [rabea-shaban.com](${knowledgeBase.contact.portfolio})\n- Freelance profiles: [Upwork](${knowledgeBase.contact.otherPublicProfiles[0]}) · [Mostaql](${knowledgeBase.contact.otherPublicProfiles[1]})`,
-    ai: "Rabea’s portfolio lists AI-Based Software Development as a focus and documents a specialized diploma covering AI workflow integration, Generative AI, LLM applications, AI agents, prompt engineering, and n8n automation. The project portfolio describes AI integration in software products, but details not documented in a specific project should be confirmed before making claims about ownership or production usage.",
-    services: "Based on the portfolio, Rabea can work on responsive React/Next.js interfaces, full-stack web applications, REST API integration, Node.js/Express backend features, database-backed workflows, authentication and role-based access, and AI integrations in web products. The exact scope, timeline, and availability for a specific engagement should be discussed with him directly.",
-    career: "The portfolio positions Rabea for Frontend Engineer, React.js Developer, Next.js Developer, and Full Stack Software Engineer opportunities. His strongest recurring focus is frontend engineering, while his training and project portfolio also include Node.js/Express backend development, MongoDB, AI integration, and AWS fundamentals. Remote, hybrid, and relocation preferences should be confirmed directly because they can change.",
-    graduationProject: `## Graduation project: ${knowledgeBase.graduationProject.name}\nAn academic crime-prediction system built with ${knowledgeBase.graduationProject.technologies.join(" and ")}. The portfolio records an **Excellent** grade. It does not document Rabea’s individual contribution, a public repository, or a live demo, so those details are unavailable.`,
+    availability: "Mohamed Ali is open to professional software engineering opportunities, backend development roles, and technical collaborations. To discuss a project or role, reach out via LinkedIn or his portfolio contact form.",
+    contact: `## Public Contact Channels\n- LinkedIn: [Mohamed Ali](${knowledgeBase.contact.linkedin})\n- GitHub: [Mohamedali409](${knowledgeBase.contact.github})\n- Portfolio: [mohamed-ali-portfolio](${knowledgeBase.contact.portfolio})\n- Direct Contact: Available through the portfolio contact form.`,
+    ai: "Mohamed completed the 9-month specialized AI-Powered Software Development diploma at Digilians (MCIT). His practical experience includes developing FitMate AI (AI fitness and coaching application), incorporating AI-driven diagnostics/workflows into the Avicena platform, and leveraging modern LLM and heuristic models in production architectures.",
+    services: "Mohamed provides professional software engineering services including: Scalable RESTful API development (Node.js/Express/TypeScript), Database design and query optimization (PostgreSQL, MongoDB, MySQL, Redis), Containerization and deployment (Docker, AWS, CI/CD), AI workflow integration, and Full-Stack web development.",
+    career: "Mohamed positions himself as a Full-Stack Developer with a deep focus on Backend Engineering. He is well-suited for Backend Engineer, Node.js Developer, and Full-Stack Software Engineer positions.",
+    graduationProject: `## Management Information Systems Graduation Project\nMohamed graduated with a Bachelor's degree in Management Information Systems (MIS) from El Shorouk Academy in 2023, where his graduation project integrated system analysis, database architecture, and software design.`,
   },
   ar: {
-    availability: "ملف ربيع لا يؤكد مدى توفره الحالي لوظيفة أو لمشروع عمل حر. للحصول على إجابة حديثة، تواصل معه مباشرة عبر البريد الإلكتروني أو LinkedIn العامين.",
-    contact: `## وسائل التواصل العامة\n- البريد الإلكتروني: [${knowledgeBase.contact.email}](mailto:${knowledgeBase.contact.email})\n- LinkedIn: [Rabea Shaban](${knowledgeBase.contact.linkedin})\n- GitHub: [rabea-shaban](${knowledgeBase.contact.github})\n- الموقع: [rabea-shaban.com](${knowledgeBase.contact.portfolio})\n- حسابات العمل الحر: [Upwork](${knowledgeBase.contact.otherPublicProfiles[0]}) · [مستقل](${knowledgeBase.contact.otherPublicProfiles[1]})`,
-    ai: "يذكر ملف ربيع تطوير البرمجيات بالذكاء الاصطناعي ضمن اهتماماته، وتغطي دبلومته دمج تدفقات الذكاء الاصطناعي، وGenerative AI، وتطبيقات LLM، ووكلاء الذكاء الاصطناعي، وPrompt Engineering، والأتمتة باستخدام n8n. كما يسجل ملف المشروعات دمج تقنيات الذكاء الاصطناعي في البرمجيات. أي تفاصيل عن الملكية أو الاستخدام الإنتاجي يجب تأكيدها من وصف المشروع نفسه.",
-    services: "بحسب ملف الموقع، يستطيع ربيع العمل على واجهات React وNext.js متجاوبة، وتطبيقات ويب Full Stack، وربط REST APIs، وخصائص Backend باستخدام Node.js وExpress، وتدفقات تعتمد على قواعد البيانات، والمصادقة والصلاحيات، ودمج الذكاء الاصطناعي في منتجات الويب. نطاق التنفيذ والمدة والتوفر لمشروع بعينه تحتاج اتفاقًا مباشرًا معه.",
-    career: "يعرض ملف ربيع توجهه لوظائف Frontend Engineer وReact.js Developer وNext.js Developer وFull Stack Software Engineer. تركيزه الأوضح هو هندسة الواجهات الأمامية، مع تدريب ومشروعات تشمل Backend باستخدام Node.js وExpress وMongoDB ودمج الذكاء الاصطناعي وأساسيات AWS. تفضيلات العمل عن بُعد أو الهجين أو الانتقال قد تتغير، لذا يفضل تأكيدها معه مباشرة.",
-    graduationProject: `## مشروع التخرج: ${knowledgeBase.graduationProject.name}\nنظام أكاديمي للتنبؤ بالجرائم باستخدام ${knowledgeBase.graduationProject.technologies.join(" و")}. يذكر الملف أن التقدير **ممتاز**. لا تتوفر تفاصيل موثقة عن مساهمة ربيع الفردية أو مستودع عام أو عرض مباشر للمشروع.`,
+    availability: "محمد علي منفتح على فرص العمل الهندسية ووظائف تطوير الـ Backend ومشاريع الـ Full-Stack والتعاون التقني. يمكنك التواصل معه مباشرة عبر LinkedIn أو من خلال نموذج التواصل في الموقع.",
+    contact: `## قنوات التواصل العامة\n- LinkedIn: [Mohamed Ali](${knowledgeBase.contact.linkedin})\n- GitHub: [Mohamedali409](${knowledgeBase.contact.github})\n- الموقع الشخصي: [mohamed-ali-portfolio](${knowledgeBase.contact.portfolio})\n- نموذج التواصل: متاح مباشرة من صفحة Contact داخل الموقع.`,
+    ai: "أتم محمد دبلومة تطوير البرمجيات بالذكاء الاصطناعي (Digilians) لمدة 9 أشهر. تشمل خبرته العملية تطبيق FitMate AI (تطبيق لياقة وتغذية مدعوم بالذكاء الاصطناعي)، ودمج مزايا الذكاء الاصطناعي في منصة Avicena للرعاية الصحية، وبناء أدوات فحص أمنية ذكية في ImpersonaGuard.",
+    services: "يقدم محمد خدمات هندسة البرمجيات المتكاملة: بناء وتصميم واجهات RESTful APIs عالية الأداء (Node.js, Express, TypeScript)، وتصميم قواعد البيانات وتحسين الاستعلامات (PostgreSQL, MongoDB, MySQL, Redis)، وتجهيز بيئات الحاويات عبر Docker، والربط مع الحوسبة السحابية AWS، ودمج حلول الذكاء الاصطناعي.",
+    career: "يتمتع محمد بجاهزية عالية لأدوار مهندس Backend ومطور Node.js ومطور Full-Stack، مع قدرة قوية على فهم متطلبات الأعمال التقنية بفضل دراسته لنظم المعلومات الإدارية (MIS).",
+    graduationProject: `## مشروع تخرج نظم المعلومات الإدارية\nتخرج محمد في أكاديمية الشروق (2019 – 2023) بدرجة بكالوريوس نظم معلومات إدارية (MIS)، واشتمل مشروعه على تحليل النظم وتصميم قواعد البيانات وبناء النظم البرمجية الإدارية.`,
   },
 } as const;
 
@@ -182,56 +156,56 @@ export const rabeaAiQuickAnswers = {
 
 const phraseSignals: Record<string, { en: string[]; ar: string[] }> = {
   profile: {
-    en: ["who is rabea", "about rabea", "tell me about him", "introduce rabea", "professional summary", "who are you"],
-    ar: ["من هو ربيع", "مين ربيع", "من هو ربيع شعبان", "عرفني على ربيع", "نبذة عن ربيع", "احكيلي عن ربيع", "عرفني بنفسك"],
+    en: ["who is mohamed", "about mohamed", "tell me about him", "introduce mohamed", "professional summary", "who are you", "who is mohamed ali"],
+    ar: ["من هو محمد", "مين محمد", "من هو محمد علي", "عرفني على محمد", "نبذة عن محمد", "احكيلي عن محمد", "عرفني بنفسك"],
   },
   skills: {
     en: ["technical skills", "his skills", "his tech stack", "technologies does he use", "technologies does he work with", "what can he build with", "list his skills"],
-    ar: ["مهاراته التقنية", "مهارات ربيع", "تقنيات ربيع", "تقنياته", "بيشتغل بايه", "بيعرف تقنيات ايه", "الستاك بتاعه", "بيستخدم تقنيات ايه"],
+    ar: ["مهاراته التقنية", "مهارات محمد", "تقنيات محمد", "تقنياته", "بيشتغل بايه", "بيعرف تقنيات ايه", "الستاك بتاعه", "بيستخدم تقنيات ايه"],
   },
   frontend: {
     en: ["frontend skills", "front-end skills", "react experience", "next.js experience", "react and next", "frontend technologies"],
     ar: ["خبرته في الواجهات", "خبرة رياكت", "خبرته في رياكت", "خبرته في next", "مهارات الفرونت", "مهارات الواجهة الامامية"],
   },
   backend: {
-    en: ["backend skills", "back-end skills", "node.js experience", "express experience", "database experience", "backend technologies"],
-    ar: ["خبرته في الباك", "خبرة الباك اند", "خبرته في نود", "مهارات الباك", "خبرة قواعد البيانات", "تقنيات الباك اند"],
+    en: ["backend skills", "back-end skills", "node.js experience", "express experience", "database experience", "backend technologies", "rest api"],
+    ar: ["خبرته في الباك", "خبرة الباك اند", "خبرته في نود", "مهارات الباك", "خبرة قواعد البيانات", "تقنيات الباك اند", "واجهات برمجة التطبيقات"],
   },
   cloud: {
-    en: ["cloud skills", "devops skills", "aws experience", "his aws experience", "cloud technologies"],
-    ar: ["خبرته في aws", "خبرته في الكلاود", "مهارات devops", "خبرة الحوسبة السحابية", "تقنيات السحابة"],
+    en: ["cloud skills", "devops skills", "aws experience", "docker experience", "his aws experience", "cloud technologies"],
+    ar: ["خبرته في aws", "خبرته في الكلاود", "مهارات devops", "خبرة الحوسبة السحابية", "تقنيات السحابة", "خبرة دوكر"],
   },
   projects: {
-    en: ["his projects", "rabea projects", "portfolio projects", "projects has he built", "what has rabea built", "show me his work", "project portfolio"],
-    ar: ["مشروعاته", "مشاريع ربيع", "مشروعات ربيع", "اعمال ربيع", "المشاريع بتاعته", "وريني شغله", "مشاريعه البرمجية", "بنى ايه"],
+    en: ["his projects", "mohamed projects", "portfolio projects", "projects has he built", "what has mohamed built", "show me his work", "project portfolio", "avicena", "fitmate", "impersonaguard"],
+    ar: ["مشروعاته", "مشاريع محمد", "مشروعات محمد", "اعمال محمد", "المشاريع بتاعته", "وريني شغله", "مشاريعه البرمجية", "بنى ايه", "افيسينا", "فيت ميت", "امبيرسونا"],
   },
   experience: {
-    en: ["his experience", "what experience does rabea have", "work experience", "professional background", "career history", "employment history", "his previous work", "his professional work"],
-    ar: ["خبراته المهنية", "خبرة ربيع", "الخبرة العملية", "تاريخه المهني", "اشتغل فين", "خبرته في الشغل", "خبراته السابقة", "ايه خبرة ربيع"],
+    en: ["his experience", "what experience does mohamed have", "work experience", "professional background", "career history", "employment history", "his previous work", "his professional work"],
+    ar: ["خبراته المهنية", "خبرة محمد", "الخبرة العملية", "تاريخه المهني", "اشتغل فين", "خبرته في الشغل", "خبراته السابقة", "ايه خبرة محمد"],
   },
   education: {
-    en: ["educational background", "his degree", "university degree", "what did he study", "what did rabea study", "his education"],
-    ar: ["خلفيته التعليمية", "مؤهله الدراسي", "مؤهله الجامعي", "درس ايه", "ربيع درس ايه", "دراسته الجامعية", "تقديره"],
+    en: ["educational background", "his degree", "university degree", "what did he study", "what did mohamed study", "his education", "el shorouk academy", "mis degree"],
+    ar: ["خلفيته التعليمية", "مؤهله الدراسي", "مؤهله الجامعي", "درس ايه", "محمد درس ايه", "دراسته الجامعية", "اكاديمية الشروق", "نظم معلومات ادارية"],
   },
   training: {
-    en: ["training programs", "courses has he completed", "what training has rabea done", "his diplomas", "professional training", "what courses"],
-    ar: ["البرامج التدريبية", "دوراته", "كورسات ربيع", "دبلوماته", "تدريباته", "ما الدورات", "تدريبات ربيع"],
+    en: ["training programs", "courses has he completed", "what training has mohamed done", "his diplomas", "professional training", "digilians"],
+    ar: ["البرامج التدريبية", "دوراته", "كورسات محمد", "دبلوماته", "تدريباته", "ما الدورات", "تدريبات محمد", "رواد مصر الرقمية", "ديجيليانز", "دبلومة"],
   },
   certifications: {
-    en: ["his certifications", "his certificates", "certificates does he have", "what certifications", "list his certificates", "aws certifications", "aws certificates", "aws certified developer", "cloud practitioner", "developer associate", "dva c02", "clf c02", "professional certificates"],
-    ar: ["شهاداته", "شهادات ربيع", "ايه شهاداته", "ايه شهادات ربيع", "شهادات aws", "شهادة مطور معتمد", "اعتماداته المهنية", "الشهادات التي حصل عليها"],
+    en: ["his certifications", "his certificates", "certificates does he have", "what certifications", "list his certificates", "credentials"],
+    ar: ["شهاداته", "شهادات محمد", "ايه شهاداته", "ايه شهادات محمد", "اعتماداته المهنية", "الشهادات التي حصل عليها"],
   },
   availability: {
     en: ["available for work", "is he hiring", "open to work", "availability", "looking for a job"],
     ar: ["متاح للعمل", "متاح لوظيفة", "يدور على شغل", "متاح للتوظيف", "هل يبحث عن عمل"],
   },
   contact: {
-    en: ["contact him", "his email", "his linkedin", "his github", "rabea linkedin", "rabea github", "contact details", "how can i reach"],
-    ar: ["اتواصل معه", "اتواصل مع ربيع", "بريده الالكتروني", "لينكدان ربيع", "لينكد ان ربيع", "حساب github", "طرق التواصل"],
+    en: ["contact him", "his email", "his linkedin", "his github", "mohamed linkedin", "mohamed github", "contact details", "how can i reach"],
+    ar: ["اتواصل معه", "اتواصل مع محمد", "بريده الالكتروني", "لينكدان محمد", "لينكد ان محمد", "حساب github", "طرق التواصل"],
   },
   ai: {
-    en: ["ai experience", "artificial intelligence experience", "generative ai", "llm experience", "ai projects", "gemini experience"],
-    ar: ["خبرته في الذكاء الاصطناعي", "خبرة الذكاء الاصطناعي", "خبرة generative ai", "مشاريع الذكاء الاصطناعي", "خبرته في جيمناي"],
+    en: ["ai experience", "artificial intelligence experience", "generative ai", "llm experience", "ai projects", "fitmate ai"],
+    ar: ["خبرته في الذكاء الاصطناعي", "خبرة الذكاء الاصطناعي", "خبرة generative ai", "مشاريع الذكاء الاصطناعي", "تكامل ai"],
   },
   services: {
     en: ["services can he provide", "what can he build", "hire him for", "freelance services", "what services"],
@@ -242,8 +216,8 @@ const phraseSignals: Record<string, { en: string[]; ar: string[] }> = {
     ar: ["الوظائف المناسبة له", "الوظائف التي يستهدفها", "مجال عمله", "تفضيلاته الوظيفية", "يشتغل ايه"],
   },
   graduationProject: {
-    en: ["graduation project", "his capstone", "crime prediction system"],
-    ar: ["مشروع تخرجه", "مشروع التخرج", "نظام التنبؤ بالجرائم"],
+    en: ["graduation project", "his capstone", "el shorouk graduation"],
+    ar: ["مشروع تخرجه", "مشروع التخرج", "تخرج اكاديمية الشروق"],
   },
 };
 
@@ -277,24 +251,24 @@ export function getPreparedRabeaAnswer(question: string, preferredLanguage: Lang
     .slice(0, 2);
   if (!selected.length) {
     const subjectTerms = language === "ar"
-      ? ["ربيع", "هو", "عنده", "له", "بتاعه", "انت", "بتشتغل"]
-      : ["rabea", "he", "his", "him", "you", "your"];
-    const aboutRabea = subjectTerms.some((term) => query.split(" ").includes(normalize(term)));
-    if (!aboutRabea) return undefined;
+      ? ["محمد", "علي", "هو", "عنده", "له", "بتاعه", "انت", "بتشتغل"]
+      : ["mohamed", "ali", "he", "his", "him", "you", "your"];
+    const aboutMohamed = subjectTerms.some((term) => query.split(" ").includes(normalize(term)));
+    if (!aboutMohamed) return undefined;
 
     const hasAny = (terms: string[]) => terms.some((term) => query.includes(normalize(term)));
-    if (hasAny(["certificate", "certification", "certified", "aws", "شهادة", "شهادات", "اعتماد"])) selected.push("certifications");
+    if (hasAny(["certificate", "certification", "certified", "شهادة", "شهادات", "اعتماد"])) selected.push("certifications");
     if (hasAny(["contact", "email", "linkedin", "github", "reach", "تواصل", "بريد", "لينكد", "حساب"])) selected.push("contact");
     if (hasAny(["available", "availability", "hiring", "job", "وظيفة", "متاح", "عمل"])) selected.push("availability");
-    if (hasAny(["education", "degree", "university", "study", "bis", "تعليم", "دراسة", "مؤهل", "جامعة"])) selected.push("education");
-    if (hasAny(["training", "course", "diploma", "nti", "depi", "meta", "تدريب", "دورة", "كورسات", "دبلوم"])) selected.push("training");
-    if (hasAny(["experience", "career", "internship", "years", "worked", "خبرة", "خبرات", "سنين", "سنوات", "اشتغل"])) selected.push("experience");
-    if (hasAny(["artificial intelligence", "generative ai", "llm", "gemini", "n8n", "ذكاء اصطناعي", "ذكاء", "جيمناي"])) selected.push("ai");
-    if (hasAny(["cloud", "devops", "aws", "docker", "kubernetes", "terraform", "سحابة", "كلاود", "ديف اوبس"])) selected.push("cloud");
+    if (hasAny(["education", "degree", "university", "study", "mis", "shorouk", "تعليم", "دراسة", "مؤهل", "جامعة", "الشروق"])) selected.push("education");
+    if (hasAny(["training", "course", "diploma", "digilians", "تدريب", "دورة", "كورسات", "دبلوم", "ديجيليانز", "رواد"])) selected.push("training");
+    if (hasAny(["experience", "career", "years", "worked", "خبرة", "خبرات", "سنين", "سنوات", "اشتغل"])) selected.push("experience");
+    if (hasAny(["artificial intelligence", "generative ai", "llm", "ai", "ذكاء اصطناعي", "ذكاء"])) selected.push("ai");
+    if (hasAny(["cloud", "devops", "aws", "docker", "سحابة", "كلاود", "ديف اوبس", "دوكر"])) selected.push("cloud");
     if (hasAny(["frontend", "front end", "react", "next.js", "nextjs", "tailwind", "واجهة امامية", "فرونت"])) selected.push("frontend");
-    if (hasAny(["backend", "back end", "node.js", "nodejs", "express", "mongodb", "mysql", "backend", "باك اند", "قواعد بيانات"])) selected.push("backend");
+    if (hasAny(["backend", "back end", "node.js", "nodejs", "express", "mongodb", "postgresql", "mysql", "redis", "باك اند", "قواعد بيانات"])) selected.push("backend");
     if (hasAny(["skill", "technology", "technologies", "tech stack", "tools", "مهارة", "مهارات", "تقنيات", "ستاك"])) selected.push("skills");
-    if (hasAny(["project", "projects", "built", "portfolio", "مشروع", "مشاريع", "مشروعات", "اعمال"])) selected.push("projects");
+    if (hasAny(["project", "projects", "built", "portfolio", "avicena", "fitmate", "impersonaguard", "مشروع", "مشاريع", "مشروعات", "اعمال"])) selected.push("projects");
     if (hasAny(["services", "hire", "freelance", "build for me", "خدمات", "توظيف", "العمل الحر"])) selected.push("services");
   }
   const uniqueSelected = [...new Set(selected)].slice(0, 2);

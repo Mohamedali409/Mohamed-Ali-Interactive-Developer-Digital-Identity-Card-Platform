@@ -28,7 +28,7 @@ export const DEFAULT_SETTINGS: Settings = {
   animations: true,
 };
 
-const SETTINGS_STORAGE_KEY = 'rabea_portfolio_settings';
+const SETTINGS_STORAGE_KEY = 'mohamed_portfolio_settings';
 
 interface SettingsContextType {
   settings: Settings;

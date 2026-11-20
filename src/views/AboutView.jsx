@@ -3,29 +3,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { 
-  Globe, 
-  Server, 
-  Database, 
-  Cloud, 
-  Activity, 
-  Wrench,
   GraduationCap,
-  Briefcase,
   MapPin,
   Calendar
 } from "lucide-react";
 import { experience } from "@/Data/experience";
 import { skills } from "@/Data/skills";
-import profilePhoto from "@/Img/rabea.jpg";
 import { useSEO } from "@/hooks/useSEO";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useSettings } from "@/context/SettingsContext";
 
 const highlightedSkills = [
-  "Full Stack Software Engineer", "MERN Stack", "React.js", "Node.js", "TypeScript",
-  "Next.js", "Express.js", "MongoDB", "REST APIs", "JWT Authentication", "AWS Cloud",
-  "Docker", "Kubernetes", "Helm", "Terraform", "GitHub Actions", "Linux", "DevOps",
-  "Clean Architecture", "Software Engineering"
+  "Full-Stack Developer", "Backend Engineering", "Node.js", "Express.js", "TypeScript",
+  "JavaScript", "RESTful APIs", "PostgreSQL", "MongoDB", "MySQL", "Redis",
+  "Authentication & Authorization", "Docker", "AWS", "CI/CD", "DevOps",
+  "AI Integration", "Clean Architecture", "Systems Analysis"
 ];
 
 const AboutView = () => {
@@ -34,14 +26,14 @@ const AboutView = () => {
 
   useSEO({
     title: isAr 
-      ? "من أنا | ربيع شعبان — مهندس برمجيات Full-Stack"
-      : "About Me | Rabea Shaban — Full-Stack Software Engineer",
+      ? "من أنا | محمد علي — مطور Full-Stack ومهندس برمجيات"
+      : "About Me | Mohamed Ali — Full-Stack Developer & Backend Engineer",
     description: isAr 
-      ? "ربيع شعبان مهندس برمجيات Full-Stack متخصص في MERN Stack وReact وNext.js وNode.js وTypeScript وMongoDB وAWS، ودرس تطوير البرمجيات في مبادرة Digilians وخاض تدريبات عملية في تطوير الواجهات والأنظمة الخلفية."
-      : "Rabea Shaban is a Full-Stack Software Engineer specializing in MERN, React, Next.js, Node.js, TypeScript, MongoDB, and AWS, with Digilians software development studies and hands-on frontend and backend training.",
+      ? "محمد علي مطور Full-Stack ومهندس برمجيات بتركيز على الأنظمة الخلفية، خريج نظم المعلومات الإدارية بأكاديمية الشروق وحاصل على دبلومة تطوير البرمجيات بالذكاء الاصطناعي من مبادرة Digilians."
+      : "Mohamed Ali is a Full-Stack Developer and Backend-Focused Software Engineer with an MIS degree from El Shorouk Academy and a specialized AI diploma from the Digilians Initiative.",
     keywords: isAr
-      ? "من هو ربيع شعبان, ربيع شعبان, مهندس برمجيات, مطور ويب شامل, MERN Stack, AWS Certified Developer Associate"
-      : "About Rabea Shaban, Rabea Shaban, Full Stack Software Engineer, MERN Stack Developer, AWS Certified Developer Associate"
+      ? "من هو محمد علي, محمد علي, مطور ويب, مهندس برمجيات, Backend Developer, Full Stack Developer, Digilians, أكاديمية الشروق"
+      : "About Mohamed Ali, Mohamed Ali, Full Stack Developer, Backend Software Engineer, Node.js, Express.js, TypeScript, Docker, Digilians"
   });
 
   return (
@@ -101,8 +93,8 @@ const AboutView = () => {
                 <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-primary via-accent to-primary blur-lg opacity-40 group-hover:opacity-75 transition duration-500"></div>
                 <div className="relative rounded-2xl overflow-hidden border-2 border-border/50 bg-card shadow-2xl">
                   <img
-                    src={profilePhoto.src || profilePhoto}
-                    alt="Rabea Shaban — Full Stack Software Engineer"
+                    src="/mohamed-ali-avatar.svg"
+                    alt="Mohamed Ali — Full-Stack Developer & Backend Software Engineer"
                     className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -204,7 +196,7 @@ const AboutView = () => {
             </div>
 
             <div className="space-y-6">
-              {/* Card 1: AI-Based Software Development Diploma */}
+              {/* Card 1: AI-Powered Software Development Diploma */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -233,7 +225,7 @@ const AboutView = () => {
                     <Calendar className="w-3.5 h-3.5 text-primary" /> {t.about.aiDiplomaPeriod}
                   </span>
                   <span className="flex items-center gap-1">
-                    <MapPin className="w-3.5 h-3.5 text-primary" /> Heliopolis, Cairo, Egypt
+                    <MapPin className="w-3.5 h-3.5 text-primary" /> Egypt
                   </span>
                 </div>
 
@@ -243,10 +235,10 @@ const AboutView = () => {
 
                 <div className="flex flex-wrap gap-1.5 pt-1">
                   <span className="px-2.5 py-0.5 rounded text-[10px] font-semibold bg-muted text-muted-foreground">
-                    Egyptian Military Academy
+                    Digital Pioneers Initiative (Digilians)
                   </span>
                   <span className="px-2.5 py-0.5 rounded text-[10px] font-semibold bg-muted text-muted-foreground">
-                    MCIT Professional Program
+                    MCIT Diploma Program
                   </span>
                 </div>
               </motion.div>
@@ -275,10 +267,10 @@ const AboutView = () => {
 
                 <div className="flex flex-wrap gap-3 text-xs text-muted-foreground border-t border-border/20 pt-3">
                   <span className="flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5 text-primary" /> Oct 2020 - Jul 2024
+                    <Calendar className="w-3.5 h-3.5 text-primary" /> 2019 – 2023
                   </span>
                   <span className="flex items-center gap-1">
-                    <MapPin className="w-3.5 h-3.5 text-primary" /> Minya, Egypt
+                    <MapPin className="w-3.5 h-3.5 text-primary" /> Egypt
                   </span>
                 </div>
 
@@ -291,15 +283,6 @@ const AboutView = () => {
                   <p className="text-muted-foreground font-medium">
                     {t.about.graduationProjectDesc}
                   </p>
-                </div>
-
-                <div className="flex flex-wrap gap-1.5 pt-1">
-                  <span className="px-2.5 py-0.5 rounded text-[10px] font-semibold bg-muted text-muted-foreground">
-                    Top of Class Option
-                  </span>
-                  <span className="px-2.5 py-0.5 rounded text-[10px] font-semibold bg-muted text-muted-foreground">
-                    Excellent Graduation Project Award
-                  </span>
                 </div>
               </motion.div>
             </div>

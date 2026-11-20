@@ -1,31 +1,30 @@
 import ServicesView from "@/views/ServicesView";
 
 export const metadata = {
-  title: "Services & Solutions | Rabea Shaban — Full Stack Software Engineer",
+  title: "Services & Solutions | Mohamed Ali — Full-Stack Developer",
   description:
-    "Professional software engineering services by Rabea Shaban: Full Stack Development, React & Next.js UI, Node.js REST APIs, Cloud Deployment, and DevOps.",
+    "Professional software engineering services by Mohamed Ali: Backend Development & REST APIs, Full-Stack Web Development, Database Architecture & Redis Caching, Docker Containerization, AWS Deployment, and AI Integration.",
   keywords: [
-    "Services Rabea Shaban",
-    "Rabea Shaban",
-    "ربيع شعبان",
-    "Full Stack Development Services",
-    "Frontend Development",
-    "Backend Development",
-    "REST API Development",
-    "Cloud Deployment AWS",
+    "Services Mohamed Ali",
+    "Mohamed Ali",
+    "محمد علي",
+    "Backend Development Services",
+    "RESTful API Development",
+    "Full Stack Web Development",
     "Docker Containerization",
-    "Kubernetes Orchestration"
+    "AWS Deployment",
+    "AI Integration"
   ],
   alternates: {
-    canonical: "https://www.rabea-shaban.com/services",
+    canonical: "https://mohamed-ali-portfolio.vercel.app/services",
   },
   openGraph: {
-    title: "Services & Solutions | Rabea Shaban — Full Stack Software Engineer",
+    title: "Services & Solutions | Mohamed Ali — Full-Stack Developer",
     description:
-      "Professional software engineering services by Rabea Shaban: Full Stack Development, React & Next.js UI, Node.js REST APIs, Cloud Deployment, and DevOps.",
-    url: "https://www.rabea-shaban.com/services",
+      "Professional software engineering services by Mohamed Ali: Backend Development, Full-Stack Apps, Database Modeling, Docker, and AI Integration.",
+    url: "https://mohamed-ali-portfolio.vercel.app/services",
     locale: "en_US",
-    images: ["/opengraph-image", "/profile.jpg"],
+    images: ["/opengraph-image", "/mohamed-ali-avatar.svg"],
   },
 };
 

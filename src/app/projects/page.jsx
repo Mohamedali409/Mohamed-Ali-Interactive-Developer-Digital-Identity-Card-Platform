@@ -1,33 +1,31 @@
 import ProjectsView from "@/views/ProjectsView";
 
 export const metadata = {
-  title: "Projects | Rabea Shaban — Full Stack Software Engineer",
+  title: "Projects | Mohamed Ali — Full-Stack Developer & Backend Engineer",
   description:
-    "Featured software engineering projects and full stack web applications built by Rabea Shaban using React, Next.js, Node.js, Express, MongoDB, TypeScript, and AWS.",
+    "Explore real-world software engineering projects built by Mohamed Ali: Avicena (Healthcare Platform with WebSockets), FitMate AI (Fitness & Nutrition AI App), and ImpersonaGuard (Cybersecurity Engine).",
   keywords: [
-    "Projects Rabea Shaban",
-    "Rabea Shaban",
-    "ربيع شعبان",
-    "EduSphere",
-    "Pharmacy POS",
-    "Zein Hub",
-    "Sy2antek",
-    "MERN Stack Projects",
+    "Projects Mohamed Ali",
+    "Mohamed Ali",
+    "محمد علي",
+    "Avicena",
+    "FitMate AI",
+    "ImpersonaGuard",
+    "Backend Projects",
     "Full Stack Software Engineer",
-    "Next.js Projects",
-    "React Applications",
-    "Node.js APIs"
+    "Node.js Projects",
+    "Docker Projects"
   ],
   alternates: {
-    canonical: "https://www.rabea-shaban.com/projects",
+    canonical: "https://mohamed-ali-portfolio.vercel.app/projects",
   },
   openGraph: {
-    title: "Projects | Rabea Shaban — Full Stack Software Engineer",
+    title: "Projects | Mohamed Ali — Full-Stack Developer & Backend Engineer",
     description:
-      "Featured software engineering projects and full stack web applications built by Rabea Shaban using React, Next.js, Node.js, Express, MongoDB, TypeScript, and AWS.",
-    url: "https://www.rabea-shaban.com/projects",
+      "Explore real-world software engineering projects built by Mohamed Ali: Avicena, FitMate AI, and ImpersonaGuard.",
+    url: "https://mohamed-ali-portfolio.vercel.app/projects",
     locale: "en_US",
-    images: ["/opengraph-image", "/profile.jpg"],
+    images: ["/opengraph-image", "/mohamed-ali-avatar.svg"],
   },
 };
 

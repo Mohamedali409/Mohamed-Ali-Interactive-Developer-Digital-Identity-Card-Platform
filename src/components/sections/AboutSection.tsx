@@ -3,13 +3,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SectionHeading } from '@/components/ui/SectionHeading';
-import profilePhoto from '@/Img/rabea.jpg';
 
 const highlightedSkills = [
-  'Full Stack Software Engineer', 'MERN Stack', 'React.js', 'Node.js', 'TypeScript',
-  'Next.js', 'Express.js', 'MongoDB', 'REST APIs', 'JWT Authentication', 'AWS Cloud',
-  'Docker', 'Kubernetes', 'Helm', 'Terraform', 'GitHub Actions', 'Linux', 'DevOps',
-  'Clean Architecture', 'Software Engineering'
+  'Full-Stack Developer', 'Backend Engineering', 'Node.js', 'Express.js', 'TypeScript',
+  'RESTful APIs', 'PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Docker', 'AWS',
+  'CI/CD', 'AI Integration', 'Authentication & Authorization', 'Clean Architecture'
 ];
 
 export const AboutSection: React.FC = () => {
@@ -20,7 +18,7 @@ export const AboutSection: React.FC = () => {
         badge="INTRODUCTION"
         title="About Me"
         watermark="About Me"
-        subtitle="Full Stack Software Engineer specializing in building modern, scalable web applications using the MERN Stack. Passionate about Cloud Computing, DevOps, and creating secure, production-ready software."
+        subtitle="Full-Stack Developer and Backend-Focused Software Engineer specializing in scalable server architectures, database modeling, Docker containerization, AWS cloud deployments, and AI integration."
         size="large"
       />
 
@@ -43,19 +41,19 @@ export const AboutSection: React.FC = () => {
               </div>
 
               <p>
-                I'm <strong className="text-foreground">Rabea Shaban</strong>, a Full Stack Software Engineer based in Minya, Egypt. I graduated in 2024 with a Bachelor's degree in Management Information Systems (MIS), earning an <strong className="text-primary font-bold">Excellent grade</strong>.
+                I'm <strong className="text-foreground">Mohamed Ali</strong>, a Full-Stack Developer and Backend-Focused Software Engineer based in Egypt. I graduated from <strong className="text-foreground">El Shorouk Academy (2019 – 2023)</strong> with a Bachelor's degree in Management Information Systems (MIS).
               </p>
 
               <p>
-                I specialize in developing end-to-end web applications using <strong className="text-foreground">MongoDB, Express.js, React.js, Node.js, Next.js, and TypeScript</strong>. My experience includes designing responsive user interfaces, building secure RESTful APIs, implementing JWT authentication, and creating maintainable applications following clean architecture principles.
+                I specialize in developing scalable backend systems and end-to-end applications using <strong className="text-foreground">Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, MySQL, and Redis</strong>. My experience includes designing robust RESTful APIs, implementing secure authentication and authorization pipelines, and optimizing database schemas following clean architecture principles.
               </p>
 
               <p>
-                Alongside Full Stack development, I'm expanding my expertise in <strong className="text-foreground">Cloud Computing and DevOps</strong>. I work with <strong className="text-foreground">Docker</strong> for containerization, <strong className="text-foreground">Kubernetes and Helm</strong> for container orchestration, <strong className="text-foreground">Terraform</strong> for Infrastructure as Code (IaC), <strong className="text-foreground">GitHub Actions</strong> for CI/CD automation, and AWS and Linux as part of modern cloud-native development.
+                Alongside backend engineering, I leverage modern <strong className="text-foreground">DevOps and Cloud practices</strong>. I work with <strong className="text-foreground">Docker</strong> for containerization, <strong className="text-foreground">GitHub Actions</strong> for CI/CD automation, and <strong className="text-foreground">AWS</strong> for dependable cloud deployments.
               </p>
 
               <p>
-                I completed the <strong className="text-foreground">Digilians AI-Based Software Development Specialized Diploma</strong> at the Egyptian Military Academy in Heliopolis, Cairo, organized by MCIT, advancing my expertise in Software Engineering, Cloud Computing, Artificial Intelligence, and DevOps through intensive hands-on training.
+                I completed the <strong className="text-foreground">Digital Pioneers Initiative (Digilians) AI-Powered Software Development Track</strong>—an intensive nine-month diploma organized by the Ministry of Communications & Information Technology (MCIT), strengthening my software engineering, cloud architecture, and AI integration skills.
               </p>
 
               {/* Highlighted Skills Pills */}
@@ -87,8 +85,8 @@ export const AboutSection: React.FC = () => {
               <div className="absolute -inset-2 rounded-3xl bg-gradient-to-r from-primary via-accent to-primary blur-xl opacity-30 group-hover:opacity-60 transition duration-500" />
               <div className="relative rounded-3xl overflow-hidden border-2 border-border/60 bg-card shadow-2xl">
                 <img
-                  src={typeof profilePhoto === 'string' ? profilePhoto : (profilePhoto as any)?.src || '/rabea.jpg'}
-                  alt="Rabea Shaban — Full Stack Software Engineer"
+                  src="/mohamed-ali-avatar.svg"
+                  alt="Mohamed Ali — Full-Stack Developer & Backend Software Engineer"
                   className="w-full h-auto object-cover rounded-3xl group-hover:scale-105 transition-transform duration-500"
                 />
               </div>

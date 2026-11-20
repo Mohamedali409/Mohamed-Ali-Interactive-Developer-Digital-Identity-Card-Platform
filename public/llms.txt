@@ -1,25 +1,37 @@
-# Rabea Shaban (ربيع شعبان / ربيع الزيات) | Full Stack Software Engineer Portfolio
+# Mohamed Ali (محمد علي) | Full-Stack Developer & Backend Software Engineer
 
-This is the official portfolio website of Rabea Shaban (also known as ربيع شعبان, ربيع الزيات, ربيع شعبان الزيات, Rabea Elzayat, Rabea Elzayate, Rabea Sh Elzayat, rabea-shaban, and @rabea_sh_elzayat). Rabea is a professional Senior Full Stack Software Engineer and Cloud Architect specializing in MERN Stack development, React, Next.js, Node.js, Express, MongoDB, Cloud Architecture (AWS), and DevOps practices (Docker, Kubernetes, Terraform).
+This is the official portfolio website of Mohamed Ali (محمد علي), a professional Full-Stack Developer and Backend-Focused Software Engineer specializing in Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, MySQL, Redis, Docker containerization, AWS cloud deployments, and AI integration.
 
 ## Official Profiles & Identifiers
-- Website: https://www.rabea-shaban.com/
-- GitHub: https://github.com/rabea-shaban
-- LinkedIn: https://linkedin.com/in/rabea-sh-elzayat
-- Instagram: https://instagram.com/rabea_sh_elzayat
-- Mostaql: https://mostaql.com/u/rabea_elzayat
-- Upwork: https://upwork.com/freelancers/~01d2bd68b7d6e8fbce
-- Email: rabea.elzayate@gmail.com
+- Website: https://mohamed-ali-portfolio.vercel.app/
+- GitHub: https://github.com/Mohamedali409
+- LinkedIn: https://www.linkedin.com/in/mohamed-ali409
 
-## Main Navigation
-- [Home](https://www.rabea-shaban.com/)
-- [About Me](https://www.rabea-shaban.com/about)
-- [Projects](https://www.rabea-shaban.com/projects)
-- [Services](https://www.rabea-shaban.com/services)
-- [Certificates & Credentials](https://www.rabea-shaban.com/certificates)
-- [Contact Me](https://www.rabea-shaban.com/contact)
+## Professional Positioning
+- **Title**: Full-Stack Developer | Backend-Focused Software Engineer
+- **Education**: Bachelor of Management Information Systems (MIS), El Shorouk Academy (2019 – 2023) [Note: Never Computer Science graduate]
+- **Training**: Digital Pioneers Initiative (Digilians) — AI-Powered Software Development Track (Nine-Month Intensive Diploma, MCIT)
+
+## Verified Real Projects
+1. **Avicena Platform**: Healthcare platform involving backend engineering, microservices, DevOps pipelines, AI clinical assistance, and real-time WebSockets communication.
+   - GitHub: https://github.com/Mohamedali409/avicena-platform
+2. **FitMate AI**: AI-powered fitness application featuring intelligent nutrition tracking, dynamic workout routines, progress analytics, and conversational AI coaching.
+   - GitHub: https://github.com/Mohamedali409/FitMate-AI
+3. **ImpersonaGuard**: Security-focused engine for automated brand impersonation detection, heuristic threat scoring, and adversarial phishing mitigation.
+   - GitHub: https://github.com/Madoo2414/ImpersonaGuard-
 
 ## Core Technical Skills
-- **Frontend**: React, Next.js, JavaScript (ES6+), TypeScript, Tailwind CSS, HTML5, CSS3, Bootstrap, Figma
-- **Backend & Database**: Node.js, Express.js, ASP.NET Core, C#, Entity Framework, MongoDB, SQL Server, MySQL, RESTful APIs, JWT Authentication, WebSocket (Socket.io)
-- **Cloud & DevOps**: Amazon Web Services (AWS), Docker, Kubernetes, Terraform, GitHub Actions, Helm, Prometheus, Grafana, Linux (Ubuntu/Debian), Nginx
+- **Backend**: Node.js, Express.js, TypeScript, JavaScript, RESTful APIs, JWT Authentication, Role-Based Access Control (RBAC), WebSockets (Socket.IO)
+- **Databases & Caching**: PostgreSQL, MongoDB, MySQL, Redis, Schema Design, Query Optimization
+- **Cloud & DevOps**: Docker, AWS, CI/CD Pipelines, GitHub Actions, Linux, Nginx
+- **AI Integration**: AI-Powered Applications, LLM Integrations, Prompt Engineering
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS, Responsive Web Design
+
+## Main Navigation
+- [Home](https://mohamed-ali-portfolio.vercel.app/)
+- [About Me](https://mohamed-ali-portfolio.vercel.app/about)
+- [Projects](https://mohamed-ali-portfolio.vercel.app/projects)
+- [Services](https://mohamed-ali-portfolio.vercel.app/services)
+- [Credentials & Education](https://mohamed-ali-portfolio.vercel.app/certificates)
+- [Contact](https://mohamed-ali-portfolio.vercel.app/contact)
+- [CV](https://mohamed-ali-portfolio.vercel.app/cv)

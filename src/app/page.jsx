@@ -1,42 +1,38 @@
 import HomeView from "@/views/HomeView";
 
 export const metadata = {
-  title: "Rabea Shaban | Full Stack Software Engineer | MERN Stack",
+  title: "Mohamed Ali | Full-Stack Developer | Backend-Focused Software Engineer",
   description:
-    "Rabea Shaban — Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
+    "Mohamed Ali — Full-Stack Developer and Backend-Focused Software Engineer specializing in Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, AWS, and AI integration.",
   keywords: [
-    "Rabea Shaban",
-    "ربيع شعبان",
-    "Rabea Shaban Software Engineer",
-    "Rabea Shaban Developer",
-    "Rabea Shaban Full Stack Developer",
-    "Rabea Shaban MERN Stack Developer",
-    "Rabea Shaban React Developer",
-    "Rabea Shaban Next.js Developer",
-    "Full Stack Software Engineer",
-    "Full Stack Developer",
-    "MERN Stack Developer",
-    "React.js Developer",
-    "Next.js Developer",
-    "Node.js Developer",
-    "TypeScript Developer",
-    "JavaScript Developer",
-    "MongoDB Developer",
-    "AWS Developer",
-    "Frontend Developer",
+    "Mohamed Ali",
+    "محمد علي",
+    "Mohamed Ali Developer",
+    "Mohamed Ali Software Engineer",
+    "Mohamed Ali Full Stack Developer",
+    "Mohamed Ali Backend Engineer",
     "Backend Developer",
-    "Web Developer"
+    "Full Stack Developer",
+    "Node.js Developer",
+    "Express.js Developer",
+    "TypeScript Developer",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "Docker",
+    "AWS",
+    "AI Integration"
   ],
   alternates: {
-    canonical: "https://www.rabea-shaban.com",
+    canonical: "https://mohamed-ali-portfolio.vercel.app",
   },
   openGraph: {
-    title: "Rabea Shaban | Full Stack Software Engineer | MERN Stack",
+    title: "Mohamed Ali | Full-Stack Developer | Backend-Focused Software Engineer",
     description:
-      "Rabea Shaban — Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
-    url: "https://www.rabea-shaban.com",
+      "Mohamed Ali — Full-Stack Developer and Backend-Focused Software Engineer specializing in Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, AWS, and AI integration.",
+    url: "https://mohamed-ali-portfolio.vercel.app",
     locale: "en_US",
-    images: ["/opengraph-image", "/profile.jpg"],
+    images: ["/opengraph-image", "/mohamed-ali-avatar.svg"],
   },
 };
 

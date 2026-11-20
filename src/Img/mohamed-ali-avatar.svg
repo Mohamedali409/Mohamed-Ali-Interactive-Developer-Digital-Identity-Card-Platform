@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="4" />
+  
+  <!-- Outer accent ring -->
+  <circle cx="200" cy="200" r="182" fill="none" stroke="url(#primaryGrad)" stroke-width="3" stroke-dasharray="10 6" opacity="0.8" />
+
+  <!-- Ambient glow background -->
+  <circle cx="200" cy="180" r="110" fill="url(#glowGrad)" opacity="0.3" filter="url(#glow)" />
+
+  <!-- Geometric Tech Pattern -->
+  <g opacity="0.15" stroke="#38bdf8" stroke-width="1.5" fill="none">
+    <polygon points="200,60 310,130 310,270 200,340 90,270 90,130" />
+    <polygon points="200,90 280,140 280,260 200,310 120,260 120,140" />
+    <line x1="200" y1="60" x2="200" y2="340" />
+    <line x1="90" y1="130" x2="310" y2="270" />
+    <line x1="90" y1="270" x2="310" y2="130" />
+  </g>
+
+  <!-- Monogram MA -->
+  <g font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-weight="900" text-anchor="middle" dominant-baseline="central">
+    <!-- Shadow -->
+    <text x="202" y="197" font-size="124" fill="#030712" opacity="0.7" letter-spacing="4">MA</text>
+    <!-- Foreground Gradient text -->
+    <text x="200" y="195" font-size="124" fill="url(#primaryGrad)" filter="url(#glow)" letter-spacing="4">MA</text>
+  </g>
+
+  <!-- Subtitle badge: Full-Stack Developer -->
+  <rect x="95" y="278" width="210" height="32" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" opacity="0.95" />
+  <text x="200" y="294" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle" dominant-baseline="central" letter-spacing="1.5">
+    BACKEND • FULL STACK
+  </text>
+</svg>

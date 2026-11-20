@@ -1,140 +1,125 @@
 import {
-  Code2,
-  Globe,
   Server,
-  Link2,
-  Cloud,
+  Code2,
+  Database,
   Package,
-  Layers,
-  Zap,
+  Cloud,
+  Cpu,
+  ShieldCheck,
   HelpCircle
 } from "lucide-react";
 
 export const services = [
   {
-    icon: Code2,
-    title: "Full Stack Development",
-    description:
-      "End-to-end web applications built with MERN stack or Next.js. Combining responsive frontends with secure, scalable backends.",
-    features: [
-      "Custom SPAs and dynamic web apps",
-      "Authentication & authorization pipelines",
-      "State management (Redux/Context)",
-      "Database schema design and integration",
-      "End-to-end testing and production prep"
-    ],
-    price: "Starting from $800",
-  },
-  {
-    icon: Globe,
-    title: "Frontend Development",
-    description:
-      "Stunning, fast, and accessible user interfaces using React, Next.js, and TypeScript, optimized for user experience.",
-    features: [
-      "Responsive and adaptive layouts",
-      "Tailwind CSS & Material UI custom themes",
-      "Framer Motion micro-animations",
-      "Vite & webpack configuration",
-      "Web accessibility (WCAG) compliance"
-    ],
-    price: "Starting from $400",
-  },
-  {
     icon: Server,
-    title: "Backend Development",
+    title: "Backend Development & REST APIs",
     description:
-      "Robust, scalable server architectures using Node.js, Express, or .NET Core to power complex web platforms.",
+      "Robust, scalable server architectures built with Node.js, Express.js, and TypeScript, engineered for speed, reliability, and security.",
     features: [
-      "Scalable RESTful API development",
-      "JWT-based security implementation",
-      "SQL and NoSQL database management",
-      "Socket.io real-time communication",
-      "Middleware validation & logging"
+      "Scalable RESTful API design & implementation",
+      "Authentication & authorization (JWT, RBAC)",
+      "Real-time event streaming via WebSockets / Socket.IO",
+      "Input validation, error handling & structured logging",
+      "API documentation and testing workflows"
     ],
-    price: "Starting from $500",
+    price: "Custom Scope",
   },
   {
-    icon: Link2,
-    title: "REST API Development",
+    icon: Code2,
+    title: "Full Stack Web Engineering",
     description:
-      "Design, documentation, and implementation of high-performance and standard RESTful APIs for mobile and web systems.",
+      "End-to-end web applications seamlessly connecting responsive React and Next.js user interfaces with high-performance Node.js backends.",
     features: [
-      "API request-response schema design",
-      "Robust input validation & error handling",
-      "Postman testing and documentation workflows",
-      "Third-party API integrations",
-      "Rate limiting and caching layers"
+      "Dynamic web applications with Next.js & React",
+      "State management and reactive client interactions",
+      "Integration of frontend with backend microservices",
+      "Mobile-first, responsive, and accessible UI",
+      "Clean architecture principles and maintainable code"
     ],
-    price: "Starting from $300",
+    price: "Custom Scope",
   },
   {
-    icon: Cloud,
-    title: "Cloud Deployment",
+    icon: Database,
+    title: "Database Modeling & Redis Caching",
     description:
-      "Deploying scalable applications in cloud environments (primarily AWS), including configuration of VPC, ECS, RDS, and S3.",
+      "Comprehensive relational and NoSQL database design with optimized queries, indexing, and high-speed Redis caching layers.",
     features: [
-      "Cloud architecture consulting",
-      "AWS ECS & EC2 instance setups",
-      "Relational and NoSQL cloud databases",
-      "Domain management and SSL provisioning",
-      "Automated backups and failovers"
+      "PostgreSQL, MongoDB, and MySQL schema design",
+      "In-memory caching and session stores with Redis",
+      "Data normalization, relationship integrity & indexing",
+      "Aggregation pipelines and complex query tuning",
+      "Data migration and backup management"
     ],
-    price: "Starting from $600",
+    price: "Custom Scope",
   },
   {
     icon: Package,
-    title: "Docker Containerization",
+    title: "Docker Containerization & DevOps",
     description:
-      "Standardizing software runtime and environment isolation by containerizing frontend, backend, and databases using Docker.",
+      "Standardizing software runtime environments and deploying isolated, multi-container architectures using Docker and CI/CD pipelines.",
     features: [
       "Multi-stage Dockerfile configurations",
-      "Docker Compose environment orchestrations",
-      "Optimized and secure minimal base images",
-      "Volume and persistent storage configurations",
-      "Development vs production configs"
+      "Multi-service Docker Compose orchestrations",
+      "Automated CI/CD workflows with GitHub Actions",
+      "Linux server setup and Nginx reverse proxying",
+      "Environment isolation for staging and production"
     ],
-    price: "Starting from $300",
+    price: "Custom Scope",
   },
   {
-    icon: Layers,
-    title: "Kubernetes Deployment",
+    icon: Cloud,
+    title: "Cloud Infrastructure & AWS Deployment",
     description:
-      "Orchestrating microservices on Kubernetes clusters. Implementing Helm charts, horizontal pod autoscaling, and ingress routes.",
+      "Deploying scalable, reliable applications in cloud environments (primarily AWS), including compute, managed databases, and object storage.",
     features: [
-      "Kubernetes manifest design",
-      "Helm chart development for deployments",
-      "Nginx Ingress controller setups",
-      "Configmaps and Secret management",
-      "Rolling updates and zero-downtime deploys"
+      "AWS cloud architecture planning and setup",
+      "Cloud database provisioning and access control",
+      "Static and dynamic asset hosting with SSL certificates",
+      "Automated deployment strategies and health checks",
+      "Resource monitoring and availability optimization"
     ],
-    price: "Starting from $700",
+    price: "Custom Scope",
   },
   {
-    icon: Zap,
-    title: "Performance Optimization",
+    icon: Cpu,
+    title: "AI Integration & Intelligent Features",
     description:
-      "Auditing and enhancing application speed, bundle sizing, query performance, and SEO scores to achieve perfect core web vitals.",
+      "Integrating cutting-edge AI capabilities, LLMs, and intelligent algorithms into real-world business and healthcare applications.",
     features: [
-      "Next.js SSG / SSR implementation",
-      "React code splitting and lazy loading",
-      "Database indexing and query optimizations",
-      "Asset compression and caching policies",
-      "Google Lighthouse auditing fixes"
+      "Conversational AI assistants and domain coaches",
+      "AI-driven classification and symptom analysis pipelines",
+      "Automated threat scoring and heuristic evaluation",
+      "Prompt engineering and model API integrations",
+      "Intelligent recommendation engines"
     ],
-    price: "Starting from $400",
+    price: "Custom Scope",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Security Hardening & Protection",
+    description:
+      "Implementing defensive software engineering practices, security headers, rate limiting, and protection against unauthorized access.",
+    features: [
+      "Granular Role-Based Access Control (RBAC)",
+      "API rate limiting, bot protection, and origin checks",
+      "Data sanitization and injection prevention",
+      "CORS, Helmet, and secure HTTP cookies",
+      "Security audit and vulnerability mitigation"
+    ],
+    price: "Custom Scope",
   },
   {
     icon: HelpCircle,
-    title: "Technical Consulting",
+    title: "Technical Consulting & System Design",
     description:
-      "Architectural advice, code reviews, technology stack choices, and scaling planning to align software design with business goals.",
+      "Architectural guidance, code reviews, technology stack selection, and scalability planning to align software engineering with product goals.",
     features: [
-      "System Design & architecture planning",
-      "Security and vulnerability audit reviews",
-      "Database selection & optimization advising",
-      "CI/CD automation setup advice",
-      "Mentoring and clean code guidelines"
+      "Backend system design and API contract definition",
+      "Monolith to microservices migration planning",
+      "Database selection (SQL vs NoSQL trade-offs)",
+      "Clean code standards and engineering mentoring",
+      "Production readiness and performance auditing"
     ],
-    price: "Starting from $100/hr",
+    price: "Hourly / Advisory",
   },
 ];

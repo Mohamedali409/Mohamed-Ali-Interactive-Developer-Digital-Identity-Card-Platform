@@ -1,119 +1,65 @@
 export const experience = [
   {
-    title: "Freelance Full Stack Software Engineer",
-    titleAr: "مهندس برمجيات Full-Stack مستقل",
-    period: "2023 - Present",
-    periodAr: "2023 - حتى الآن",
+    title: "AI-Powered Software Development Specialized Track (Digilians Initiative)",
+    titleAr: "مسار تطوير البرمجيات المدعومة بالذكاء الاصطناعي (مبادرة Digilians)",
+    period: "Nine-Month Intensive Diploma",
+    periodAr: "دبلومة مكثفة لمدة تسعة أشهر",
     description:
-      "Developing, designing, and maintaining end-to-end web applications for international and regional clients, utilizing the MERN stack, Next.js, and AWS cloud hosting. Implementing clean architecture, robust JWT auth, REST APIs, and database schemes.",
+      "Completed an intensive, full-time diploma under the Digital Pioneers Initiative (Digilians) organized by the Ministry of Communications & Information Technology (MCIT). Covered advanced software engineering, backend architecture, containerization with Docker, cloud infrastructure with AWS, CI/CD pipelines, and AI workflow integration.",
     descriptionAr:
-      "تصميم وبناء وصيانة تطبيقات ويب متكاملة لعملاء محليين ودوليين باستخدام MERN وNext.js وAWS، مع تطوير REST APIs آمنة وتطبيق مبادئ Clean Architecture.",
+      "إتمام دبلومة مهنية مكثفة بدوام كامل ضمن مبادرة الرواد الرقميون (Digilians) التابعة لوزارة الاتصالات وتكنولوجيا المعلومات (MCIT). شملت هندسة البرمجيات المتقدمة، معمارية الأنظمة الخلفية، إدارة الحاويات بـ Docker، البنية التحتية السحابية على AWS، مسارات CI/CD، ودمج حلول الذكاء الاصطناعي.",
     skills: [
-      "React",
-      "Next.js",
       "Node.js",
       "Express.js",
-      "MongoDB",
       "TypeScript",
+      "Docker",
       "AWS",
-      "Docker",
-      "Git & GitHub",
-      "REST APIs",
-      "JWT"
-    ],
-  },
-  {
-    title: "Frontend Developer Intern (Next.js) — Digital Fortress",
-    titleAr: "متدرب تطوير واجهات أمامية (Next.js) — Digital Fortress",
-    period: "Sep 2026 - Nov 2026",
-    periodAr: "سبتمبر 2026 - نوفمبر 2026",
-    description:
-      "Applied Next.js and React on real projects, building responsive and reusable UI components, improving performance and usability, and collaborating through Git-based workflows.",
-    descriptionAr:
-      "استخدام Next.js وReact في مشروعات عملية، وبناء مكونات واجهات متجاوبة وقابلة لإعادة الاستخدام، وتحسين الأداء وتجربة المستخدم، والتعاون عبر Git.",
-    skills: ["Next.js", "React", "JavaScript", "Responsive UI", "Git"],
-  },
-  {
-    title: "Backend Developer Trainee — Darwish & Co.",
-    titleAr: "متدرب تطوير أنظمة خلفية — Darwish & Co.",
-    period: "Sep 2026 - Nov 2026",
-    periodAr: "سبتمبر 2026 - نوفمبر 2026",
-    description:
-      "Trained in building RESTful APIs and backend services with Node.js, Express.js, TypeScript, and MongoDB, including authentication, database design, API validation, and clean architecture.",
-    descriptionAr:
-      "تدريب عملي على بناء REST APIs وخدمات خلفية باستخدام Node.js وExpress.js وTypeScript وMongoDB، مع التركيز على المصادقة وتصميم قواعد البيانات والتحقق من الطلبات وClean Architecture.",
-    skills: ["Node.js", "Express.js", "TypeScript", "MongoDB", "REST APIs"],
-  },
-  {
-    title: "Frontend Developer Intern — WEB MASTER",
-    titleAr: "متدرب تطوير واجهات أمامية — WEB MASTER",
-    period: "May 2025 - Sep 2025",
-    periodAr: "مايو 2025 - سبتمبر 2025",
-    description:
-      "Contributed to production web applications by building reusable React components, improving responsiveness and performance, and collaborating with cross-functional teams on maintainable UI systems.",
-    descriptionAr:
-      "المساهمة في تطبيقات ويب فعلية عبر بناء مكونات React قابلة لإعادة الاستخدام، وتحسين الاستجابة والأداء، والتعاون مع فرق متعددة التخصصات لتطوير واجهات قابلة للصيانة.",
-    skills: ["React", "JavaScript", "Responsive Design", "Component Architecture", "Git"],
-  },
-  {
-    title: "AI-Based Software Development Specialized Diploma (Digilians Initiative)",
-    titleAr: "دبلومة تطوير البرمجيات القائمة على الذكاء الاصطناعي (Digilians)",
-    period: "Dec 2025 - Sep 2026",
-    periodAr: "ديسمبر 2025 - سبتمبر 2026",
-    description:
-      "Completed a full-time intensive diploma at the Egyptian Military Academy under MCIT, covering software engineering, AI workflow integration, MERN stack, AWS cloud architecture, and DevOps with Docker and Kubernetes.",
-    descriptionAr:
-      "إتمام دبلومة مكثفة بدوام كامل في الأكاديمية العسكرية المصرية ضمن مبادرة Digilians التابعة لوزارة الاتصالات، وشملت هندسة البرمجيات ودمج حلول الذكاء الاصطناعي وMERN وAWS وDevOps باستخدام Docker وKubernetes.",
-    skills: [
       "AI Integration",
-      "MERN Stack",
-      "AWS Cloud",
-      "Docker",
-      "Kubernetes",
-      "Microservices",
       "DevOps",
-      "CI/CD"
+      "CI/CD",
+      "PostgreSQL",
+      "MongoDB",
+      "REST APIs"
     ],
   },
   {
-    title: "Meta Front-End Developer Professional Certificate",
-    period: "2024 - 2026",
+    title: "Full-Stack & Backend Software Development Journey",
+    titleAr: "مسيرة تطوير الأنظمة الخلفية وتطبيقات Full-Stack",
+    period: "Independent Engineering & Production Projects",
+    periodAr: "تطوير مشروعات برمجية متكاملة",
     description:
-      "In-depth professional training under Meta specialists covering UX/UI design principles, advanced React patterns, client-side routing, hooks, state management, testing, and final responsive web capstone project.",
+      "Engineered real-world platforms including Avicena (healthcare platform with real-time WebSockets communication), FitMate AI (fitness & nutrition AI engine), and ImpersonaGuard (automated brand impersonation detection). Focused on scalable RESTful APIs, clean architecture, Redis caching, authentication & authorization pipelines, and relational & NoSQL databases.",
+    descriptionAr:
+      "تصميم وبناء تطبيقات برمجية متقدمة شملت منصة Avicena الطبية (مع تواصل فوري عبر WebSockets)، وتطبيق FitMate AI (محرك لياقة وتغذية بالذكاء الاصطناعي)، ومحرك ImpersonaGuard الأمني لكشف انتحال العلامات التجارية. التركيز على بناء RESTful APIs قابلة للتوسع، وتطبيق Clean Architecture، والتخزين المؤقت بـ Redis، وأنظمة المصادقة والصلاحيات، وإدارة قواعد البيانات العلاقية وغير العلاقية.",
     skills: [
-      "React",
-      "UX/UI Principles",
-      "Figma",
-      "Jest",
-      "Responsive Web Design"
-    ],
-  },
-  {
-    title: "Digital Egypt Pioneers Initiative (DEPI)",
-    period: "2024",
-    description:
-      "Collaborated as a Full Stack Developer (.NET + React) in building enterprise systems. Built a full-stack agricultural supplies e-commerce platform featuring multi-role authentication, dashboard visualization, and secure Stripe payment integration.",
-    skills: [
-      "React",
+      "Backend Development",
+      "Node.js",
+      "Express.js",
       "TypeScript",
-      ".NET Core",
-      "Entity Framework",
-      "SQL Server",
-      "REST APIs",
-      "Teamwork"
+      "JavaScript",
+      "RESTful APIs",
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "Redis",
+      "Authentication & Authorization",
+      "Docker"
     ],
   },
   {
-    title: "National Telecommunications Institute (NTI)",
-    period: "2023",
+    title: "Bachelor of Management Information Systems (MIS)",
+    titleAr: "بكالوريوس نظم المعلومات الإدارية (MIS)",
+    period: "2019 – 2023",
+    periodAr: "2019 – 2023",
     description:
-      "Trained in modern web development paradigms. Built 'Tarahoj Dental Clinic' website with a comprehensive appointment booking flow and clinic manager dashboard.",
+      "Earned a Bachelor's degree in Management Information Systems (MIS) from El Shorouk Academy. Academic coursework focused on systems analysis and design, relational database modeling, software development fundamentals, and enterprise information systems.",
+    descriptionAr:
+      "التخرج بدرجة البكالوريوس في نظم المعلومات الإدارية (MIS) من أكاديمية الشروق (2019 – 2023). ركزت الدراسة الأكاديمية على تحليل وتصميم النظم، نمذجة قواعد البيانات العلاقية، أساسيات هندسة البرمجيات، ونظم المعلومات المؤسسية.",
     skills: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Bootstrap",
-      "API Integration"
+      "Management Information Systems",
+      "Systems Analysis & Design",
+      "Relational Databases",
+      "Software Engineering Fundamentals"
     ],
   },
 ];

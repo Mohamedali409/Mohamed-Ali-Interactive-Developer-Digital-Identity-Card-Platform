@@ -2,12 +2,12 @@
   {
     "id": 1,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "من هو ربيع شعبان؟",
-    "answerAr": "ربيع شعبان هو مهندس برمجيات ومطور Full Stack متخصص في بناء تطبيقات الويب الحديثة، مع تركيز أساسي على Frontend Development باستخدام React.js وNext.js وTypeScript، بالإضافة إلى تطوير Backend باستخدام Node.js وExpress.js وقواعد البيانات.\n\nيمتلك ربيع خلفية في نظم معلومات الأعمال (Business Information Systems)، واهتمامًا بتطوير البرمجيات وفق معايير هندسية تشمل Clean Architecture، وقابلية التوسع، والأمان، والأداء.\n\nعمل على مجموعة متنوعة من المشاريع، منها تطبيقات التجارة الإلكترونية، والمنصات التعليمية، والتطبيقات الإسلامية، وأنظمة إدارة الأعمال، وحلول تعتمد على الذكاء الاصطناعي.\n\nكما يهتم بتطوير مهاراته في Cloud Computing وAWS وDevOps وSystem Design، ويعمل على صناعة محتوى تقني باللغة العربية لتبسيط مفاهيم البرمجة وهندسة البرمجيات.",
+    "questionAr": "من هو محمد علي؟",
+    "answerAr": "محمد علي هو مهندس برمجيات ومطور Full Stack متميز يركز بشكل أساسي على هندسة Backend وتطوير الأنظمة الموزعة والواجهات البرمجية RESTful APIs.\n\nيمتلك محمد خبرة في Node.js وExpress.js وTypeScript، وإدارة وتصميم قواعد البيانات (PostgreSQL وMongoDB وMySQL وRedis)، بالإضافة إلى ممارسات الحاويات Docker وأساسيات الحوسبة السحابية AWS وتكامل الذكاء الاصطناعي.\n\nحاصل على بكالوريوس نظم معلومات إدارية (MIS) من أكاديمية الشروق (2019 – 2023)، وأتم دبلومة تخصصية مكثفة لمدة 9 أشهر في تطوير البرمجيات بالذكاء الاصطناعي من مبادرة رواد مصر الرقمية (Digilians) بالتعاون مع وزارة الاتصالات وتكنولوجيا المعلومات (MCIT).",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "profile"
     ]
@@ -15,12 +15,12 @@
   {
     "id": 2,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "احكيلي عن ربيع بالتفصيل.",
-    "answerAr": "ربيع بدأ مسيرته من دراسة Business Information Systems، وهي دراسة تجمع بين التكنولوجيا وإدارة الأعمال وتحليل الأنظمة.\n\nاتجه بعد ذلك إلى تطوير الويب، وبدأ ببناء واجهات المستخدم باستخدام HTML وCSS وJavaScript، ثم توسع إلى React.js وTypeScript وNext.js.\n\nمع تطور خبرته، بدأ العمل على تطبيقات Full Stack، بحيث لا يقتصر دوره على تصميم الواجهات، بل يشمل أيضًا بناء REST APIs، وتصميم قواعد البيانات، وتنفيذ أنظمة المصادقة والصلاحيات، وربط الواجهات بالخدمات الخلفية.\n\nشارك في برامج تدريبية ومبادرات تقنية متعددة، وعمل على مشاريع حقيقية وتطبيقات متكاملة، كما اتجه إلى مجال الذكاء الاصطناعي وتطوير التطبيقات التي تستفيد من نماذج اللغة الكبيرة وتقنيات OCR وAI Agents.\n\nاهتمامه الأساسي هو الانتقال من مجرد كتابة الكود إلى بناء منتجات برمجية متكاملة، قابلة للصيانة والتطوير والتوسع.",
+    "questionAr": "احكيلي عن محمد بالتفصيل.",
+    "answerAr": "بدأ محمد علي مسيرته الأكاديمية بدراسة نظم المعلومات الإدارية (MIS) في أكاديمية الشروق (2019 – 2023)، حيث جمع بين فهم متطلبات الأعمال وتصميم النظم وقواعد البيانات.\n\nانتقل بعد ذلك للتعمق في هندسة البرمجيات، وركز على تطوير خدمات الـ Backend المتقدمة وبناء RESTful APIs متينة باستخدام Node.js وExpress وTypeScript، والتعامل الاحترافي مع قواعد البيانات المتقدمة مثل PostgreSQL وMongoDB وRedis.\n\nعزز خبرته بإتمام دبلومة تخصصية مكثفة لمدة 9 أشهر في تطوير البرمجيات بالذكاء الاصطناعي من مبادرة رواد مصر الرقمية (Digilians)، واكتسب مهارات متقدمة في Docker وAWS وCI/CD ودمج نماذج الذكاء الاصطناعي.\n\nأنجز مشاريع برمجية حقيقية ومفتوحة المصدر منها منصة Avicena للرعاية الصحية، وتطبيق FitMate AI، ومحرك الأمان ImpersonaGuard.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "profile"
     ]
@@ -28,34 +28,34 @@
   {
     "id": 3,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "ربيع منين؟",
+    "questionAr": "محمد منين؟",
     "answerAr": "[محتوى خاص محجوب عن قاعدة المعرفة العامة.]",
     "status": "HISTORICAL",
     "access": "PRIVATE",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": []
   },
   {
     "id": 4,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "ربيع عنده كام سنة؟",
+    "questionAr": "محمد عنده كام سنة؟",
     "answerAr": "[محتوى خاص محجوب عن قاعدة المعرفة العامة.]",
     "status": "HISTORICAL",
     "access": "PRIVATE",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": []
   },
   {
     "id": 5,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه خلفية ربيع التعليمية؟",
-    "answerAr": "حصل ربيع على بكالوريوس نظم معلومات الأعمال (Business Information Systems – BIS) من المعهد العالي للتكنولوجيا والإدارة والمعلومات بالمنيا.\n\n- سنة التخرج: 2024.\n- التقدير: امتياز.\n- مشروع التخرج: Crime Prediction System.\n\nمشروع التخرج كان نظامًا للتنبؤ بالجريمة باستخدام React وFirebase.",
-    "status": "USER_REPORTED",
+    "questionAr": "إيه خلفية محمد التعليمية؟",
+    "answerAr": "الخلفية التعليمية لمحمد علي تتكون من:\n\n1. **بكالوريوس نظم معلومات إدارية (MIS):** أكاديمية الشروق (El Shorouk Academy) للفترة 2019 – 2023.\n2. **دبلومة تخصصية في تطوير البرمجيات بالذكاء الاصطناعي (9 أشهر):** مبادرة رواد مصر الرقمية (Digilians) التابعة لوزارة الاتصالات وتكنولوجيا المعلومات (MCIT).\n\nملاحظة هامة: محمد خريج نظم معلومات إدارية وليس خريج علوم حاسب، والتدريب هو مبادرة Digilians وليس DEPI.",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "education"
     ]
@@ -63,12 +63,12 @@
   {
     "id": 6,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه اللي بيميز ربيع؟",
-    "answerAr": "من خلال مسيرته ومشاريعه، تظهر عدة نقاط مميزة:\n\n1. الجمع بين Frontend وBackend Development.\n2. الاهتمام بتطوير تطبيقات متكاملة، وليس مجرد واجهات.\n3. استخدام TypeScript في بناء تطبيقات أكثر تنظيمًا.\n4. الاهتمام بالـ Architecture وقابلية صيانة الكود.\n5. تجربة تقنيات Cloud وAWS.\n6. الاهتمام بتطبيقات الذكاء الاصطناعي.\n7. امتلاك خبرة عملية في أنواع مختلفة من المشاريع.\n8. الاهتمام بالتوثيق ومراجعة الكود واختبار الوظائف.\n9. القدرة على تبسيط المفاهيم التقنية من خلال صناعة المحتوى.",
+    "questionAr": "إيه اللي بيميز محمد؟",
+    "answerAr": "أهم ما يميز محمد علي:\n\n1. **التركيز العميق على هندسة الـ Backend:** بناء معماريات قوية، وواجهات REST APIs سريعة وآمنة.\n2. **الجمع بين فهم الأعمال والهندسة:** بفضل خلفيته في نظم المعلومات الإدارية (MIS).\n3. **إتقان قواعد البيانات المتعددة:** التعامل مع PostgreSQL وMongoDB وMySQL والتخزين المؤقت Redis.\n4. **الدمج العملي للذكاء الاصطناعي والحاويات:** تطبيق Docker وأساسيات AWS ونماذج الذكاء الاصطناعي في حلول واقعية.\n5. **الالتزام بالمعايير الهندسية:** كود نظيف، هيكلية واضحة، وتوثيق دقيق.",
     "status": "INFERRED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "profile"
     ]
@@ -76,23 +76,23 @@
   {
     "id": 7,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه اهتمامات ربيع خارج البرمجة؟",
+    "questionAr": "إيه اهتمامات محمد خارج البرمجة؟",
     "answerAr": "[محتوى خاص محجوب عن قاعدة المعرفة العامة.]",
     "status": "HISTORICAL",
     "access": "PRIVATE",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": []
   },
   {
     "id": 8,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "ربيع اتخرج من كلية إيه؟",
-    "answerAr": "تخرج ربيع من المعهد العالي للتكنولوجيا والإدارة والمعلومات بالمنيا، قسم Business Information Systems، دفعة 2024، بتقدير امتياز.",
-    "status": "USER_REPORTED",
+    "questionAr": "محمد اتخرج من كلية إيه؟",
+    "answerAr": "تخرج محمد علي من أكاديمية الشروق (El Shorouk Academy) وحصل على درجة البكالوريوس في نظم المعلومات الإدارية (Management Information Systems - MIS) في الفترة (2019 – 2023).\n\nملاحظة مهمة: محمد ليس خريج كلية علوم حاسب، بل تخصصه هو نظم المعلومات الإدارية.",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "education"
     ]
@@ -100,14 +100,13 @@
   {
     "id": 9,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع حاصل على دبلومة في الذكاء الاصطناعي؟",
-    "answerAr": "نعم، شارك في دبلومة متخصصة بعنوان:\n\n**AI-Based Software Development Specialized Diploma**\n\nوهي دبلومة متخصصة في تطوير البرمجيات باستخدام تقنيات الذكاء الاصطناعي، مرتبطة بمبادرة Digilians وبالتعاون مع جهات مصرية، من بينها الأكاديمية العسكرية ووزارة الاتصالات وتكنولوجيا المعلومات وفق المعلومات التي شاركها.\n\nاستمرت الدراسة حوالي 9 أشهر.\n\nتناولت موضوعات متعددة، منها:\n\n- Software Development.\n- Frontend Development.\n- Backend Development.\n- React.js.\n- Next.js.\n- TypeScript.\n- Node.js.\n- Express.js.\n- MongoDB.\n- Generative AI.\n- Large Language Models.\n- AI Agents.\n- Prompt Engineering.\n- n8n.\n- AWS.\n- Docker.\n- Linux.\n- Git وCI/CD.\n- Cybersecurity.\n- OWASP.\n- Data Structures and Algorithms.",
-    "status": "USER_REPORTED",
+    "questionAr": "هل محمد حاصل على دبلومة في الذكاء الاصطناعي؟",
+    "answerAr": "نعم، أتم محمد علي دبلومة تخصصية مكثفة لمدة 9 أشهر في مسار تطوير البرمجيات بالذكاء الاصطناعي (AI-Powered Software Development Track) ضمن مبادرة رواد مصر الرقمية (Digilians) بالتعاون مع وزارة الاتصالات وتكنولوجيا المعلومات (MCIT).\n\n(يرجى الانتباه لعدم الخلط بين مبادرة Digilians ومبادرة DEPI).",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "education",
       "training",
       "ai"
     ]
@@ -115,14 +114,13 @@
   {
     "id": 10,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع حاصل على شهادات AWS؟",
-    "answerAr": "نعم، وفق آخر تحديثات المستخدم، حصل على:\n\n1. AWS Certified Cloud Practitioner – CLF-C02.\n2. AWS Certified Developer – Associate – DVA-C02.\n\nالشهادة الأولى تثبت معرفته بالمفاهيم الأساسية لخدمات AWS وCloud Computing، والثانية ترتبط بتطوير التطبيقات على AWS واستخدام خدماتها في بناء الحلول البرمجية.\n\n**تنبيه:** حالة الشهادتين هنا مبنية على تحديثات ربيع، وينبغي إرفاق روابط التحقق أو الشهادات الرسمية عند تقديمها لجهة توظيف.",
-    "status": "USER_REPORTED",
+    "questionAr": "هل محمد حاصل على شهادات أو اعتمادات مهنية؟",
+    "answerAr": "الاعتمادات الموثقة رسمياً في ملف محمد علي هي:\n\n1. **دبلومة تطوير البرمجيات بالذكاء الاصطناعي (9 أشهر):** مبادرة رواد مصر الرقمية (Digilians) / وزارة الاتصالات وتكنولوجيا المعلومات (MCIT).\n2. **بكالوريوس نظم معلومات إدارية (MIS):** أكاديمية الشروق (2019 – 2023).\n\nالملف لا يحتوي على شهادات أخرى غير مؤكدة.",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "education",
       "certification"
     ]
   },
@@ -130,53 +128,52 @@
     "id": 11,
     "section": "القسم الأول: التعريف الشخصي",
     "questionAr": "إيه البرامج التدريبية اللي شارك فيها؟",
-    "answerAr": "شارك ربيع في عدد من البرامج التدريبية، منها:\n\n**Digital Egypt Pioneers Initiative – DEPI**\n\nبرنامج Full Stack .NET Developer، من أبريل إلى أكتوبر 2024، وعمل خلاله على مشروع AGRSUP.\n\n**Meta Front-End Developer Professional Certificate**\n\nبرنامج متخصص في تطوير الواجهات باستخدام تقنيات الويب وReact، عبر Coursera.\n\n**NTI Web Developer Training**\n\nتدريب في مجال تطوير الويب، وعمل خلاله على مشروع Tarahoj Dental Clinic.\n\n**Upskilling Front-End Program**\n\nركز على React.js وRedux وNext.js وTailwind CSS.\n\n**Digilians Specialized Diploma**\n\nبرنامج متخصص في AI-Based Software Development.\n\n**برامج إضافية:**\n\n- ASP.NET Diploma – 210 Hours.\n- Full Stack PHP – 120 Hours.\n- Pro Frontend Engineer.\n- Advanced Front-End Engineering.",
-    "status": "USER_REPORTED",
+    "answerAr": "أتم محمد علي برنامجاً تدريبياً مكثفاً:\n\n**مبادرة رواد مصر الرقمية (Digilians):**\n- المسار: تطوير البرمجيات بالذكاء الاصطناعي (AI-Powered Software Development Track).\n- المدة: دبلومة تخصصية لمدة 9 أشهر.\n- المحتوى: هندسة البرمجيات المتقدمة، Node.js، Express، قواعد البيانات، Docker، AWS، ومنهجيات CI/CD، وتكامل الذكاء الاصطناعي.",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "education",
       "training"
     ]
   },
   {
     "id": 12,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه الفرق بين الشهادات الأكاديمية والمهنية عند ربيع؟",
-    "answerAr": "الشهادة الأكاديمية الأساسية هي بكالوريوس Business Information Systems.\n\nأما الشهادات المهنية والتدريبية فتشمل برامج تطوير الويب، وMeta Front-End، ومبادرات التدريب التقني، ودبلومة تطوير البرمجيات بالذكاء الاصطناعي، وشهادات AWS.\n\nهذا التنوع يعكس الجمع بين الخلفية الأكاديمية والتعلم التطبيقي المستمر.\n\n---\n\n# القسم الثالث: الخبرات المهنية",
-    "status": "USER_REPORTED",
+    "questionAr": "إيه الفرق بين الشهادات الأكاديمية والمهنية عند محمد؟",
+    "answerAr": "المؤهل الأكاديمي الأساسي هو بكالوريوس نظم معلومات إدارية (MIS) من أكاديمية الشروق (2019 – 2023).\n\nأما الاعتماد المهني فهو الدبلومة التخصصية المكثفة (9 أشهر) في تطوير البرمجيات بالذكاء الاصطناعي من مبادرة رواد مصر الرقمية (Digilians).",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "education",
-      "training",
       "certification"
     ]
   },
   {
     "id": 13,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه خبرة ربيع في مجال البرمجة؟",
-    "answerAr": "يمتلك ربيع خبرة عملية وتدريبية في تطوير تطبيقات الويب باستخدام تقنيات Frontend وBackend.\n\nتتضمن خبراته:\n\n- تطوير واجهات React.js.\n- بناء تطبيقات باستخدام Next.js.\n- استخدام TypeScript.\n- تطوير RESTful APIs.\n- التعامل مع Node.js وExpress.js.\n- تصميم قواعد بيانات MongoDB.\n- استخدام Mongoose.\n- تنفيذ Authentication وAuthorization.\n- التعامل مع JWT.\n- تطبيق Role-Based Access Control.\n- التعامل مع قواعد البيانات العلائقية.\n- ربط التطبيقات بخدمات خارجية.\n- استخدام Firebase.\n- التعامل مع أدوات AWS وDocker.\n\nويجب التمييز بين الخبرة الناتجة عن العمل والتدريب والمشاريع الشخصية عند تقييم سنوات الخبرة.",
+    "questionAr": "إيه خبرة محمد في مجال البرمجة؟",
+    "answerAr": "يمتلك محمد علي خبرة عملية متطورة في هندسة الـ Backend وتطوير Full-Stack، تشمل:\n- تصميم وتطوير واجهات برمجة التطبيقات RESTful APIs بـ Node.js وExpress وTypeScript.\n- نمذجة وإدارة قواعد البيانات PostgreSQL وMongoDB وMySQL وRedis.\n- بناء أنظمة الحاويات وإدارتها باستخدام Docker.\n- دمج حلول الذكاء الاصطناعي في المنصات البرمجية.\n- بناء مشاريع برمجية متكاملة ومفتوحة المصدر.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "experience"
+      "experience",
+      "skills"
     ]
   },
   {
     "id": 14,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "اشتغل ربيع في شركات إيه؟",
-    "answerAr": "وفق المعلومات المهنية المتاحة، تتضمن مسيرته:\n\n**Digital Fortress**\n\nFrontend Developer Intern، مع التركيز على Next.js وتطوير واجهات المستخدم.\n\n**Darwish & Co.**\n\nBackend Developer Trainee/Intern، مع العمل على Node.js وExpress.js وTypeScript وMongoDB وMongoose.\n\n**WEB MASTER**\n\nFrontend Developer Intern، مع التركيز على تطوير الواجهات.\n\n**Beta Social**\n\nوردت تجربة تطوعية مرتبطة بتطوير الواجهات، لكن تفاصيلها وتاريخها يحتاجان إلى تأكيد.",
+    "questionAr": "اشتغل محمد في شركات إيه وما مساره المهني؟",
+    "answerAr": "ترتكز مسيرة محمد المهنية على الخبرة العملية المكثفة:\n1. إتمام دبلومة Digilians التخصصية (9 أشهر) في تطوير البرمجيات بالذكاء الاصطناعي.\n2. هندسة وبناء مشاريع واقعية متقدمة تركز على الـ Backend مثل منصة Avicena، وتطبيق FitMate AI، ومحرك ImpersonaGuard.\n3. تطبيق معايير الأمان وقابلية التوسع واستخدام الحاويات Docker.\n\nلا يحتوي ملفه على أسماء شركات وظيفية غير موثقة، بل يركز على إنجازاته البرمجية ومستودعاته المعتمدة.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience"
     ]
@@ -184,51 +181,53 @@
   {
     "id": 15,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه طبيعة شغل ربيع في Digital Fortress؟",
-    "answerAr": "ارتبطت تجربته في Digital Fortress بتطوير الواجهات باستخدام Next.js، والعمل ضمن سياق مشروع تقني يهتم بالأمن الرقمي وحماية الهوية.\n\nومن المشروعات المرتبطة بهذه التجربة ImpersonaGuard، وهو نظام يهدف إلى تقييم المخاطر وتحليل السلوك والتهديدات الداخلية.",
+    "questionAr": "إيه طبيعة مشاريع وتطبيقات محمد البرمجية؟",
+    "answerAr": "يركز محمد علي على بناء منصات متكاملة وحلول برمجية تلبي احتياجات واقعية:\n- منصات الرعاية الصحية التي تتطلب اتصالاً فورياً (WebSockets) وتكاملاً ذكياً مثل Avicena Platform.\n- تطبيقات الذكاء الاصطناعي الرياضية والغذائية مثل FitMate AI.\n- حلول وأدوات أمن المعلومات ومكافحة التصيد والاحتيال مثل ImpersonaGuard.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "experience"
+      "projects"
     ]
   },
   {
     "id": 16,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل عند ربيع خبرة في Backend Development؟",
-    "answerAr": "نعم.\n\nعمل ربيع على تطوير Backend باستخدام Node.js وExpress.js وTypeScript وMongoDB.\n\nوتشمل الموضوعات التي تعامل معها:\n\n- REST API Development.\n- Authentication.\n- Authorization.\n- JWT.\n- Password Hashing.\n- Middleware.\n- Input Validation.\n- MongoDB Schema Design.\n- Mongoose.\n- Database Transactions.\n- Error Handling.\n- API Integration.\n\nكما شارك في تطوير منطق أنظمة الحجز وإدارة العمليات والبيانات.",
-    "status": "USER_REPORTED",
+    "questionAr": "هل عند محمد خبرة في Backend Development؟",
+    "answerAr": "نعم، هندسة الـ Backend هي التخصص والتركيز الأساسي لمحمد علي.\n\nتشمل خبرته:\n- بناء خدمات الـ Backend باستخدام Node.js وExpress.js وTypeScript.\n- تصميم وبناء واجهات RESTful APIs عالية الأداء والاعتمادية.\n- استخدام قواعد البيانات العلائقية (PostgreSQL, MySQL) وغير العلائقية (MongoDB).\n- استخدام Redis في الـ In-Memory Caching وإدارة الجلسات.\n- تطبيق مفاهيم الأمان المتقدمة والمصادقة (JWT, RBAC).\n- إدارة البيئات وتشغيل الخدمات داخل حاويات Docker.",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
+      "skills",
       "experience"
     ]
   },
   {
     "id": 17,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع يقدر يشتغل Full Stack Developer؟",
-    "answerAr": "نعم، لديه معرفة وخبرة تطبيقية في جانبي تطوير الويب.\n\nفي Frontend يعمل باستخدام React.js وNext.js وTypeScript، وفي Backend يستخدم Node.js وExpress.js وقواعد البيانات.\n\nكما لديه خبرة في ربط الواجهات بالخدمات الخلفية وإدارة البيانات وتنفيذ أنظمة المصادقة والصلاحيات.",
+    "questionAr": "هل محمد يقدر يشتغل Full Stack Developer؟",
+    "answerAr": "نعم، محمد مطور Full-Stack ولديه تركيز عميق على الـ Backend.\n\nيستطيع بناء التطبيق من الصفر: تصميم الـ Database، وبناء خدمات الـ Backend والـ APIs، وربطها بواجهات حديثة ومتجاوبة باستخدام React وNext.js وTailwind CSS، ونشر النظام بالكامل باستخدام Docker وأساسيات AWS.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "experience"
+      "skills",
+      "career"
     ]
   },
   {
     "id": 18,
     "section": "القسم الأول: التعريف الشخصي",
     "questionAr": "هل عنده خبرة في العمل ضمن فريق؟",
-    "answerAr": "شارك في تجارب تدريبية ومشروعات تطوير مرتبطة بفرق عمل.\n\nلكن لا ينبغي تحديد حجم الفرق أو مستوى المسؤولية القيادية أو حجم المشروعات التي قادها دون معلومات موثقة.",
-    "status": "UNCONFIRMED",
+    "answerAr": "نعم، شارك محمد في مشاريع جماعية وفرق عمل هندسية خلال دبلومة رواد مصر الرقمية (Digilians) وطور مشاريع برمجية تعاونية بالاعتماد على Git وGitHub وإدارة الفروع ومراجعة الكود.",
+    "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience"
     ]
@@ -236,25 +235,26 @@
   {
     "id": 19,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع عنده خبرة في بناء REST APIs؟",
-    "answerAr": "نعم.\n\nتعامل مع بناء APIs باستخدام Node.js وExpress.js، وتنفيذ عمليات CRUD، والتحقق من البيانات، وإدارة الأخطاء، وتطبيق Authentication وAuthorization، وربط الـ APIs بقواعد البيانات.\n\n---\n\n# القسم الرابع: المهارات التقنية",
-    "status": "USER_REPORTED",
+    "questionAr": "هل محمد عنده خبرة في بناء REST APIs؟",
+    "answerAr": "نعم، بناء وتصميم الـ REST APIs هو أحد أهم مجالات قوته.\n\nيصمم الـ APIs باتباع أفضل الممارسات:\n- تقسيم المسارات والمتحكمات (Controllers, Services).\n- التحقق الصارم من صحة البيانات (Validation).\n- إرجاع استجابات معيارية مع معالجة الأخطاء (Error Handling Middleware).\n- التوثيق والحماية بـ Rate Limiting وCORS وتأمين المصادقة بـ JWT.",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "experience"
+      "skills",
+      "architecture"
     ]
   },
   {
     "id": 20,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه أقوى مهارات ربيع التقنية؟",
-    "answerAr": "يمكن تقسيم مهاراته إلى خمسة مجالات:\n\n**Frontend Development**\n- React.js.\n- Next.js.\n- TypeScript.\n- JavaScript.\n- HTML5.\n- CSS3.\n- Tailwind CSS.\n- Redux Toolkit.\n- Context API.\n- Material UI.\n\n**Backend Development**\n- Node.js.\n- Express.js.\n- REST APIs.\n- JWT.\n- Middleware.\n- Authentication.\n- Authorization.\n- Clean Architecture.\n\n**Databases**\n- MongoDB.\n- Mongoose.\n- MySQL.\n- SQL Server.\n- PostgreSQL.\n- Firebase.\n- Firestore.\n\n**Cloud & DevOps**\n- AWS.\n- Docker.\n- Kubernetes.\n- Terraform.\n- Linux.\n- Git.\n- GitHub Actions.\n- CI/CD.\n- Helm.\n- Minikube.\n- Prometheus.\n\n**AI Development**\n- Generative AI.\n- LLMs.\n- Gemini API.\n- OCR.\n- AI Agents.\n- Prompt Engineering.\n- n8n.",
-    "status": "USER_REPORTED",
+    "questionAr": "إيه أقوى مهارات محمد التقنية؟",
+    "answerAr": "أقوى مهارات محمد علي تتركز في:\n1. **هندسة الـ Backend:** Node.js، Express.js، TypeScript، واجهات RESTful APIs.\n2. **قواعد البيانات:** PostgreSQL، MongoDB، MySQL، والتخزين المؤقت Redis.\n3. **DevOps والحاويات:** Docker، أساسيات AWS، والـ CI/CD.\n4. **الذكاء الاصطناعي:** دمج حلول ونماذج الـ AI في المنتجات البرمجية.\n5. **تطوير الـ Frontend:** React وNext.js وتصميم الواجهات المتجاوبة.",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -262,25 +262,26 @@
   {
     "id": 21,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع متخصص Frontend ولا Backend؟",
-    "answerAr": "تركيزه المهني الأساسي يميل إلى Frontend Development، خصوصًا React.js وNext.js وTypeScript.\n\nلكنه يمتلك خبرة في Backend Development باستخدام Node.js وExpress.js وMongoDB، مما يسمح له بالعمل على تطبيقات Full Stack.\n\nبالتالي، يمكن وصفه بأنه:\n\n**Full Stack Developer with a Strong Frontend Focus.**",
-    "status": "USER_REPORTED",
+    "questionAr": "هل محمد متخصص Frontend ولا Backend؟",
+    "answerAr": "محمد هو مطور Full-Stack بتخصص وتركيز أساسي على **Backend Engineering**؛ يركز جهده على منطق الأعمال، ومعمارية الأنظمة، وتصميم واجهات البرمجة، والتعامل مع البيانات والـ DevOps، مع قدرته على بناء واجهات Frontend متكاملة.",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "skills"
+      "skills",
+      "career"
     ]
   },
   {
     "id": 22,
     "section": "القسم الأول: التعريف الشخصي",
     "questionAr": "إيه خبرته في React.js؟",
-    "answerAr": "تعامل ربيع مع React في بناء تطبيقات متعددة، ويشمل ذلك:\n\n- Component-Based Architecture.\n- Reusable Components.\n- Hooks.\n- State Management.\n- Context API.\n- Redux Toolkit.\n- API Integration.\n- Forms.\n- Authentication Flows.\n- Responsive UI.\n- TypeScript Integration.\n\nكما استخدم React في تطبيقات التجارة الإلكترونية ولوحات التحكم والمنصات التعليمية.",
+    "answerAr": "تعامل محمد مع React في بناء تطبيقات متعددة، ويشمل ذلك:\n\n- Component-Based Architecture.\n- Reusable Components.\n- Hooks.\n- State Management.\n- Context API.\n- Redux Toolkit.\n- API Integration.\n- Forms.\n- Authentication Flows.\n- Responsive UI.\n- TypeScript Integration.\n\nكما استخدم React في تطبيقات التجارة الإلكترونية ولوحات التحكم والمنصات التعليمية.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -292,8 +293,8 @@
     "answerAr": "نعم.\n\nاستخدم Next.js في تطوير تطبيقات الويب، ويتعامل مع مفاهيم مثل:\n\n- App Router.\n- Server Components.\n- Client Components.\n- SSR.\n- SSG.\n- Routing.\n- Layouts.\n- Data Fetching.\n- Metadata.\n- SEO.\n- TypeScript Integration.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -305,8 +306,8 @@
     "answerAr": "تعامل مع قواعد بيانات NoSQL مثل MongoDB وFirebase Firestore، بالإضافة إلى قواعد بيانات SQL مثل MySQL وSQL Server وPostgreSQL.\n\nوتشمل خبرته:\n\n- تصميم البيانات.\n- إنشاء Collections وDocuments.\n- العلاقات بين البيانات.\n- Schema Validation.\n- Mongoose Models.\n- CRUD Operations.\n- Indexing.\n- Transactions.\n- التعامل مع ORM مثل Prisma.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -318,8 +319,8 @@
     "answerAr": "نعم، درس وتعامل مع خدمات AWS المختلفة، ومنها:\n\n- EC2.\n- S3.\n- Lambda.\n- IAM.\n- API Gateway.\n- DynamoDB.\n- CloudWatch.\n\nكما حصل، وفق تحديثاته، على شهادتي AWS Cloud Practitioner وAWS Developer Associate.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -331,8 +332,8 @@
     "answerAr": "نعم، لديه خبرة تدريبية وعملية في استخدام Docker، كما تعامل مع Kubernetes من خلال Minikube، واستخدم Helm في إدارة التطبيقات.\n\nلكن يجب عدم تقديمه كـ DevOps Engineer متخصص دون أدلة إضافية على خبرة تشغيل أنظمة Production على نطاق واسع.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -344,8 +345,8 @@
     "answerAr": "اهتمامه بالذكاء الاصطناعي يتجاوز مجرد استخدام أدوات المحادثة.\n\nدرس وعمل على موضوعات تشمل:\n\n- Generative AI.\n- LLM Integration.\n- Gemini API.\n- OCR.\n- AI-Based Applications.\n- AI Agents.\n- Prompt Engineering.\n- Automation باستخدام n8n.\n\nومن أمثلة ذلك مشروع MediMind الذي يعتمد على الذكاء الاصطناعي في التعامل مع بيانات الوصفات الطبية.\n\n---\n\n# القسم الخامس: المشاريع",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills",
       "ai"
@@ -354,12 +355,12 @@
   {
     "id": 28,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه أهم المشاريع اللي اشتغل عليها ربيع؟",
-    "answerAr": "من أبرز المشاريع:\n\n1. ATHAR.\n2. ImpersonaGuard.\n3. MediMind.\n4. Full Stack E-Commerce.\n5. EduSphere.\n6. Pharmacy POS.\n7. Sy2antek.\n8. Crime Prediction System.\n9. AGRSUP.\n10. Tarahoj Dental Clinic.\n11. E-Learning Dashboard.\n12. Zein Hub.\n\nبالإضافة إلى أعمال مواقع الويب مثل Riyadh Landscaping وBasmat Alwafa Medical Center و365 Furniture Website.",
-    "status": "USER_REPORTED",
+    "questionAr": "إيه أهم المشاريع اللي اشتغل عليها محمد؟",
+    "answerAr": "أهم المشاريع المعتمدة في الملف المهني لمحمد علي هي:\n\n1. **منصة Avicena (Avicena Platform):** منصة متكاملة للرعاية الصحية، تشمل هندسة Backend متقدمة، اتصال فوري عبر WebSockets، ودمج للذكاء الاصطناعي، وبيئات تشغيل Docker. (https://github.com/Mohamedali409/avicena-platform)\n2. **تطبيق FitMate AI:** تطبيق لياقة بدنية وتغذية ذكي مدعوم بنماذج الذكاء الاصطناعي لتقديم خطط مخصصة وتتبع التقدم. (https://github.com/Mohamedali409/FitMate-AI)\n3. **محرك ImpersonaGuard:** محرك أمن معلومات لكشف وتتبع انتحال العلامات التجارية والتصيد الاحتيالي وتحليل التهديدات. (https://github.com/Madoo2414/ImpersonaGuard-)",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects"
     ]
@@ -367,12 +368,12 @@
   {
     "id": 29,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "احكيلي عن مشروع ATHAR.",
-    "answerAr": "يوجد تعارض بين مصدرين لوصف ATHAR: صفحة المشروع الحالية في الموقع تعرضه كمنصة ويب عربية، بينما ملف الأسئلة المقدم يصف تطبيقًا للموبايل باستخدام React Native وExpo وFirebase. لا أستطيع تأكيد هل هما نسختان من المشروع نفسه أم مشروعان مرتبطان؛ لذلك أعرض هذا التعارض بدل دمج التفاصيل. رابط المنصة المنشور: https://athar-library.vercel.app/ .",
-    "status": "UNCONFIRMED",
-    "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "questionAr": "احكيلي عن منصة Avicena (Avicena Platform).",
+    "answerAr": "منصة Avicena هي منصة رعاية صحية متكاملة ركز فيها محمد علي على هندسة الـ Backend والبنية المعمارية وتكامل الذكاء الاصطناعي.\n\nتشمل المنصة:\n- معمارية Backend قوية باستخدام Node.js وExpress وTypeScript وPostgreSQL.\n- اتصال فوري Real-Time باستخدام WebSockets للتواصل المباشر.\n- تكامل مع نماذج الذكاء الاصطناعي لدعم اتخاذ القرار الطبي والمساعدة الذكية.\n- نشر وإدارة الحاويات باستخدام Docker ومبادئ DevOps لضمان الموثوقية وقابلية التوسع.\n\nرابط المستودع المعتمد: https://github.com/Mohamedali409/avicena-platform",
+    "status": "VERIFIED",
+    "access": "PUBLIC",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects"
     ]
@@ -381,11 +382,11 @@
     "id": 30,
     "section": "القسم الأول: التعريف الشخصي",
     "questionAr": "إيه فكرة مشروع ImpersonaGuard؟",
-    "answerAr": "ImpersonaGuard مشروع مرتبط بالأمن الرقمي وحماية الهوية وتقييم المخاطر.\n\nيهدف إلى تحليل البيانات وتقييم احتمالات التهديدات والمخاطر المرتبطة بالسلوك والهوية الرقمية.\n\n**التقنيات:**\n\n- Node.js.\n- Express 5.\n- JavaScript ES Modules.\n- MongoDB.\n- Mongoose.\n- JWT.\n- Zod.\n- Python FastAPI في مكونات Red Engine.\n\nيتضمن النظام تكاملًا مع محرك تحليل مخاطر، ويهتم بمفاهيم Insider Threat وRisk Profiling.\n\nشارك ربيع في العمل على Backend APIs، وتنظيم المسارات، والتحقق من البيانات، والتكامل مع الخدمات الأخرى.",
-    "status": "USER_REPORTED",
+    "answerAr": "ImpersonaGuard هو مشروع متقدم في أمن المعلومات وحماية العلامات التجارية من الانتحال والتصيد الاحتيالي.\n\nيهدف النظام إلى فحص النطاقات وعناوين URL المشبوهة، وتحليل السلوكيات الاحتيالية باستخدام تقنيات Heuristic Scoring، وحساب درجات المخاطر بدقة.\n\n**التقنيات المستخدمة:**\n- Node.js وExpress.\n- TypeScript وJavaScript.\n- خوارزميات التقييم الأمني وتحليل الأنماط.\n- تأمين واجهات البرمجة RESTful APIs.\n\nرابط المستودع: https://github.com/Madoo2414/ImpersonaGuard-",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects"
     ]
@@ -393,12 +394,12 @@
   {
     "id": 31,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "احكيلي عن مشروع MediMind.",
-    "answerAr": "MediMind هو مشروع في مجال HealthTech يهدف إلى تسهيل إدارة الأدوية والالتزام بالجدول العلاجي.\n\nمن الأفكار والوظائف المرتبطة به:\n\n- قراءة الوصفات الطبية.\n- استخدام OCR لاستخراج المعلومات.\n- توظيف Gemini API في تحليل البيانات.\n- إدارة الأدوية.\n- تنظيم مواعيد الجرعات.\n- التذكير بمواعيد تناول الدواء.\n- دعم متابعة مقدمي الرعاية.\n\nالفكرة الأساسية هي تحويل المعلومات الطبية الموجودة في الوصفات إلى بيانات منظمة تساعد المستخدم على إدارة أدويته.",
-    "status": "USER_REPORTED",
+    "questionAr": "احكيلي عن مشروع FitMate AI.",
+    "answerAr": "FitMate AI هو تطبيق لياقة بدنية وتغذية ذكي يدمج تقنيات الذكاء الاصطناعي لتقديم تجربة تدريب شخصية.\n\nمن أهم وظائفه:\n- إنشاء خطط تمارين وتغذية مخصصة حسب أهداف المستخدم.\n- تتبع الوجبات والسعرات الحرارية بدقة.\n- محادثة وتوجيه ذكي مدعوم بالـ AI Coaching للإجابة على استفسارات اللياقة.\n- متابعة التقدم ومؤشرات الأداء الرياضي عبر لوحات تحكم تفاعلية.\n\n**التقنيات:** Node.js، Express، MongoDB، RESTful APIs، وتكامل نماذج الذكاء الاصطناعي.\n\nرابط المستودع: https://github.com/Mohamedali409/FitMate-AI",
+    "status": "VERIFIED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects",
       "ai"
@@ -407,64 +408,66 @@
   {
     "id": 32,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه فكرة مشروع E-Commerce؟",
-    "answerAr": "مشروع تجارة إلكترونية متكامل باستخدام MERN Stack.\n\n**Frontend:**\n- React 19.\n- TypeScript.\n- Tailwind CSS.\n\n**Backend:**\n- Node.js.\n- Express.js.\n- MongoDB.\n- Mongoose.\n\nيتضمن وظائف مثل:\n\n- إدارة المنتجات.\n- سلة المشتريات.\n- المفضلة.\n- تسجيل المستخدمين.\n- Authentication.\n- Role-Based Access Control.\n- Checkout.\n\nDemo: https://front-e-commerce-v2.vercel.app/\n\nGitHub: https://github.com/rabea-shaban/Front-E-commerce-v2",
+    "questionAr": "إيه بنية Backend وواجهات REST APIs في مشاريع محمد؟",
+    "answerAr": "يركز محمد علي على بناء واجهات RESTful APIs احترافية ومنظمة وفق معايير Clean Architecture والطبقات المفصولة (Controllers, Services, Repositories).\n\nتشمل بنيته:\n- التحقق الدقيق من البيانات المدخلة وتوثيق الـ Endpoints.\n- إدارة الهوية والصلاحيات عبر JWT وRole-Based Access Control (RBAC).\n- تصميم قواعد بيانات فعالة (PostgreSQL, MongoDB, MySQL).\n- التخزين المؤقت مع Redis لتقليل الحمل على قواعد البيانات وتسريع الاستجابة.\n- التعامل الاحترافي مع الأخطاء والـ Logging.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "projects"
+      "architecture",
+      "skills"
     ]
   },
   {
     "id": 33,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "احكيلي عن EduSphere.",
-    "answerAr": "EduSphere مشروع مرتبط بإدارة العملية التعليمية.\n\nتم تطويره باستخدام تقنيات تشمل:\n\n- React.\n- Next.js.\n- TypeScript.\n- Node.js.\n- Express.js.\n- MongoDB.\n- Socket.IO.\n\nومن الوظائف المرتبطة به:\n\n- إدارة الدورات.\n- لوحات تحكم.\n- إدارة المستخدمين.\n- الرسائل الفورية.\n- المدفوعات.\n- تخزين الملفات.",
+    "questionAr": "إزاي بيطبق محمد Docker وDevOps في مشاريعه؟",
+    "answerAr": "يحرص محمد علي على استخدام Docker لإنشاء بيئات تشغيل متطابقة بين التطوير والإنتاج (Containerization)، واستخدام Docker Compose لتشغيل الخدمات وقواعد البيانات وسيرفرات Redis معاً بسهولة. كما يطبق مبادئ الـ CI/CD عبر GitHub Actions لضمان جودة الكود واختباره ونشره بسلاسة على بيئات الحوسبة السحابية مثل AWS.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "projects"
+      "skills"
     ]
   },
   {
     "id": 34,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه فكرة Pharmacy POS؟",
-    "answerAr": "نظام لإدارة عمليات الصيدليات ونقاط البيع.\n\nيتعامل مع:\n\n- المبيعات.\n- المخزون.\n- الأدوية.\n- الوصفات الطبية.\n- التأمين.\n- برامج الولاء.\n- التقارير.\n- الصلاحيات.\n- الباركود.\n- الطباعة الحرارية.\n- إدارة صلاحية المنتجات باستخدام FEFO.\n\nالتقنيات المستخدمة تشمل React وTypeScript وNode.js وExpress وPrisma وMySQL.",
+    "questionAr": "إيه ممارسات الأمان والـ Security اللي بيتبعها محمد؟",
+    "answerAr": "يطبق محمد مبادئ الأمان الصارمة في كافة مشاريعه (مثل ImpersonaGuard وAvicena):\n- تشفير كلمات المرور الحساسة باستخدام بروتوكولات قوية.\n- تأمين الـ Endpoints ومنع هجمات CSRF وXSS وSQL Injection.\n- إدارة الصلاحيات ومصادقة المستخدمين عبر JWT وRefresh Tokens.\n- حماية الـ APIs عبر Rate Limiting وتحديد أحجام الطلبات وحظر المصادر غير المصرح لها (CORS Policy).",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "projects"
+      "skills",
+      "architecture"
     ]
   },
   {
     "id": 35,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "احكيلي عن Sy2antek.",
-    "answerAr": "Sy2antek مشروع مرتبط بخدمات صيانة السيارات وإدارة طلبات الخدمة.\n\nيتضمن:\n\n- إدارة طلبات الصيانة.\n- بيانات المركبات.\n- متابعة الخدمات.\n- الخرائط.\n- تحديد المواقع الجغرافية.\n\nاستخدم React وTypeScript وNode.js وExpress وMongoDB وLeaflet.",
+    "questionAr": "إيه خبرة محمد في التعامل مع قواعد البيانات؟",
+    "answerAr": "يمتلك محمد علي خبرة واسعة في التعامل مع قواعد البيانات العلائقية (Relational) وغير العلائقية (NoSQL):\n- PostgreSQL وMySQL: تصميم الجداول، وتطبيع البيانات (Normalization)، وكتابة الاستعلامات المعقدة وتحسين أدائها، واستخدام الفهارس (Indexes).\n- MongoDB: تصميم المخططات المرنة واستخدام Mongoose والـ Aggregation Pipelines.\n- Redis: استخدام التخزين في الذاكرة (In-Memory) لتسريع استجابة النظام وتخزين الجلسات (Session Storage).",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "projects"
+      "skills"
     ]
   },
   {
     "id": 36,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه مشروع التخرج؟",
-    "answerAr": "Crime Prediction System.\n\nهو نظام للتنبؤ بالجريمة باستخدام React وFirebase.\n\nكان مشروع التخرج الخاص بربيع في مرحلة البكالوريوس، وحصل على تقدير امتياز وفق المعلومات المتاحة.",
+    "questionAr": "إيه مشروع التخرج لمحمد علي؟",
+    "answerAr": "مشروع تخرج في نظم المعلومات الإدارية (MIS) من أكاديمية الشروق (El Shorouk Academy) دفعة 2023.\n\nركز المشروع على دراسة وتحليل النظم المعلوماتية وتصميم قواعد البيانات وتطوير البنية البرمجية لحل مشاكل إدارية وتقنية عملية، مستفيداً من المنهجيات الهندسية لنظم المعلومات.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "education",
       "projects"
@@ -473,12 +476,12 @@
   {
     "id": 37,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع عنده مشاريع منشورة؟",
-    "answerAr": "من الروابط المهنية المنشورة: Portfolio: https://www.rabea-shaban.com/ ، ATHAR: https://athar-library.vercel.app/ ، مشروع E-Commerce: https://front-e-commerce-v2.vercel.app/ ، وGitHub: https://github.com/rabea-shaban . قد تتغير حالة تشغيل أي رابط؛ استخدم الرابط الرسمي للموقع الحالي وتحقق من العرض قبل إرساله.",
+    "questionAr": "هل محمد عنده مشاريع منشورة؟",
+    "answerAr": "من الروابط المهنية المنشورة: Portfolio: https://www.mohamed-ali-portfolio.vercel.app/ ، ATHAR: https://athar-library.vercel.app/ ، مشروع E-Commerce: https://front-e-commerce-v2.vercel.app/ ، وGitHub: https://github.com/Mohamedali409 . قد تتغير حالة تشغيل أي رابط؛ استخدم الرابط الرسمي للموقع الحالي وتحقق من العرض قبل إرساله.",
     "status": "HISTORICAL",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects"
     ]
@@ -487,11 +490,11 @@
     "id": 38,
     "section": "القسم الأول: التعريف الشخصي",
     "questionAr": "إيه أصعب مشكلة تقنية اشتغل عليها؟",
-    "answerAr": "من أبرز المشكلات التقنية التي تعامل معها:\n\n**إدارة عمليات الحجز ومنع الحجز المزدوج.**\n\nفي أنظمة الحجز، قد يحاول أكثر من مستخدم حجز نفس الموعد في الوقت نفسه.\n\nالحل يتطلب التعامل الصحيح مع Database Transactions، بحيث يتم ضمان عدم تأكيد أكثر من حجز لنفس المورد أو الموعد.\n\nمن المفاهيم التي تعامل معها ربيع:\n\n- Atomicity.\n- Commit.\n- Rollback.\n- Race Conditions.\n- Concurrent Requests.\n- Transactional Consistency.\n\nوهي مشكلة مرتبطة بمشروع Sanad Transactional Booking Engine.\n\n---\n\n# القسم السادس: العمل والتوظيف",
+    "answerAr": "من أبرز المشكلات التقنية التي تعامل معها:\n\n**إدارة عمليات الحجز ومنع الحجز المزدوج.**\n\nفي أنظمة الحجز، قد يحاول أكثر من مستخدم حجز نفس الموعد في الوقت نفسه.\n\nالحل يتطلب التعامل الصحيح مع Database Transactions، بحيث يتم ضمان عدم تأكيد أكثر من حجز لنفس المورد أو الموعد.\n\nمن المفاهيم التي تعامل معها محمد:\n\n- Atomicity.\n- Commit.\n- Rollback.\n- Race Conditions.\n- Concurrent Requests.\n- Transactional Consistency.\n\nوهي مشكلة مرتبطة بمشروع Sanad Transactional Booking Engine.\n\n---\n\n# القسم السادس: العمل والتوظيف",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience",
       "projects",
@@ -501,12 +504,12 @@
   {
     "id": 39,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع متاح لفرص عمل جديدة؟",
+    "questionAr": "هل محمد متاح لفرص عمل جديدة؟",
     "answerAr": "المعلومات المهنية السابقة تشير إلى اهتمامه بفرص العمل في تطوير الويب، خصوصًا Frontend وFull Stack.\n\nلكن حالة التوظيف الحالية يجب التأكد منها مباشرة قبل تقديم إجابة نهائية باسم المساعد.",
     "status": "UNCONFIRMED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience",
       "career"
@@ -515,12 +518,12 @@
   {
     "id": 40,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه الوظيفة المناسبة لمهارات ربيع؟",
+    "questionAr": "إيه الوظيفة المناسبة لمهارات محمد؟",
     "answerAr": "أقرب الوظائف لمهاراته:\n\n1. Frontend Developer.\n2. React.js Developer.\n3. Next.js Developer.\n4. Frontend Software Engineer.\n5. Full Stack Developer – MERN Stack.\n6. Junior Node.js Developer.\n7. Software Engineer – Web Development.\n\nالاختيار الأفضل يعتمد على متطلبات الوظيفة، ومستوى المسؤولية، وطبيعة الفريق.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience",
       "career"
@@ -529,12 +532,12 @@
   {
     "id": 41,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع بيفضل Frontend ولا Full Stack؟",
-    "answerAr": "يميل ربيع إلى Frontend Development، خصوصًا React.js وNext.js.\n\nلكنه يفضل امتلاك فهم متكامل للنظام، لذلك يهتم أيضًا بالـ Backend وقواعد البيانات وواجهات APIs.",
+    "questionAr": "هل محمد بيفضل Frontend ولا Full Stack؟",
+    "answerAr": "يميل محمد إلى Frontend Development، خصوصًا React.js وNext.js.\n\nلكنه يفضل امتلاك فهم متكامل للنظام، لذلك يهتم أيضًا بالـ Backend وقواعد البيانات وواجهات APIs.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience",
       "career"
@@ -547,8 +550,8 @@
     "answerAr": "نعم، سبق أن أبدى اهتمامًا بفرص Remote وHybrid وOn-site.\n\nولا توجد قيود معلنة تمنعه من العمل عن بُعد.",
     "status": "HISTORICAL",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience",
       "career"
@@ -561,8 +564,8 @@
     "answerAr": "سبق أن ذكر استعداده للانتقال إذا كانت الفرصة مناسبة.\n\nلكن يجب التأكد من ظروفه الحالية قبل تقديم وعد بالتنقل.",
     "status": "HISTORICAL",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience",
       "career"
@@ -572,11 +575,11 @@
     "id": 44,
     "section": "القسم الأول: التعريف الشخصي",
     "questionAr": "إيه القيمة اللي ممكن يضيفها لفريق العمل؟",
-    "answerAr": "يمكن أن يضيف ربيع قيمة من خلال:\n\n- تطوير واجهات مستخدم حديثة.\n- بناء تطبيقات باستخدام React وNext.js.\n- التعامل مع TypeScript.\n- ربط التطبيقات بالـ Backend APIs.\n- المشاركة في بناء Backend باستخدام Node.js.\n- التعامل مع قواعد البيانات.\n- الاهتمام بجودة الكود.\n- المشاركة في مراجعة الكود واكتشاف الأخطاء.\n- التفكير في قابلية التوسع والصيانة.\n- فهم احتياجات المنتج من الناحية التقنية.",
+    "answerAr": "يمكن أن يضيف محمد قيمة من خلال:\n\n- تطوير واجهات مستخدم حديثة.\n- بناء تطبيقات باستخدام React وNext.js.\n- التعامل مع TypeScript.\n- ربط التطبيقات بالـ Backend APIs.\n- المشاركة في بناء Backend باستخدام Node.js.\n- التعامل مع قواعد البيانات.\n- الاهتمام بجودة الكود.\n- المشاركة في مراجعة الكود واكتشاف الأخطاء.\n- التفكير في قابلية التوسع والصيانة.\n- فهم احتياجات المنتج من الناحية التقنية.",
     "status": "INFERRED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience",
       "career"
@@ -585,12 +588,12 @@
   {
     "id": 45,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "ليه شركة تختار ربيع؟",
+    "questionAr": "ليه شركة تختار محمد؟",
     "answerAr": "لأنه يجمع بين خلفية أكاديمية في نظم المعلومات، ومهارات عملية في تطوير الويب، وتجارب في بناء مشروعات متنوعة.\n\nكما أنه لا يركز فقط على تنفيذ واجهة المستخدم، بل يهتم بفهم طريقة عمل النظام بالكامل، بداية من الواجهة وحتى قواعد البيانات والخدمات الخلفية.\n\nويعمل باستمرار على تطوير مهاراته في تقنيات الويب الحديثة والـ Cloud والذكاء الاصطناعي.",
     "status": "INFERRED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience",
       "career"
@@ -603,8 +606,8 @@
     "answerAr": "شارك في مشروعات وتدريبات تقنية متعددة تتطلب التعامل مع مهام مختلفة.\n\nلكن لا توجد بيانات كافية لقياس أدائه تحت ضغط العمل أو تحديد حجم المهام التي كان مسؤولًا عنها في بيئة Production.\n\n---\n\n# القسم السابع: Software Architecture وجودة الكود",
     "status": "UNCONFIRMED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience",
       "career"
@@ -613,12 +616,12 @@
   {
     "id": 47,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إزاي ربيع بيصمم Architecture للمشاريع؟",
-    "answerAr": "يهتم ربيع بتنظيم المشروع وتقسيم المسؤوليات إلى أجزاء واضحة بدل وضع جميع الوظائف في مكان واحد.\n\nومن المبادئ التي يهتم بها:\n\n- Separation of Concerns.\n- Reusable Components.\n- Modular Architecture.\n- Clean Code.\n- Maintainability.\n- Scalability.\n- Type Safety.\n- Error Handling.\n- Validation.\n- Security.\n\nويختلف التصميم النهائي حسب حجم المشروع ومتطلباته.",
+    "questionAr": "إزاي محمد بيصمم Architecture للمشاريع؟",
+    "answerAr": "يهتم محمد بتنظيم المشروع وتقسيم المسؤوليات إلى أجزاء واضحة بدل وضع جميع الوظائف في مكان واحد.\n\nومن المبادئ التي يهتم بها:\n\n- Separation of Concerns.\n- Reusable Components.\n- Modular Architecture.\n- Clean Code.\n- Maintainability.\n- Scalability.\n- Type Safety.\n- Error Handling.\n- Validation.\n- Security.\n\nويختلف التصميم النهائي حسب حجم المشروع ومتطلباته.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills",
       "architecture"
@@ -627,12 +630,12 @@
   {
     "id": 48,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع بيستخدم Clean Architecture؟",
+    "questionAr": "هل محمد بيستخدم Clean Architecture؟",
     "answerAr": "درس وتعامل مع مفاهيم Clean Architecture وتنظيم طبقات التطبيق.\n\nومن المبادئ المرتبطة بها:\n\n- فصل منطق الأعمال عن البنية التحتية.\n- تقليل الاعتماد بين المكونات.\n- تنظيم الخدمات.\n- فصل مسؤوليات Controllers وServices وRepositories عند الحاجة.\n- تسهيل الاختبار والصيانة.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills",
       "architecture"
@@ -641,12 +644,12 @@
   {
     "id": 49,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه مفهوم ربيع عن Scalable Applications؟",
+    "questionAr": "إيه مفهوم محمد عن Scalable Applications؟",
     "answerAr": "التطبيق القابل للتوسع هو التطبيق الذي يمكنه استيعاب نمو عدد المستخدمين والطلبات والبيانات دون الحاجة إلى إعادة بناء النظام بالكامل.\n\nويتحقق ذلك من خلال:\n\n- Architecture مناسبة.\n- Database Design جيد.\n- Caching عند الحاجة.\n- Efficient API Design.\n- Background Jobs.\n- Monitoring.\n- Security.\n- Cloud Infrastructure.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills",
       "architecture"
@@ -659,8 +662,8 @@
     "answerAr": "يتعامل مع Authentication للتأكد من هوية المستخدم، وAuthorization لتحديد العمليات التي يسمح له بتنفيذها.\n\nومن التقنيات التي استخدمها:\n\n- JWT.\n- Password Hashing.\n- bcrypt.\n- HTTPOnly Cookies.\n- Middleware.\n- Role-Based Access Control.\n- Input Validation.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills",
       "architecture"
@@ -673,8 +676,8 @@
     "answerAr": "الحل لا يعتمد على فحص الموعد قبل الحجز فقط، لأن طلبين قد يصلان في الوقت نفسه.\n\nيجب تنفيذ الحجز بطريقة آمنة باستخدام Transactions وقيود مناسبة في قاعدة البيانات.\n\nومن الخطوات المهمة:\n\n1. التحقق من صلاحية الحجز.\n2. بدء Transaction.\n3. التأكد من أن الموعد متاح.\n4. تسجيل الحجز.\n5. تحديث حالة الموعد.\n6. تنفيذ Commit عند النجاح.\n7. تنفيذ Rollback عند الفشل.\n\nويجب تصميم آلية التزامن بحيث لا يتم تأكيد حجزين لنفس المورد.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills",
       "architecture"
@@ -687,8 +690,8 @@
     "answerAr": "منهج المراجعة الذي يفضله يتضمن:\n\n- مراجعة هيكل المشروع.\n- مراجعة Routes.\n- مراجعة Controllers وServices.\n- مراجعة Models وSchemas.\n- مراجعة API Integration.\n- مراجعة Authentication.\n- مراجعة Authorization.\n- مراجعة Validation.\n- مراجعة Database Operations.\n- البحث عن Mock Data.\n- مراجعة TODO وFIXME.\n- اختبار الوظائف.\n- مراجعة Error Handling.\n- مراجعة Security.\n- مراجعة Performance.\n- مراجعة Build وDeployment.\n\nويفضل أن تكون نتيجة المراجعة مبنية على أدلة من الملفات والاختبارات، وليس مجرد انطباعات.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills",
       "architecture"
@@ -697,12 +700,12 @@
   {
     "id": 53,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع بيكتب Unit Tests؟",
+    "questionAr": "هل محمد بيكتب Unit Tests؟",
     "answerAr": "تعامل مع الاختبارات ضمن مشروعاته ومراجعاته التقنية، لكن لا توجد معلومات كافية لتحديد إطار الاختبار الأساسي الذي يعتمد عليه في كل مشروعاته أو مستوى تغطية الاختبارات لديه.\n\n---\n\n# القسم الثامن: صناعة المحتوى",
     "status": "UNCONFIRMED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills",
       "architecture"
@@ -711,116 +714,117 @@
   {
     "id": 54,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع بيقدم محتوى تعليمي؟",
-    "answerAr": "نعم.\n\nلديه مشروع محتوى تعليمي باسم:\n\n**خمسة برمجة بالبلدي**\n\nوهو محتوى تقني باللغة العربية يهدف إلى تبسيط مفاهيم البرمجة وهندسة البرمجيات.",
+    "questionAr": "هل محمد مهتم بمشاركة المعرفة التقنية وتوثيق الكود؟",
+    "answerAr": "نعم، يحرص محمد علي على توثيق مشاريعه البرمجية على GitHub وتوضيح بنية الكود والمعمارية الهندسية وكيفية تشغيل الخدمات لتمكين المطورين من الاستفادة منها واستخدامها كأمثلة تطبيقية موثوقة.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "content"
+      "profile"
     ]
   },
   {
     "id": 55,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه فكرة خمسة برمجة بالبلدي؟",
-    "answerAr": "العلامة مبنية على فكرة شرح المفاهيم التقنية المعقدة بطريقة بسيطة وقريبة من المطور العربي.\n\nالشعار:\n\n**افهمها بالبلدي .. اكتبها بالكود**\n\nويستهدف المحتوى المبتدئين والمطورين الذين يريدون فهم المفاهيم التقنية بشكل عملي.",
+    "questionAr": "إيه منهجية محمد في توثيق وهندسة المشاريع؟",
+    "answerAr": "يركز محمد على التوثيق الهندسي الدقيق للـ APIs، وتوفير ملفات README شاملة توضح معمارية المشروع، خطوات التثبيت عبر Docker، ومخططات تدفق البيانات واستخدامات النماذج.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "content"
+      "architecture"
     ]
   },
   {
     "id": 56,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه المواضيع اللي بيشرحها؟",
-    "answerAr": "من الموضوعات التي عمل عليها:\n\n- أساسيات البرمجة.\n- Web Development.\n- JavaScript.\n- React.\n- System Architecture.\n- Design Systems.\n- JWT.\n- SQL Injection.\n- XSS.\n- Cybersecurity.\n- Software Engineering.\n- مفاهيم Backend Development.",
+    "questionAr": "إيه الموضوعات التقنية اللي بيركز عليها في مشاريعه؟",
+    "answerAr": "يركز محمد علي على: هندسة الـ Backend باستخدام Node.js وTypeScript، وتصميم واجهات RESTful APIs، ونمذجة قواعد البيانات وتأمينها، والتخزين المؤقت عبر Redis، واستخدام Docker في الحاويات، ودمج حلول الذكاء الاصطناعي.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "content"
+      "skills"
     ]
   },
   {
     "id": 57,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع بيشرح البرمجة باللهجة المصرية؟",
-    "answerAr": "نعم، يفضل استخدام اللهجة المصرية البسيطة في المحتوى التعليمي، خصوصًا الفيديوهات القصيرة والـ Voice Over.",
+    "questionAr": "إزاي بيتواصل محمد مع المطورين والمهندسين؟",
+    "answerAr": "يتواصل محمد باللغتين العربية والإنجليزية بأسلوب هندسي دقيق وواضح، ويركز على استخدام المصطلحات التقنية المعيارية والشرح المنطقي المنظم للمفاهيم البرمجية.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "content"
+      "profile"
     ]
   },
   {
     "id": 58,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه الهوية البصرية للعلامة؟",
-    "answerAr": "الألوان المعتمدة:\n\n| اللون | الكود |\n|---|---|\n| Studio Black | #0B0B0B |\n| Neon Yellow | #FFD400 |\n| Cyber Sky | #00FFCC |\n| White | #FFFFFF |\n\nالخط المفضل: Poppins ExtraBold.\n\nوالأسلوب البصري يميل إلى الطابع التقني الحديث مع خلفيات داكنة وتباين قوي.\n\n---\n\n# القسم التاسع: الأعمال التجارية والبراندات",
+    "questionAr": "إيه معايير الكود وجودة البرمجيات عند محمد؟",
+    "answerAr": "يعتمد محمد معايير الجودة الصارمة: تطبيق مبادئ Clean Code، وفصل المسؤوليات (Separation of Concerns)، وكتابة تعليمات برمجية قابلة للصيانة والاختبار، والاعتماد على TypeScript لتقليل الأخطاء وقت التشغيل.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "content"
+      "architecture"
     ]
   },
   {
     "id": 59,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه هي نهج الرقمية؟",
-    "answerAr": "نهج الرقمية – NAHJ ALRAQAMIA هي مبادرة أو علامة تجارية مرتبطة بتقديم خدمات تطوير المواقع والحلول الرقمية والتسويق.\n\nترتبط أنشطتها بمجالات مثل:\n\n- Web Development.\n- Website Design.\n- Business Websites.\n- Digital Solutions.\n- تطوير واجهات المستخدم.\n- تطوير الأنظمة الإلكترونية.\n\nوقد تحدث ربيع عن دوره فيها باعتباره مؤسسًا أو قائدًا تقنيًا.\n\nلكن التفاصيل القانونية للكيان وحجم الفريق والخدمات التجارية الحالية تحتاج إلى تأكيد.",
-    "status": "UNCONFIRMED",
+    "questionAr": "إيه رؤية محمد في تطوير الأنظمة الرقمية؟",
+    "answerAr": "يرى محمد أن هندسة البرمجيات تهدف لحل مشاكل حقيقية من خلال بناء نظم متينة وسريعة، تجمع بين استقرار الـ Backend، وسلاسة تجربة المستخدم، والاستفادة الذكية من أدوات الذكاء الاصطناعي الحديثة.",
+    "status": "USER_REPORTED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "business"
+      "profile"
     ]
   },
   {
     "id": 60,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع عنده خبرة في بناء مواقع الشركات؟",
-    "answerAr": "نعم، لديه تجارب في بناء مواقع ويب ومشروعات رقمية، ومنها:\n\n- Riyadh Landscaping.\n- Basmat Alwafa Medical Center.\n- 365 Furniture Website.\n- Car Rental React App.\n\nوتختلف تفاصيل التقنيات والمساهمات في هذه المشاريع، لذلك يجب عدم افتراض أنه نفذ كل أجزاء كل مشروع بمفرده دون توثيق.",
+    "questionAr": "هل محمد عنده خبرة في بناء منصات متكاملة؟",
+    "answerAr": "نعم، بنى محمد منصات حقيقية متكاملة تشمل واجهات برمجية، وقواعد بيانات، وخدمات سحابية وحاويات Docker مثل منصة Avicena للرعاية الصحية، وتطبيق FitMate AI، ومحرك ImpersonaGuard الأمني.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "business"
+      "projects"
     ]
   },
   {
     "id": 61,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل بيقدم حلول Digital Transformation؟",
-    "answerAr": "لديه اهتمام ومشروعات مرتبطة بتحويل العمليات التقليدية إلى أنظمة رقمية، مثل أنظمة إدارة الصيدليات، ولوحات التحكم، وأنظمة الحجز، والمنصات التعليمية.\n\nلكن لا ينبغي وصف ذلك بأنه سجل مؤسسي مثبت في تنفيذ مشروعات تحول رقمي واسعة النطاق دون وجود حالات موثقة.\n\n---\n\n# القسم العاشر: التحليل المهني",
+    "questionAr": "إيه دور خلفيته في نظم المعلومات الإدارية (MIS) في عمله البرمجي؟",
+    "answerAr": "تمنحه دراسته لنظم المعلومات الإدارية في أكاديمية الشروق ميزة فهم متطلبات الأعمال (Business Logic)، وتحليل وتصميم النظم بفاعلية، وربط الاحتياجات الوظيفية للمستخدمين بالحلول الهندسية التقنية المباشرة.",
     "status": "USER_REPORTED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "business"
+      "education",
+      "profile"
     ]
   },
   {
     "id": 62,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "حلل المسار المهني لربيع من البداية حتى الآن.",
-    "answerAr": "يمكن تقسيم المسار إلى مراحل:\n\n**المرحلة الأولى: التأسيس الأكاديمي**\n\nبدأ من دراسة Business Information Systems، واكتسب خلفية تجمع بين التكنولوجيا وإدارة الأعمال وتحليل الأنظمة.\n\n**المرحلة الثانية: تعلم تطوير الويب**\n\nاتجه إلى HTML وCSS وJavaScript، ثم React.js، وبدأ في بناء تطبيقات الويب.\n\n**المرحلة الثالثة: التخصص في Frontend**\n\nتوسع في React وRedux وTypeScript وNext.js وTailwind CSS.\n\n**المرحلة الرابعة: التوسع إلى Full Stack**\n\nبدأ في التعامل مع Node.js وExpress.js وMongoDB وبناء REST APIs.\n\n**المرحلة الخامسة: تطوير الخبرة العملية**\n\nشارك في تدريبات ومشروعات تقنية مثل Digital Fortress وDarwish & Co.، وعمل على أنظمة تتضمن متطلبات Backend وأمان وعمليات قواعد بيانات.\n\n**المرحلة السادسة: الذكاء الاصطناعي والـ Cloud**\n\nتوسع في AI-Based Software Development وAWS وDocker وKubernetes، وبدأ العمل على أفكار تطبيقات تعتمد على الذكاء الاصطناعي.\n\n**المرحلة الحالية: بناء هوية هندسية متكاملة**\n\nأصبح اهتمامه يتجه نحو بناء منتجات برمجية متكاملة، وتحسين Architecture وجودة الكود، وتطوير قدراته في System Design وCloud Computing.",
+    "questionAr": "حلل المسار المهني لمحمد من البداية حتى الآن.",
+    "answerAr": "يمكن تقسيم المسار إلى مراحل:\n\n**المرحلة الأولى: التأسيس الأكاديمي**\n\nبدأ من دراسة Management Information Systems، واكتسب خلفية تجمع بين التكنولوجيا وإدارة الأعمال وتحليل الأنظمة.\n\n**المرحلة الثانية: تعلم تطوير الويب**\n\nاتجه إلى HTML وCSS وJavaScript، ثم React.js، وبدأ في بناء تطبيقات الويب.\n\n**المرحلة الثالثة: التخصص في Frontend**\n\nتوسع في React وRedux وTypeScript وNext.js وTailwind CSS.\n\n**المرحلة الرابعة: التوسع إلى Full Stack**\n\nبدأ في التعامل مع Node.js وExpress.js وMongoDB وبناء REST APIs.\n\n**المرحلة الخامسة: تطوير الخبرة العملية**\n\nشارك في تدريبات ومشروعات تقنية مثل Digital Fortress وDarwish & Co.، وعمل على أنظمة تتضمن متطلبات Backend وأمان وعمليات قواعد بيانات.\n\n**المرحلة السادسة: الذكاء الاصطناعي والـ Cloud**\n\nتوسع في AI-Based Software Development وAWS وDocker وKubernetes، وبدأ العمل على أفكار تطبيقات تعتمد على الذكاء الاصطناعي.\n\n**المرحلة الحالية: بناء هوية هندسية متكاملة**\n\nأصبح اهتمامه يتجه نحو بناء منتجات برمجية متكاملة، وتحسين Architecture وجودة الكود، وتطوير قدراته في System Design وCloud Computing.",
     "status": "INFERRED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "profile",
       "experience",
@@ -830,12 +834,12 @@
   {
     "id": 63,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه نقاط القوة الأساسية في خبرة ربيع؟",
+    "questionAr": "إيه نقاط القوة الأساسية في خبرة محمد؟",
     "answerAr": "من خلال المعلومات المتاحة:\n\n1. تنوع الخبرة بين Frontend وBackend.\n2. تركيز جيد على React وNext.js.\n3. استخدام TypeScript.\n4. القدرة على بناء تطبيقات متكاملة.\n5. خبرة في قواعد بيانات متنوعة.\n6. التعامل مع Authentication وAuthorization.\n7. اهتمام بالـ Architecture.\n8. تجربة في تطبيقات الذكاء الاصطناعي.\n9. اهتمام بالتعلم المستمر.\n10. تنوع المشاريع التي عمل عليها.",
     "status": "INFERRED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "profile",
       "career"
@@ -848,8 +852,8 @@
     "answerAr": "دي توصيات تطوير مهنية، وليست بالضرورة نقاط ضعف مثبتة:\n\n- التعمق في System Design.\n- تحسين فهم Distributed Systems.\n- التعمق في Database Optimization.\n- التوسع في Testing Strategies.\n- التعمق في Advanced AWS Architecture.\n- تحسين خبرة Production Deployment.\n- دراسة Observability وMonitoring.\n- التعمق في Security Engineering.\n- تطوير مهارات Technical Communication.\n- توثيق الإنجازات بالأرقام والنتائج.",
     "status": "INFERRED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "profile",
       "experience",
@@ -863,8 +867,8 @@
     "answerAr": "من ناحية التوجه المهني، Frontend Engineer هو الوصف الأقرب لتركيزه الأساسي.\n\nلكن امتلاكه خبرة في Node.js وExpress وMongoDB يسمح له بتقديم نفسه أيضًا كـ Full Stack Developer.\n\nأفضل وصف مهني يجمع الاثنين:\n\n**Full Stack Software Engineer | React.js & Next.js Specialist**",
     "status": "INFERRED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "profile",
       "experience",
@@ -875,26 +879,25 @@
     "id": 66,
     "section": "القسم الأول: التعريف الشخصي",
     "questionAr": "إيه أفضل 3 مشاريع يعرضها في مقابلة عمل؟",
-    "answerAr": "بالنسبة لوظيفة Frontend أو Full Stack، يمكن اختيار:\n\n**1. ATHAR**\n\nلإظهار خبرته في React Native وTypeScript والتكامل مع Firebase وإدارة البيانات والتنزيلات.\n\n**2. Full Stack E-Commerce**\n\nلإظهار قدرته على بناء تطبيق ويب متكامل باستخدام MERN Stack.\n\n**3. EduSphere أو Pharmacy POS**\n\nلإظهار قدرته على التعامل مع الأنظمة الإدارية والـ Dashboards والعمليات التجارية المعقدة.\n\nأما لو الوظيفة Backend، فمن الأفضل تقديم ImpersonaGuard وSanad Transactional Booking Engine ضمن أبرز المشروعات ذات الصلة.",
+    "answerAr": "بالنسبة لوظيفة Backend أو Full Stack، فإن أفضل 3 مشاريع هي:\n\n1. **منصة Avicena (Avicena Platform):** لإظهار مهارات هندسة الـ Backend، الاتصال الفوري بـ WebSockets، دمج الذكاء الاصطناعي، والـ Containerization عبر Docker.\n2. **تطبيق FitMate AI:** لإبراز قدرته على دمج نماذج الـ AI وبناء تطبيقات تفاعلية متكاملة لإدارة التغذية والتمارين.\n3. **محرك ImpersonaGuard:** لإظهار مهاراته في الأمان السيبراني، وفحص التهديدات وعناوين الـ URL المشبوهة، وتحليل الأنماط الخبيثة.",
     "status": "INFERRED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "profile",
-      "experience",
+      "projects",
       "career"
     ]
   },
   {
     "id": 67,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "لو شركة بتدور على React Developer، ليه ربيع مناسب؟",
+    "questionAr": "لو شركة بتدور على React Developer، ليه محمد مناسب؟",
     "answerAr": "لأنه يمتلك خبرة في React.js وTypeScript وRedux Toolkit وTailwind CSS، وعمل على مشروعات متعددة تشمل التجارة الإلكترونية ولوحات التحكم والمنصات التعليمية.\n\nكما أن معرفته بالـ Backend تساعده على فهم تكامل الواجهة مع الخدمات الخلفية، والتعامل مع APIs وحالات البيانات والأخطاء.",
     "status": "INFERRED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "profile",
       "experience",
@@ -908,8 +911,8 @@
     "answerAr": "مسار مقترح:\n\n**المرحلة الأولى: Advanced Frontend Engineering**\n\nالتعمق في React وNext.js وTypeScript والأداء والاختبارات.\n\n**المرحلة الثانية: Full Stack Architecture**\n\nالتوسع في تصميم Backend Systems وDatabase Architecture وAuthentication وSecurity.\n\n**المرحلة الثالثة: Cloud Engineering**\n\nتعميق الخبرة في AWS وDocker وKubernetes وCI/CD.\n\n**المرحلة الرابعة: System Design**\n\nدراسة تصميم الأنظمة القابلة للتوسع والتعامل مع Distributed Systems.\n\n**المرحلة الخامسة: AI-Powered Applications**\n\nدمج الذكاء الاصطناعي مع تطبيقات الويب وبناء منتجات تعتمد على LLMs وAI Agents.\n\n---\n\n# القسم الحادي عشر: الأسئلة غير المباشرة",
     "status": "INFERRED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "profile",
       "experience",
@@ -919,12 +922,12 @@
   {
     "id": 69,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "لو عايز أعمل مشروع مشابه لـ ATHAR، هل ربيع عنده خبرة تساعدني؟",
-    "answerAr": "نعم، لديه خبرة مرتبطة بتطوير تطبيقات React Native وExpo وTypeScript والتكامل مع Firebase.\n\nيمكنه المساهمة في تصميم هيكل التطبيق، وتنفيذ الواجهات، وإدارة البيانات، والتعامل مع الإشعارات والتنزيلات والوظائف التي تحتاج إلى العمل دون اتصال بالإنترنت.",
+    "questionAr": "لو عايز أعمل مشروع مشابه لـ Avicena أو ImpersonaGuard، هل محمد عنده خبرة تساعدني؟",
+    "answerAr": "نعم، يمتلك محمد علي خبرة عملية متقدمة في بناء تطبيقات ومنصات مشابهة:\n- في المشاريع الشبيهة بـ Avicena: بناء معمارية الـ Backend بـ Node.js/TypeScript، واستخدام PostgreSQL، وإدارة الاتصال اللحظي بـ WebSockets، وتشغيل الخدمات بالحاويات Docker.\n- في المشاريع الشبيهة بـ ImpersonaGuard: بناء محركات الفحص الأمني، والتحقق الصارم من المدخلات، وتحليل المخاطر واكتشاف التهديدات.",
     "status": "INFERRED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects"
     ]
@@ -932,14 +935,14 @@
   {
     "id": 70,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع يقدر يساعدني في مشروع MERN Stack؟",
-    "answerAr": "نعم.\n\nلديه خبرة في React وTypeScript وNode.js وExpress.js وMongoDB.\n\nويمكنه المساهمة في بناء Frontend وBackend وربطهما، وتنفيذ المصادقة وإدارة البيانات وواجهات REST APIs.",
+    "questionAr": "هل محمد يقدر يساعدني في مشروع Full Stack أو Backend؟",
+    "answerAr": "نعم، يستطيع محمد المساعدة بكفاءة عالية في مشاريع الـ Backend والـ Full-Stack باستخدام Node.js، Express، TypeScript، PostgreSQL، MongoDB، Redis، وDocker.",
     "status": "INFERRED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
-      "projects"
+      "skills"
     ]
   },
   {
@@ -949,8 +952,8 @@
     "answerAr": "نعم، لديه خبرة في Next.js App Router وServer Components وClient Components وSSR وSSG وData Fetching.\n\nويمكنه المساعدة في تحليل المشكلات المرتبطة بالـ Routing والـ Rendering والـ API Integration والـ SEO والـ Build.",
     "status": "INFERRED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects"
     ]
@@ -962,8 +965,8 @@
     "answerAr": "نعم، يمتلك المهارات الأساسية اللازمة لذلك باستخدام Node.js وExpress.js وMongoDB.\n\nيمكن بناء APIs خاصة بالتسجيل والدخول وإدارة المستخدمين والبيانات والإشعارات وربطها بتطبيق React Native.",
     "status": "INFERRED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects"
     ]
@@ -975,8 +978,8 @@
     "answerAr": "نعم، هذا يجمع بين ثلاثة مجالات تعامل معها:\n\n- React وNext.js لتطوير الواجهة.\n- Node.js وExpress لتطوير Backend.\n- Gemini API وLLMs وOCR وتقنيات AI لتوفير الوظائف الذكية.\n\nويمكن استخدام هذه المهارات في بناء تطبيقات تعتمد على الذكاء الاصطناعي من البداية إلى النهاية.\n\n---\n\n# القسم الثاني عشر: أسئلة حساسة ودقة المعلومات\n\nهذا القسم مهم جدًا؛ لأنه يمنع Rabea AI من تقديم معلومات خاطئة عن صاحبه.",
     "status": "INFERRED",
     "access": "PROFESSIONAL",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects",
       "ai"
@@ -985,12 +988,12 @@
   {
     "id": 74,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع خبير في Python؟",
+    "questionAr": "هل محمد خبير في Python؟",
     "answerAr": "لا توجد معلومات كافية لوصفه بأنه Python Developer متخصص.\n\nلديه تعامل مع Python في سياق مكونات مرتبطة بمشروع ImpersonaGuard وFastAPI، لكن تخصصه الأساسي في تطوير الويب باستخدام JavaScript وTypeScript.",
     "status": "UNCONFIRMED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -998,23 +1001,23 @@
   {
     "id": 75,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع اشتغل في شركة معينة؟",
+    "questionAr": "هل محمد اشتغل في شركة معينة؟",
     "answerAr": "يجب التحقق من سجل الخبرات المهنية قبل الإجابة.\n\nإذا كانت الشركة موجودة في قاعدة المعرفة، يوضح المساعد طبيعة العلاقة وتاريخها، سواء كانت وظيفة أو تدريبًا أو عملًا تطوعيًا.\n\nإذا لم تكن موجودة، يجب أن يقول إنه لا يمتلك معلومة موثقة عنها.",
     "status": "UNCONFIRMED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": []
   },
   {
     "id": 76,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع حاصل على شهادة معينة؟",
+    "questionAr": "هل محمد حاصل على شهادة معينة؟",
     "answerAr": "يجب التفريق بين:\n\n- شهادة مكتملة.\n- دبلومة مكتملة.\n- دورة تدريبية.\n- برنامج تدريبي.\n- شهادة قيد الدراسة.\n- شهادة مخطط للحصول عليها.\n\nلا يجوز تحويل دورة تدريبية إلى شهادة احترافية، أو تقديم شهادة مخطط لها باعتبارها مكتملة.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "certification"
     ]
@@ -1022,23 +1025,23 @@
   {
     "id": 77,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه آخر مشروع اشتغل عليه ربيع؟",
-    "answerAr": "يجب الاعتماد على أحدث تحديث موثق للمشروعات.\n\nولا ينبغي للمساعد افتراض أن المشروع الأحدث في قاعدة المعرفة هو بالضرورة آخر مشروع يعمل عليه ربيع حاليًا.",
+    "questionAr": "إيه آخر مشروع اشتغل عليه محمد؟",
+    "answerAr": "يجب الاعتماد على أحدث تحديث موثق للمشروعات.\n\nولا ينبغي للمساعد افتراض أن المشروع الأحدث في قاعدة المعرفة هو بالضرورة آخر مشروع يعمل عليه محمد حاليًا.",
     "status": "UNCONFIRMED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": []
   },
   {
     "id": 78,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "كام سنة خبرة عند ربيع؟",
+    "questionAr": "كام سنة خبرة عند محمد؟",
     "answerAr": "لا ينبغي للمساعد تقديم رقم عشوائي.\n\nيجب حساب الخبرة وفق الفترات المهنية الموثقة، مع التمييز بين:\n\n- الخبرة الوظيفية.\n- التدريب.\n- العمل التطوعي.\n- المشاريع الشخصية.\n- المشاريع الأكاديمية.\n\nوالأفضل عرض الخط الزمني للخبرات بدل اختزال كل ذلك في رقم واحد قد يكون مضللًا.",
     "status": "UNCONFIRMED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "experience",
       "career"
@@ -1047,23 +1050,23 @@
   {
     "id": 79,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع نفذ مشاريع لعملاء؟",
+    "questionAr": "هل محمد نفذ مشاريع لعملاء؟",
     "answerAr": "توجد مشروعات ومواقع مرتبطة بأعمال تجارية وعلامات ومبادرات، لكن يجب التحقق من طبيعة كل مشروع قبل وصفه بأنه مشروع عميل مدفوع.",
     "status": "UNCONFIRMED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": []
   },
   {
     "id": 80,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "إيه رقم تليفون ربيع أو بيانات التواصل الخاصة به؟",
-    "answerAr": "يجب ألا يعرض المساعد البيانات الشخصية الحساسة بشكل تلقائي.\n\nيمكنه توجيه الزائر إلى قنوات التواصل المهنية العامة التي اختار ربيع نشرها، مثل LinkedIn أو Portfolio أو GitHub.\n\n---\n\n# القسم الثالث عشر: أسئلة إضافية متقدمة\n\nهذه الأسئلة تضيف قيمة حقيقية للشات بوت، خصوصًا عند استخدامه من مسؤولي التوظيف أو العملاء.",
+    "questionAr": "إيه رقم هاتف أو تليفون محمد أو بيانات التواصل الخاصة به؟",
+    "answerAr": "يجب ألا يعرض المساعد البيانات الشخصية الحساسة مثل رقم الهاتف الشخصي بشكل مباشر حفاظاً على الخصوصية.\n\nيمكن للزائر التواصل المهني مع محمد علي عبر قنواته العامة المعتمدة:\n- لينكد إن: https://www.linkedin.com/in/mohamed-ali409\n- مستودع جيت هاب: https://github.com/Mohamedali409\n- أو من خلال نموذج التواصل المتاح في الموقع.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "contact"
     ]
@@ -1071,12 +1074,12 @@
   {
     "id": 81,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "ما الفرق بين مشاريع ربيع الأكاديمية والمشاريع العملية؟",
+    "questionAr": "ما الفرق بين مشاريع محمد الأكاديمية والمشاريع العملية؟",
     "answerAr": "المشاريع الأكاديمية ارتبطت بمسيرته التعليمية، مثل Crime Prediction System.\n\nأما المشاريع العملية والشخصية فتشمل تطبيقات مثل ATHAR وE-Commerce وMediMind وImpersonaGuard.\n\nالمشاريع الأكاديمية تساعد على إثبات الأساس النظري، بينما المشاريع العملية توضح كيفية تطبيق المهارات في بناء أنظمة حقيقية.",
     "status": "INFERRED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects"
     ]
@@ -1084,12 +1087,12 @@
   {
     "id": 82,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع يستطيع تطوير منتج من الصفر؟",
+    "questionAr": "هل محمد يستطيع تطوير منتج من الصفر؟",
     "answerAr": "يمتلك المهارات اللازمة للمساهمة في دورة تطوير منتج ويب متكامل، بدءًا من تصميم الواجهة، مرورًا ببناء Backend APIs وقاعدة البيانات، وحتى التكامل والاختبار والنشر.\n\nلكن حجم المنتج وتعقيده وعدد أعضاء الفريق والوقت المطلوب عوامل تحدد نطاق مسؤوليته.",
     "status": "INFERRED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "projects"
     ]
@@ -1101,8 +1104,8 @@
     "answerAr": "تعامل مع مفاهيم SEO في سياق تطوير مواقع الويب باستخدام Next.js، ومنها Metadata وServer-Side Rendering وتحسين ظهور الصفحات لمحركات البحث.\n\nكما عمل على مراجعات مرتبطة بأداء المواقع وتهيئتها لمحركات البحث وGoogle AdSense.",
     "status": "UNCONFIRMED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -1114,8 +1117,8 @@
     "answerAr": "نعم، يستخدم Git وGitHub ضمن بيئة تطوير البرمجيات، ويحتفظ بمشروعات ومستودعات برمجية على GitHub.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -1127,8 +1130,8 @@
     "answerAr": "نعم، من خلال React Native وExpo وTypeScript، خصوصًا مشروع ATHAR.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -1140,8 +1143,8 @@
     "answerAr": "نعم، عمل على لوحات تحكم وأنظمة إدارية ضمن مشروعات متعددة، مثل المنصات التعليمية وأنظمة إدارة الصيدليات والتجارة الإلكترونية.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -1153,8 +1156,8 @@
     "answerAr": "وردت وظائف مدفوعات ضمن نطاق بعض مشروعاته، مثل EduSphere، لكن لا توجد تفاصيل كافية عن بوابات الدفع التي استخدمها أو طبيعة تكاملها؛ لذلك يجب عدم اختراع أسماء مزودي خدمات.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills",
       "projects"
@@ -1167,8 +1170,8 @@
     "answerAr": "تعامل مع مفاهيم أمن التطبيقات، منها:\n\n- JWT.\n- Password Hashing.\n- Authentication.\n- Authorization.\n- RBAC.\n- Input Validation.\n- OWASP.\n- حماية واجهات APIs.\n\nكما ارتبط أحد مشروعاته بمجال تقييم المخاطر والأمن الرقمي.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills",
       "architecture"
@@ -1181,8 +1184,8 @@
     "answerAr": "من الأدوات والتقنيات المعروفة في بيئة عمله:\n\n- VS Code.\n- Git.\n- GitHub.\n- Postman.\n- Docker.\n- Ubuntu.\n- MongoDB.\n- Firebase.\n- AWS.\n- Android Studio.\n- Expo.\n- Minikube.\n- Helm.\n- Prometheus.\n\nوقد تتغير الأدوات التي يعتمد عليها حسب المشروع.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "skills"
     ]
@@ -1194,8 +1197,8 @@
     "answerAr": "يميل إلى المشروعات التي تتضمن بناء تطبيقات ويب متكاملة، وواجهات حديثة، وأنظمة إدارة، ومنصات رقمية، وتطبيقات تستفيد من الذكاء الاصطناعي.\n\nكما يهتم بالمشروعات التي تتطلب تنظيمًا هندسيًا جيدًا وقابلية للصيانة والتوسع.\n\n---\n\n# القسم الرابع عشر: معلومات تقنية وشخصية إضافية",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "career"
     ]
@@ -1203,23 +1206,23 @@
   {
     "id": 91,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "ما جهاز العمل الأساسي الذي يستخدمه ربيع؟",
+    "questionAr": "ما جهاز العمل الأساسي الذي يستخدمه محمد؟",
     "answerAr": "[محتوى خاص محجوب عن قاعدة المعرفة العامة.]",
     "status": "HISTORICAL",
     "access": "PRIVATE",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": []
   },
   {
     "id": 92,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع مهتم بالتصوير وصناعة الفيديو؟",
+    "questionAr": "هل محمد مهتم بالتصوير وصناعة الفيديو؟",
     "answerAr": "[محتوى خاص محجوب عن قاعدة المعرفة العامة.]",
     "status": "HISTORICAL",
     "access": "PRIVATE",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "content"
     ]
@@ -1227,12 +1230,12 @@
   {
     "id": 93,
     "section": "القسم الأول: التعريف الشخصي",
-    "questionAr": "هل ربيع يعمل على تطوير علامته الشخصية؟",
+    "questionAr": "هل محمد يعمل على تطوير علامته الشخصية؟",
     "answerAr": "نعم، لديه حضور مهني على LinkedIn وGitHub وPortfolio، بالإضافة إلى مشروع المحتوى التعليمي خمسة برمجة بالبلدي.\n\nويعمل على إبراز مهاراته ومشروعاته وشهاداته المهنية.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "content"
     ]
@@ -1241,11 +1244,11 @@
     "id": 94,
     "section": "القسم الأول: التعريف الشخصي",
     "questionAr": "ما الرؤية المهنية التي يمكن استنتاجها من مشروعاته؟",
-    "answerAr": "من تنوع المشروعات، يمكن استنتاج أن ربيع يهتم ببناء حلول تقنية متكاملة تجمع بين تجربة المستخدم والوظائف الخلفية وإدارة البيانات.\n\nكما يظهر اهتمامه بدمج الذكاء الاصطناعي مع تطبيقات الويب، والتوسع في Cloud Computing وSystem Design.\n\nهذه قراءة لمساره وليست تصريحًا رسميًا منه عن هدف وظيفي نهائي.",
+    "answerAr": "من تنوع المشروعات، يمكن استنتاج أن محمد يهتم ببناء حلول تقنية متكاملة تجمع بين تجربة المستخدم والوظائف الخلفية وإدارة البيانات.\n\nكما يظهر اهتمامه بدمج الذكاء الاصطناعي مع تطبيقات الويب، والتوسع في Cloud Computing وSystem Design.\n\nهذه قراءة لمساره وليست تصريحًا رسميًا منه عن هدف وظيفي نهائي.",
     "status": "INFERRED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "profile",
       "career"
@@ -1255,11 +1258,11 @@
     "id": 95,
     "section": "القسم الأول: التعريف الشخصي",
     "questionAr": "ما أفضل طريقة للتواصل المهني معه؟",
-    "answerAr": "يمكن توجيه المهتمين إلى قنواته المهنية:\n\n- Portfolio: https://rabea-shaban.vercel.app/\n- LinkedIn: https://www.linkedin.com/in/rabea-sh-elzayat/\n- GitHub: https://github.com/rabea-shaban\n\n---",
+    "answerAr": "يمكن توجيه المهتمين إلى قنواته المهنية المعتمدة:\n\n- موقع الويب الشخصي: https://mohamed-ali-portfolio.vercel.app\n- لينكد إن: https://www.linkedin.com/in/mohamed-ali409\n- مستودع جيت هاب: https://github.com/Mohamedali409\n- نموذج التواصل: متاح داخل الموقع.",
     "status": "USER_REPORTED",
     "access": "PUBLIC",
-    "source": "User-provided Rabea AI 95 Q&A document",
-    "lastUpdated": "2026-11-19",
+    "source": "Mohamed Ali Verified Portfolio Knowledge",
+    "lastUpdated": "2026-11-20",
     "tags": [
       "contact"
     ]

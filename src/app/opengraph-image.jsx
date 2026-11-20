@@ -1,8 +1,6 @@
 import { ImageResponse } from 'next/og';
-import fs from 'fs';
-import path from 'path';
 
-export const alt = 'Rabea Shaban (ربيع شعبان) | Full Stack Software Engineer | MERN Stack';
+export const alt = 'Mohamed Ali (محمد علي) | Full-Stack Developer | Backend-Focused Software Engineer';
 export const size = {
   width: 1200,
   height: 630,
@@ -10,17 +8,6 @@ export const size = {
 export const contentType = 'image/png';
 
 export default async function Image() {
-  let profileBase64 = '';
-  try {
-    const imagePath = path.join(process.cwd(), 'public', 'profile.jpg');
-    if (fs.existsSync(imagePath)) {
-      const imageBuffer = fs.readFileSync(imagePath);
-      profileBase64 = `data:image/jpeg;base64,${imageBuffer.toString('base64')}`;
-    }
-  } catch (e) {
-    console.error('Failed to load profile image for OG:', e);
-  }
-
   return new ImageResponse(
     (
       <div
@@ -70,7 +57,7 @@ export default async function Image() {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            maxWidth: '660px',
+            maxWidth: '680px',
           }}
         >
           {/* Top Pill Badge */}
@@ -84,7 +71,7 @@ export default async function Image() {
               border: '1px solid rgba(96, 165, 250, 0.35)',
               borderRadius: '9999px',
               padding: '8px 22px',
-              fontSize: '16px',
+              fontSize: '15px',
               fontWeight: 700,
               color: '#60a5fa',
               marginBottom: '20px',
@@ -92,7 +79,7 @@ export default async function Image() {
               textTransform: 'uppercase',
             }}
           >
-            MERN Stack • Next.js • AWS
+            Backend Architecture • DevOps • AI Integration
           </div>
 
           {/* Main Name */}
@@ -106,7 +93,7 @@ export default async function Image() {
               color: '#ffffff',
             }}
           >
-            Rabea Shaban
+            Mohamed Ali
           </div>
 
           {/* Arabic Name Subtitle */}
@@ -118,19 +105,19 @@ export default async function Image() {
               marginBottom: '16px',
             }}
           >
-            ربيع شعبان
+            محمد علي
           </div>
 
           {/* Professional Role */}
           <div
             style={{
-              fontSize: '28px',
+              fontSize: '24px',
               fontWeight: 600,
               color: '#cbd5e1',
               marginBottom: '24px',
             }}
           >
-            Full Stack Software Engineer
+            Full-Stack Developer | Backend-Focused Software Engineer
           </div>
 
           {/* Tech Stack Chips */}
@@ -142,7 +129,7 @@ export default async function Image() {
               marginBottom: '28px',
             }}
           >
-            {['React.js', 'Next.js', 'Node.js', 'TypeScript', 'MongoDB', 'AWS', 'Docker'].map((tech) => (
+            {['Node.js', 'Express.js', 'TypeScript', 'PostgreSQL', 'MongoDB', 'Redis', 'Docker', 'AWS'].map((tech) => (
               <div
                 key={tech}
                 style={{
@@ -163,13 +150,13 @@ export default async function Image() {
           {/* Domain */}
           <div
             style={{
-              fontSize: '18px',
+              fontSize: '16px',
               fontWeight: 500,
               color: '#64748b',
               letterSpacing: '0.5px',
             }}
           >
-            https://www.rabea-shaban.com
+            https://github.com/Mohamedali409
           </div>
         </div>
 
@@ -185,8 +172,8 @@ export default async function Image() {
           {/* Glowing Avatar Border */}
           <div
             style={{
-              width: '330px',
-              height: '330px',
+              width: '320px',
+              height: '320px',
               borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
@@ -196,36 +183,42 @@ export default async function Image() {
               boxShadow: '0 20px 50px rgba(59, 130, 246, 0.35)',
             }}
           >
-            {profileBase64 ? (
-              <img
-                src={profileBase64}
-                alt="Rabea Shaban"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  border: '4px solid #0d1322',
-                }}
-              />
-            ) : (
+            <div
+              style={{
+                width: '100%',
+                height: '100%',
+                borderRadius: '50%',
+                background: '#0f172a',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                border: '4px solid #1e293b',
+              }}
+            >
               <div
                 style={{
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: '50%',
-                  background: '#1e293b',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '48px',
+                  fontSize: '84px',
                   fontWeight: 900,
-                  color: '#60a5fa',
+                  color: '#38bdf8',
+                  letterSpacing: '3px',
                 }}
               >
-                RS
+                MA
               </div>
-            )}
+              <div
+                style={{
+                  fontSize: '14px',
+                  fontWeight: 700,
+                  color: '#94a3b8',
+                  letterSpacing: '2px',
+                  textTransform: 'uppercase',
+                  marginTop: '-4px',
+                }}
+              >
+                Engineer
+              </div>
+            </div>
           </div>
         </div>
       </div>

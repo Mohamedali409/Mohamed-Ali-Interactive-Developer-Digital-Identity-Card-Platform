@@ -6,10 +6,10 @@ import { MessageCircle } from "lucide-react";
 import { useSettings } from "@/context/SettingsContext";
 
 const ChatWindow = lazy(() => import("./RabeaAIChatWindow"));
-const SEEN_EVENT = "rabea-ai-seen-change";
+const SEEN_EVENT = "mohamed-ai-seen-change";
 
 function getSeenState() {
-  try { return window.localStorage.getItem("rabea-ai-seen") === "true"; }
+  try { return window.localStorage.getItem("mohamed-ai-seen") === "true"; }
   catch { return false; }
 }
 
@@ -31,13 +31,13 @@ export default function RabeaAIChat() {
   }, [open, initialized]);
 
   const openChat = () => {
-    try { window.localStorage.setItem("rabea-ai-seen", "true"); } catch { /* The indicator is optional when storage is disabled. */ }
+    try { window.localStorage.setItem("mohamed-ai-seen", "true"); } catch { /* The indicator is optional when storage is disabled. */ }
     window.dispatchEvent(new Event(SEEN_EVENT));
     setInitialized(true);
     setOpen(true);
   };
 
-  const label = settings.language === "ar" ? "اسأل ربيع AI" : "Ask Rabea AI";
+  const label = settings.language === "ar" ? "اسأل محمد AI" : "Ask Mohamed AI";
 
   return (
     <>
@@ -65,7 +65,7 @@ export default function RabeaAIChat() {
           aria-haspopup="dialog"
           title={label}
         >
-          {open ? <MessageCircle className="h-6 w-6" /> : <Image src="/rabea-ai-robot.png" alt="" aria-hidden="true" width={1024} height={1024} priority className="h-12 w-12 object-contain" />}
+          {open ? <MessageCircle className="h-6 w-6" /> : <Image src="/mohamed-ai-robot.svg" alt="" aria-hidden="true" width={1024} height={1024} priority className="h-12 w-12 object-contain" />}
           {!hasSeen && !open && (
             <span className="absolute -right-0.5 -top-0.5 h-3.5 w-3.5 rounded-full border-2 border-background bg-emerald-500" aria-hidden="true" />
           )}

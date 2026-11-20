@@ -10,9 +10,9 @@ export const useSEO = ({ title, description, keywords, canonicalUrl }) => {
 
     // 1. Update Document Title
     if (title) {
-      document.title = title.includes("Rabea Shaban") || title.includes("ربيع شعبان")
+      document.title = title.includes("Mohamed Ali") || title.includes("محمد علي")
         ? title
-        : (isAr ? `${title} | ربيع شعبان` : `${title} | Rabea Shaban`);
+        : (isAr ? `${title} | محمد علي` : `${title} | Mohamed Ali`);
     }
 
     // Helper to create or update meta tag
@@ -33,7 +33,7 @@ export const useSEO = ({ title, description, keywords, canonicalUrl }) => {
       let link = document.querySelector(`link[rel="${rel}"]`);
       if (!link) {
         link = document.createElement("link");
-        link.setAttribute("rel", rel);
+        link.setAttribute(rel, href);
         document.head.appendChild(link);
       }
       link.setAttribute("href", href);
@@ -44,18 +44,18 @@ export const useSEO = ({ title, description, keywords, canonicalUrl }) => {
     setMetaTag("name", "keywords", keywords);
 
     // 3. OpenGraph Tags
-    setMetaTag("property", "og:title", title ? (title.includes("Rabea Shaban") ? title : `${title} | Rabea Shaban`) : undefined);
+    setMetaTag("property", "og:title", title ? (title.includes("Mohamed Ali") || title.includes("محمد علي") ? title : `${title} | Mohamed Ali`) : undefined);
     setMetaTag("property", "og:description", description);
     setMetaTag("property", "og:locale", isAr ? "ar_AR" : "en_US");
-    setMetaTag("property", "og:site_name", "Rabea Shaban");
+    setMetaTag("property", "og:site_name", isAr ? "محمد علي" : "Mohamed Ali");
 
     // 4. Twitter Card Tags
-    setMetaTag("name", "twitter:title", title ? (title.includes("Rabea Shaban") ? title : `${title} | Rabea Shaban`) : undefined);
+    setMetaTag("name", "twitter:title", title ? (title.includes("Mohamed Ali") || title.includes("محمد علي") ? title : `${title} | Mohamed Ali`) : undefined);
     setMetaTag("name", "twitter:description", description);
 
     // 5. Canonical URL
     const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
-    const currentBase = "https://www.rabea-shaban.com";
+    const currentBase = "https://mohamed-ali-portfolio.vercel.app";
     const canonicalTarget = canonicalUrl || `${currentBase}${currentPath || '/'}`;
 
     setLinkTag("canonical", canonicalTarget);

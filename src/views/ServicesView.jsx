@@ -17,14 +17,14 @@ const ServicesView = () => {
 
   useSEO({
     title: isAr 
-      ? "الخدمات والحلول | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
-      : "Services & Solutions | Rabea Shaban — Full Stack Software Engineer",
+      ? "الخدمات والحلول | محمد علي — مطور Full-Stack ومهندس برمجيات" 
+      : "Services & Solutions | Mohamed Ali — Full-Stack Developer",
     description: isAr
-      ? "خدمات هندسة برمجية متقدمة: بناء تطبيقات ويب متكاملة، واجهات برمجة التطبيقات REST APIs، والنشر السحابي على AWS وإدارة الحاويات Docker و Kubernetes."
-      : "Professional software engineering services by Rabea Shaban: Full Stack Development, React & Next.js UI, Node.js REST APIs, Cloud Deployment, and DevOps.",
+      ? "خدمات هندسة برمجية متقدمة: بناء الأنظمة الخلفية، وتطوير REST APIs، ونمذجة قواعد البيانات والتخزين المؤقت بـ Redis، وحاويات Docker، وسحابة AWS، ودمج تقنيات الذكاء الاصطناعي."
+      : "Professional software engineering services by Mohamed Ali: Backend Development & REST APIs, Full-Stack Web Development, Database Architecture, Docker Containerization, AWS Deployment, and AI Integration.",
     keywords: isAr
-      ? "خدمات ربيع شعبان, تطوير تطبيقات ويب, مهندس برمجيات, استشارات سحابية AWS"
-      : "Rabea Shaban Services, Full Stack Development, REST APIs, Cloud Deployment AWS, DevOps"
+      ? "خدمات محمد علي, تطوير أنظمة خلفية, مهندس برمجيات, Backend Developer, Node.js, Docker, AWS"
+      : "Mohamed Ali Services, Backend Development, RESTful APIs, Database Design, Docker, AWS Deployment, AI Integration"
   });
 
   return (
@@ -164,13 +164,13 @@ const ServicesView = () => {
             </h2>
             <p className="text-md text-muted-foreground mb-8 max-w-xl mx-auto leading-relaxed">
               {isAr
-                ? "إذا كانت متطلبات مشروعك تحتاج إلى خطة مخصصة، دعنا نتواصل لمناقشة التفاصيل وتصميم الحل الأمثل."
-                : "If your requirements don't fit into standard categories, let's hop on a call to design a customized plan for your project."}
+                ? "إذا كانت متطلبات مشروعك تحتاج إلى خطة معمارية مخصصة، دعنا نتواصل لمناقشة التفاصيل وتصميم الحل الأمثل."
+                : "If your requirements need customized backend architectures or API integrations, let's connect to design the optimal plan for your project."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="shadow-lg">
                 <Link href="/contact">
-                  {isAr ? "حجز استشارة فنية" : "Consultation Call"}
+                  {isAr ? "إرسال رسالة" : "Send Inquiry"}
                   {isRtl ? (
                     <ArrowLeft className="mr-2 h-4 w-4" />
                   ) : (
@@ -179,8 +179,8 @@ const ServicesView = () => {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild className="glass-effect border-border/50">
-                <a href="https://wa.me/201156807072" target="_blank" rel="noopener noreferrer">
-                  {isAr ? "تواصل عبر واتساب" : "WhatsApp Me"}
+                <a href="https://www.linkedin.com/in/mohamed-ali409" target="_blank" rel="noopener noreferrer">
+                  {isAr ? "تواصل عبر LinkedIn" : "Connect on LinkedIn"}
                 </a>
               </Button>
             </div>

@@ -3,39 +3,38 @@ import SiteChrome from "@/components/SiteChrome";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 
 export const metadata = {
-  metadataBase: new URL("https://www.rabea-shaban.com"),
+  metadataBase: new URL("https://mohamed-ali-portfolio.vercel.app"),
   title: {
-    default: "Rabea Shaban | Full Stack Software Engineer | MERN Stack",
-    template: "%s | Rabea Shaban",
+    default: "Mohamed Ali | Full-Stack Developer | Backend-Focused Software Engineer",
+    template: "%s | Mohamed Ali",
   },
   description:
-    "Rabea Shaban — Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
+    "Mohamed Ali — Full-Stack Developer and Backend-Focused Software Engineer specializing in Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, AWS, and AI integration.",
   keywords: [
-    "Rabea Shaban",
-    "ربيع شعبان",
-    "Rabea Shaban Software Engineer",
-    "Rabea Shaban Developer",
-    "Rabea Shaban Full Stack Developer",
-    "Rabea Shaban MERN Stack Developer",
-    "Rabea Shaban React Developer",
-    "Rabea Shaban Next.js Developer",
-    "Full Stack Software Engineer",
+    "Mohamed Ali",
+    "محمد علي",
+    "Mohamed Ali Developer",
+    "Mohamed Ali Software Engineer",
+    "Mohamed Ali Full Stack Developer",
+    "Mohamed Ali Backend Engineer",
+    "Backend Developer",
     "Full Stack Developer",
-    "MERN Stack Developer",
-    "React.js Developer",
-    "Next.js Developer",
     "Node.js Developer",
+    "Express.js Developer",
     "TypeScript Developer",
     "JavaScript Developer",
-    "MongoDB Developer",
-    "AWS Developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "Web Developer"
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "Docker",
+    "AWS",
+    "DevOps",
+    "CI/CD",
+    "AI Integration"
   ],
-  authors: [{ name: "Rabea Shaban", url: "https://www.rabea-shaban.com" }],
-  creator: "Rabea Shaban",
-  publisher: "Rabea Shaban",
+  authors: [{ name: "Mohamed Ali", url: "https://mohamed-ali-portfolio.vercel.app" }],
+  creator: "Mohamed Ali",
+  publisher: "Mohamed Ali",
   robots: {
     index: true,
     follow: true,
@@ -48,49 +47,42 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.rabea-shaban.com",
+    canonical: "https://mohamed-ali-portfolio.vercel.app",
   },
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.rabea-shaban.com",
-    siteName: "Rabea Shaban",
-    title: "Rabea Shaban | Full Stack Software Engineer | MERN Stack",
+    url: "https://mohamed-ali-portfolio.vercel.app",
+    siteName: "Mohamed Ali",
+    title: "Mohamed Ali | Full-Stack Developer | Backend-Focused Software Engineer",
     description:
-      "Rabea Shaban — Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
+      "Mohamed Ali — Full-Stack Developer and Backend-Focused Software Engineer specializing in Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, AWS, and AI integration.",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Rabea Shaban (ربيع شعبان) — Full Stack Software Engineer",
+        alt: "Mohamed Ali (محمد علي) — Full-Stack Developer & Backend Software Engineer",
       },
       {
-        url: "/profile.jpg",
-        width: 800,
-        height: 800,
-        alt: "Rabea Shaban (ربيع شعبان) Profile Picture",
+        url: "/mohamed-ali-avatar.svg",
+        width: 400,
+        height: 400,
+        alt: "Mohamed Ali (محمد علي) Profile Avatar",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rabea Shaban | Full Stack Software Engineer | MERN Stack",
+    title: "Mohamed Ali | Full-Stack Developer | Backend-Focused Software Engineer",
     description:
-      "Rabea Shaban — Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
+      "Mohamed Ali — Full-Stack Developer and Backend-Focused Software Engineer specializing in Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, AWS, and AI integration.",
     images: ["/opengraph-image"],
-    creator: "@rabea_sh_elzayat",
-  },
-  verification: {
-    google: [
-      "vnqIpYUy_6-cc_4ZxpTWULbpWGTnJdDtOVTada2zUhc",
-      "nNlwGk53zi-tWlVHmfwrF4yAgkzMN9n_lZji1_cAk9Y"
-    ],
   },
 };
 
@@ -99,59 +91,62 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://www.rabea-shaban.com/#person",
-      "name": "Rabea Shaban",
-      "alternateName": "ربيع شعبان",
-      "jobTitle": "Full Stack Software Engineer",
-      "url": "https://www.rabea-shaban.com/",
-      "image": "https://www.rabea-shaban.com/profile.jpg",
-      "description": "Rabea Shaban is a Full Stack Software Engineer specializing in MERN Stack, React.js, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
+      "@id": "https://mohamed-ali-portfolio.vercel.app/#person",
+      "name": "Mohamed Ali",
+      "alternateName": "محمد علي",
+      "jobTitle": "Full-Stack Developer | Backend-Focused Software Engineer",
+      "url": "https://mohamed-ali-portfolio.vercel.app/",
+      "image": "https://mohamed-ali-portfolio.vercel.app/mohamed-ali-avatar.svg",
+      "description": "Mohamed Ali is a Full-Stack Developer and Backend-Focused Software Engineer specializing in Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, AWS, and AI integration.",
       "inLanguage": ["en", "ar"],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "El Shorouk Academy",
+        "description": "Bachelor of Management Information Systems (2019 – 2023)"
+      },
       "sameAs": [
-        "https://github.com/rabea-shaban",
-        "https://linkedin.com/in/rabea-sh-elzayat",
-        "https://instagram.com/rabea_sh_elzayat",
-        "https://upwork.com/freelancers/~01d2bd68b7d6e8fbce",
-        "https://mostaql.com/u/rabea_elzayat"
+        "https://github.com/Mohamedali409",
+        "https://www.linkedin.com/in/mohamed-ali409"
       ],
       "knowsAbout": [
-        "Full Stack Web Development",
-        "MERN Stack",
-        "React.js",
-        "Next.js",
-        "TypeScript",
-        "JavaScript",
+        "Backend Development",
+        "Full-Stack Web Development",
         "Node.js",
         "Express.js",
+        "TypeScript",
+        "JavaScript",
+        "PostgreSQL",
         "MongoDB",
-        "AWS",
+        "MySQL",
+        "Redis",
+        "RESTful APIs",
+        "Authentication & Authorization",
         "Docker",
-        "Kubernetes",
-        "Terraform",
-        "REST APIs",
-        "System Design",
-        "DevOps"
+        "AWS",
+        "DevOps",
+        "CI/CD",
+        "AI Integration"
       ]
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.rabea-shaban.com/#website",
-      "url": "https://www.rabea-shaban.com/",
-      "name": "Rabea Shaban",
-      "alternateName": "ربيع شعبان",
-      "description": "Rabea Shaban personal portfolio — Full Stack Software Engineer specializing in MERN Stack and modern web technologies.",
+      "@id": "https://mohamed-ali-portfolio.vercel.app/#website",
+      "url": "https://mohamed-ali-portfolio.vercel.app/",
+      "name": "Mohamed Ali",
+      "alternateName": "محمد علي",
+      "description": "Mohamed Ali Developer Portfolio — Full-Stack Developer | Backend-Focused Software Engineer.",
       "inLanguage": ["en", "ar"],
       "publisher": {
-        "@id": "https://www.rabea-shaban.com/#person"
+        "@id": "https://mohamed-ali-portfolio.vercel.app/#person"
       }
     },
     {
       "@type": "ProfilePage",
-      "@id": "https://www.rabea-shaban.com/#profilepage",
-      "url": "https://www.rabea-shaban.com/",
-      "name": "Rabea Shaban | Full Stack Software Engineer | MERN Stack",
+      "@id": "https://mohamed-ali-portfolio.vercel.app/#profilepage",
+      "url": "https://mohamed-ali-portfolio.vercel.app/",
+      "name": "Mohamed Ali | Full-Stack Developer | Backend-Focused Software Engineer",
       "mainEntity": {
-        "@id": "https://www.rabea-shaban.com/#person"
+        "@id": "https://mohamed-ali-portfolio.vercel.app/#person"
       }
     }
   ]

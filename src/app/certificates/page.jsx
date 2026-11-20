@@ -1,30 +1,29 @@
 import CertificatesView from "@/views/CertificatesView";
 
 export const metadata = {
-  title: "Certificates & Credentials | Rabea Shaban — Full Stack Software Engineer",
+  title: "Credentials & Education | Mohamed Ali — Full-Stack Developer",
   description:
-    "Verified professional certifications and technical credentials earned by Rabea Shaban including AWS Certified Cloud Practitioner, AWS Certified Developer - Associate, Meta Front-End Developer, and MIS Degree.",
+    "Verified specialized diplomas and academic qualifications earned by Mohamed Ali: AI-Powered Software Development Diploma (Digilians Initiative / MCIT) and Bachelor's in Management Information Systems (El Shorouk Academy).",
   keywords: [
-    "Certificates Rabea Shaban",
-    "Rabea Shaban",
-    "ربيع شعبان",
-    "AWS Certified Cloud Practitioner",
-    "AWS Certified Developer Associate",
-    "Meta Front-End Developer",
-    "MIS Degree",
-    "Digilians AI Diploma",
+    "Credentials Mohamed Ali",
+    "Mohamed Ali",
+    "محمد علي",
+    "Digilians Initiative",
+    "AI-Powered Software Development",
+    "El Shorouk Academy",
+    "Management Information Systems",
     "Software Engineering Credentials"
   ],
   alternates: {
-    canonical: "https://www.rabea-shaban.com/certificates",
+    canonical: "https://mohamed-ali-portfolio.vercel.app/certificates",
   },
   openGraph: {
-    title: "Certificates & Credentials | Rabea Shaban — Full Stack Software Engineer",
+    title: "Credentials & Education | Mohamed Ali — Full-Stack Developer",
     description:
-      "Verified professional certifications and technical credentials earned by Rabea Shaban including AWS Certified Cloud Practitioner, AWS Certified Developer - Associate, Meta Front-End Developer, and MIS Degree.",
-    url: "https://www.rabea-shaban.com/certificates",
+      "Verified specialized diplomas and academic qualifications earned by Mohamed Ali: Digilians AI Diploma and El Shorouk Academy MIS degree.",
+    url: "https://mohamed-ali-portfolio.vercel.app/certificates",
     locale: "en_US",
-    images: ["/opengraph-image", "/profile.jpg"],
+    images: ["/opengraph-image", "/mohamed-ali-avatar.svg"],
   },
 };
 

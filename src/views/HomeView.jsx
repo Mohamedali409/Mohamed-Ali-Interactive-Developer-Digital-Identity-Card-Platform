@@ -3,14 +3,13 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowRight, ArrowLeft, ExternalLink, Github, Linkedin, Mail, Phone, Mouse } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowLeft, ExternalLink, Github, Linkedin, Mail, Mouse } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Timeline from "@/components/Timeline";
 import ScrollProgress from "@/components/ScrollProgress";
 import CurrentlyLearning from "@/components/CurrentlyLearning";
 import { featuredProjects } from "@/Data/featuredProjects";
 import { timelineData } from "@/Data/timelineData";
-import profilePic from "@/Img/Picsart_25-01-21_11-09-34-893.jpg";
 import { useSEO } from "@/hooks/useSEO";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useSettings } from "@/context/SettingsContext";
@@ -21,21 +20,20 @@ const HomeView = () => {
 
   useSEO({
     title: isAr 
-      ? "ربيع شعبان | مهندس برمجيات Full-Stack | MERN Stack"
-      : "Rabea Shaban | Full-Stack Software Engineer | MERN Stack",
+      ? "محمد علي | مطور Full-Stack | مهندس برمجيات بتركيز على الأنظمة الخلفية"
+      : "Mohamed Ali | Full-Stack Developer | Backend-Focused Software Engineer",
     description: isAr 
-      ? "ربيع شعبان — مهندس برمجيات Full-Stack يبني تطبيقات ويب متكاملة باستخدام MERN Stack وReact وNext.js وNode.js وTypeScript وMongoDB وAWS."
-      : "Rabea Shaban is a Full-Stack Software Engineer building end-to-end web applications with React, Next.js, Node.js, TypeScript, MongoDB, and AWS.",
+      ? "محمد علي — مطور Full-Stack ومهندس برمجيات بتركيز على الأنظمة الخلفية، يبني حلولاً قابلة للتوسع باستخدام Node.js وExpress وTypeScript وPostgreSQL وMongoDB وRedis وDocker وAWS."
+      : "Mohamed Ali is a Full-Stack Developer and Backend-Focused Software Engineer building scalable applications with Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, AWS, and AI integration.",
     keywords: isAr
-      ? "ربيع شعبان, مهندس برمجيات, مطور ويب شامل, MERN Stack, React, Next.js, Node.js, AWS, TypeScript"
-      : "Rabea Shaban, Full Stack Software Engineer, MERN Stack Developer, React.js Developer, Next.js Developer, Node.js Developer, TypeScript Developer, MongoDB Developer, AWS Developer"
+      ? "محمد علي, مطور ويب, مهندس برمجيات, Backend Developer, Full Stack Developer, Node.js, Express.js, Docker, AWS, PostgreSQL, MongoDB"
+      : "Mohamed Ali, Full Stack Developer, Backend Software Engineer, Node.js Developer, Express.js Developer, TypeScript Developer, Docker, AWS, PostgreSQL, MongoDB"
   });
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/rabea-shaban", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/rabea-sh-elzayat", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:rabea.elzayate@gmail.com", label: "Email" },
-    { icon: Phone, href: "https://wa.me/201156807072", label: "WhatsApp" },
+    { icon: Github, href: "https://github.com/Mohamedali409", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/mohamed-ali409", label: "LinkedIn" },
+    { icon: Mail, href: "/contact", label: "Contact Form" },
   ];
 
   return (
@@ -56,8 +54,8 @@ const HomeView = () => {
           >
             <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-accent to-primary blur-md opacity-75 group-hover:opacity-100 transition duration-500"></div>
             <img
-              src={profilePic.src || profilePic}
-              alt="Rabea Shaban — Full Stack Software Engineer"
+              src="/mohamed-ali-avatar.svg"
+              alt="Mohamed Ali — Full-Stack Developer & Backend Software Engineer"
               className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-background shadow-2xl"
             />
           </motion.div>
@@ -69,8 +67,8 @@ const HomeView = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-display tracking-tight leading-tight"
           >
-            {t.home.greeting} <span className="gradient-text">{isAr ? "ربيع شعبان" : "Rabea Shaban"}</span>
-            <span className="sr-only"> — {isAr ? "مهندس برمجيات وتطوير ويب شامل" : "Full Stack Software Engineer"}</span>
+            {t.home.greeting} <span className="gradient-text">{isAr ? "محمد علي" : "Mohamed Ali"}</span>
+            <span className="sr-only"> — {isAr ? "مطور Full-Stack ومهندس برمجيات" : "Full-Stack Developer | Backend Software Engineer"}</span>
           </motion.h1>
 
           {/* Subtitle & Pill Badge */}
@@ -117,10 +115,10 @@ const HomeView = () => {
             </Button>
 
             <Button variant="outline" asChild size="lg" className="group glass-effect border-border/50 hover:bg-primary/10">
-              <a href="https://flowcv.com/resume/a7n0o85l8o65" target="_blank" rel="noopener noreferrer">
+              <Link href="/cv">
                 {t.common.downloadResume}
                 <ArrowDown className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0 transition-transform group-hover:translate-y-0.5" />
-              </a>
+              </Link>
             </Button>
 
             <Button variant="outline" asChild size="lg" className="group glass-effect border-border/50 hover:bg-primary/10">
@@ -144,8 +142,8 @@ const HomeView = () => {
                 <a
                   key={idx}
                   href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="p-2.5 rounded-full glass-effect border border-border/50 hover:bg-primary/10 hover:text-primary transition-all text-muted-foreground hover:scale-110"
                   aria-label={link.label}
                 >
@@ -208,7 +206,7 @@ const HomeView = () => {
                       <div className="relative aspect-video rounded-xl overflow-hidden mb-4 bg-muted">
                         <img
                           src={typeof project.img === 'string' ? project.img : project.img.src || project.img}
-                          alt={project.alt || `${projectTitle} - Rabea Shaban`}
+                          alt={project.alt || `${projectTitle} - Mohamed Ali`}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
@@ -224,9 +222,9 @@ const HomeView = () => {
                         </span>
                       ))}
                     </div>
-                    {(project.liveUrl || project.demo) && (
-                      <a href={project.liveUrl || project.demo} target="_blank" rel="noopener noreferrer" className="p-2 text-primary hover:scale-110 transition-transform">
-                        <ExternalLink className="w-4 h-4" />
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 text-primary hover:scale-110 transition-transform" aria-label="GitHub Repository">
+                        <Github className="w-4 h-4" />
                       </a>
                     )}
                   </div>
@@ -236,7 +234,7 @@ const HomeView = () => {
           </div>
 
           <div className="mt-16 text-center">
-            <Button asChild size="lg" className="shadow-[0_4px_20px_rgba(255,180,0,0.2)]">
+            <Button asChild size="lg" className="shadow-[0_4px_20px_rgba(37,99,235,0.2)]">
               <Link href="/projects">
                 {t.home.viewAllProjects}
                 {isRtl ? (
@@ -268,8 +266,8 @@ const HomeView = () => {
             </h2>
             <p className="mb-8 max-w-lg mx-auto text-md md:text-lg text-muted-foreground leading-relaxed">
               {isAr
-                ? "دعنا نتعاون لتحويل أفكارك إلى واقع رقمي مبهر بتطبيقات ويب حديثة، بنى تحتية سحابية موثوقة، وأداء استثنائي."
-                : "Let's work together to bring your ideas to life with modern web technologies, containerized deployments, and clean cloud setups."}
+                ? "دعنا نتعاون لبناء معمارية برمجية متينة، وخدمات خلفية عالية الأداء، وتطبيقات ويب حديثة وموثوقة."
+                : "Let's collaborate to build dependable software architectures, high-performance backend systems, and modern web applications."}
             </p>
             <Button asChild size="lg" className="shadow-lg">
               <Link href="/contact">

@@ -58,8 +58,8 @@ const LoadingScreen = () => {
           >
             <div className="relative flex items-center justify-center w-24 h-24 rounded-2xl bg-gradient-to-br from-primary/30 to-amber-500/20 border border-primary/40 shadow-[0_0_50px_rgba(255,180,0,0.3)] p-4 overflow-hidden">
               <img
-                src="/logoWhite.png"
-                alt="Rabea Shaban Logo"
+                src="/logo.svg"
+                alt="Mohamed Ali Logo"
                 className="w-full h-full object-contain animate-pulse"
               />
             </div>
@@ -69,7 +69,7 @@ const LoadingScreen = () => {
               transition={{ delay: 0.2, duration: 0.4 }}
               className="text-xl font-bold tracking-widest uppercase bg-gradient-to-r from-white via-amber-100 to-primary bg-clip-text text-transparent font-display"
             >
-              Rabea Shaban
+              Mohamed Ali
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}

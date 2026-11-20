@@ -1,5 +1,5 @@
 export async function GET() {
-  const baseUrl = "https://www.rabea-shaban.com";
+  const baseUrl = "https://mohamed-ali-portfolio.vercel.app";
 
   const robotsTxt = `User-agent: *
 Allow: /

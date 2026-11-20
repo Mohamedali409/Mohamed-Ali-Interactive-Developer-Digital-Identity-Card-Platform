@@ -1,17 +1,17 @@
 import PrivacyView from "@/views/PrivacyView";
 
 export const metadata = {
-  title: "Privacy Policy & Data Deletion | Rabea Shaban",
+  title: "Privacy Policy | Mohamed Ali",
   description:
-    "Privacy Policy and User Data Deletion instructions for Rabea Shaban's website (rabea-shaban.com) and WhatsApp Business API integration.",
+    "Privacy Policy for Mohamed Ali's developer portfolio (mohamed-ali-portfolio.vercel.app), covering contact form submissions and browser preferences.",
   alternates: {
-    canonical: "https://www.rabea-shaban.com/privacy",
+    canonical: "https://mohamed-ali-portfolio.vercel.app/privacy",
   },
   openGraph: {
-    title: "Privacy Policy | Rabea Shaban",
+    title: "Privacy Policy | Mohamed Ali",
     description:
-      "Privacy Policy and User Data Deletion instructions for Rabea Shaban's website and WhatsApp Business API integration.",
-    url: "https://www.rabea-shaban.com/privacy",
+      "Privacy Policy for Mohamed Ali's developer portfolio.",
+    url: "https://mohamed-ali-portfolio.vercel.app/privacy",
     locale: "en_US",
   },
 };

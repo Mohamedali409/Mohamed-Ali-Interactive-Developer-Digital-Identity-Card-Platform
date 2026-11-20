@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1128" />
+      <stop offset="50%" stop-color="#001e3d" />
+      <stop offset="100%" stop-color="#05192d" />
+    </linearGradient>
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.05" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+
+  <!-- Grid Pattern -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" />
+    </pattern>
+    <rect width="1200" height="675" fill="url(#grid)" />
+  </g>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="180" r="220" fill="url(#accentGlow)" filter="url(#glow)" />
+  <circle cx="1000" cy="500" r="260" fill="url(#accentGlow)" filter="url(#glow)" />
+
+  <!-- Healthcare / Clinical Cross Graphic & Tech Accents -->
+  <g transform="translate(600, 220)">
+    <!-- Pulse Line Behind -->
+    <path d="M -450 0 L -180 0 L -120 -60 L -60 70 L 0 -90 L 60 70 L 120 -60 L 180 0 L 450 0" 
+          fill="none" stroke="#06b6d4" stroke-width="3" opacity="0.4" stroke-dasharray="8 6" />
+    <!-- Glowing Pulse Line Active -->
+    <path d="M -250 0 L -180 0 L -120 -60 L -60 70 L 0 -90 L 60 70 L 120 -60 L 180 0 L 250 0" 
+          fill="none" stroke="url(#cyanBlue)" stroke-width="4" filter="url(#glow)" />
+
+    <!-- Central Tech Medical Icon Badge -->
+    <rect x="-65" y="-65" width="130" height="130" rx="32" fill="#0f172a" stroke="#06b6d4" stroke-width="3" filter="url(#glow)" />
+    <!-- Medical Cross -->
+    <rect x="-14" y="-38" width="28" height="76" rx="6" fill="#38bdf8" />
+    <rect x="-38" y="-14" width="76" height="28" rx="6" fill="#38bdf8" />
+    <circle cx="0" cy="0" r="8" fill="#ffffff" />
+  </g>
+
+  <!-- Title & Details -->
+  <text x="600" y="380" font-family="'Segoe UI', -apple-system, sans-serif" font-size="64" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-1">
+    AVICENA PLATFORM
+  </text>
+  <text x="600" y="425" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#38bdf8" text-anchor="middle" letter-spacing="3">
+    HEALTHCARE • REAL-TIME WEBSOCKETS • AI CLINICAL ENGINE
+  </text>
+  <text x="600" y="470" font-family="'Segoe UI', sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle" letter-spacing="0.5">
+    Backend Engineering • Microservices • Node.js • Express • PostgreSQL • Redis • Docker • AWS
+  </text>
+
+  <!-- Status / Tech Badges -->
+  <g transform="translate(600, 540)">
+    <g transform="translate(-240, 0)">
+      <rect x="-70" y="-18" width="140" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
+      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#06b6d4" text-anchor="middle">Real-Time Sync</text>
+    </g>
+    <g transform="translate(-80, 0)">
+      <rect x="-65" y="-18" width="130" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
+      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#3b82f6" text-anchor="middle">AI Clinical API</text>
+    </g>
+    <g transform="translate(80, 0)">
+      <rect x="-65" y="-18" width="130" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
+      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#10b981" text-anchor="middle">Dockerized</text>
+    </g>
+    <g transform="translate(240, 0)">
+      <rect x="-70" y="-18" width="140" height="36" rx="18" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
+      <text x="0" y="5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#f59e0b" text-anchor="middle">DevOps CI/CD</text>
+    </g>
+  </g>
+</svg>

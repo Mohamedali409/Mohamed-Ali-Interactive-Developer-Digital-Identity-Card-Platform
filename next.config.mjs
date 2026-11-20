@@ -10,21 +10,9 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error'] } : false,
   },
-  // Redirect old vercel domain to custom domain
+  // Redirects if needed
   async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'rabea-shaban.vercel.app',
-          },
-        ],
-        destination: 'https://www.rabea-shaban.com/:path*',
-        permanent: true,
-      },
-    ];
+    return [];
   },
   // Security and Caching Headers for SSG Assets
   async headers() {

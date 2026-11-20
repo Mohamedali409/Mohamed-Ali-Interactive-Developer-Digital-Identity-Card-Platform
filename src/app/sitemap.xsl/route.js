@@ -11,7 +11,7 @@ export async function GET() {
   <xsl:template match="/">
     <html lang="en">
       <head>
-        <title>XML Sitemap | Rabea Shaban Portfolio</title>
+        <title>XML Sitemap | Mohamed Ali Portfolio</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <style>
@@ -107,7 +107,7 @@ export async function GET() {
           <div className="header">
             <div>
               <h1>XML Sitemap</h1>
-              <p className="subtitle">Official Search Engine Index for Rabea Shaban Portfolio</p>
+              <p className="subtitle">Official Search Engine Index for Mohamed Ali Portfolio</p>
             </div>
             <div className="badge">
               <xsl:value-of select="count(sitemap:urlset/sitemap:url)"/> Pages Indexed

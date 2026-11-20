@@ -4,12 +4,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Award, 
-  Download, 
-  ExternalLink, 
+  Calendar, 
   CheckCircle2,
-  Calendar,
-  GraduationCap,
-  ZoomIn,
   Search,
   X
 } from "lucide-react";
@@ -26,14 +22,14 @@ const CertificatesView = () => {
 
   useSEO({
     title: isAr 
-      ? "الشهادات والاعتمادات | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
-      : "Certificates & Credentials | Rabea Shaban — Full Stack Software Engineer",
+      ? "الاعتمادات والتعليم | محمد علي — مطور Full-Stack ومهندس برمجيات" 
+      : "Credentials & Education | Mohamed Ali — Full-Stack Developer",
     description: isAr
-      ? "الشهادات والاعتمادات الرسمية المعتمدة للمهندس ربيع شعبان: شهادتا AWS Certified Cloud Practitioner وAWS Certified Developer - Associate، وشهادة Meta Front-End Developer، وبكالوريوس نظم المعلومات."
-      : "Official certifications and technical credentials earned by Rabea Shaban, including AWS Certified Cloud Practitioner, AWS Certified Developer - Associate, Meta Front-End Developer, and an MIS degree.",
+      ? "الشهادات التخصصية والدرجات الأكاديمية الرسمية المعتمدة للمهندس محمد علي: دبلومة تطوير البرمجيات بالذكاء الاصطناعي من مبادرة Digilians، وبكالوريوس نظم المعلومات الإدارية بأكاديمية الشروق."
+      : "Verified specialized diplomas and academic qualifications earned by Mohamed Ali, including the Digilians AI-Powered Software Development Diploma and an MIS degree from El Shorouk Academy.",
     keywords: isAr
-      ? "شهادات ربيع شعبان, AWS Certified Cloud Practitioner, AWS Certified Developer Associate, Meta Front-End Developer, اعتمادات مهندس برمجيات"
-      : "Rabea Shaban Certificates, AWS Certified Cloud Practitioner, AWS Certified Developer Associate, Meta Front-End Developer, Software Engineer Credentials"
+      ? "اعتمادات محمد علي, مبادرة الرواد الرقميون, Digilians, أكاديمية الشروق, نظم المعلومات الإدارية"
+      : "Mohamed Ali Credentials, Digilians Diploma, El Shorouk Academy, Management Information Systems, Software Engineering Credentials"
   });
 
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -81,7 +77,7 @@ const CertificatesView = () => {
             <Search className={`w-5 h-5 absolute top-1/2 -translate-y-1/2 text-muted-foreground ${isRtl ? 'right-3.5' : 'left-3.5'}`} />
             <input
               type="text"
-              placeholder={isAr ? "ابحث عن شهادة بالاسم، الجهة، أو الموضوع..." : "Search certificates by title, issuer, or topic..."}
+              placeholder={isAr ? "ابحث عن اعتماد بالاسم أو الجهة..." : "Search credentials by title or issuer..."}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className={`w-full py-3 rounded-full border border-border/50 bg-card/60 glass-effect focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all text-sm ${
@@ -126,7 +122,7 @@ const CertificatesView = () => {
         {filteredCertificates.length === 0 ? (
           <div className="text-center py-16 glass-effect rounded-2xl border border-border/40 max-w-md mx-auto">
             <Award className="w-12 h-12 text-muted-foreground mx-auto mb-4 opacity-50" />
-            <h3 className="text-lg font-bold">{isAr ? "لم يتم العثور على شهادات" : "No certificates found"}</h3>
+            <h3 className="text-lg font-bold">{isAr ? "لم يتم العثور على نتائج" : "No credentials found"}</h3>
             <p className="text-sm text-muted-foreground mt-1">
               {isAr ? "جرب تعديل كلمة البحث أو اختيار تصنيف آخر." : "Try adjusting your search query or filter selection."}
             </p>
@@ -134,7 +130,7 @@ const CertificatesView = () => {
         ) : (
           <motion.div
             layout
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
           >
             <AnimatePresence>
               {filteredCertificates.map((cert) => {
@@ -154,78 +150,50 @@ const CertificatesView = () => {
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.3 }}
                     whileHover={{ y: -6 }}
-                    className="glass-effect rounded-2xl border border-border/40 overflow-hidden hover:border-primary/40 hover:shadow-xl transition-all flex flex-col justify-between group"
+                    className="glass-effect rounded-2xl border border-border/40 overflow-hidden hover:border-primary/40 hover:shadow-xl transition-all flex flex-col justify-between group p-6"
                   >
                     <div>
-                      {/* Image preview thumbnail with zoom button */}
-                      <div className="relative aspect-video bg-muted/30 overflow-hidden cursor-pointer" onClick={() => setActiveCertificate(cert)}>
-                        {cert.image ? (
-                          <img
-                            src={cert.image}
-                            alt={title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            onError={(e) => {
-                              e.target.style.display = 'none';
-                            }}
-                          />
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center bg-primary/10">
-                            <IconComponent className="w-12 h-12 text-primary/50" />
-                          </div>
-                        )}
-                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <span className="px-3 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold flex items-center gap-1.5">
-                            <ZoomIn className="w-4 h-4" /> {isAr ? "عرض الشهادة" : "View Certificate"}
-                          </span>
+                      <div className="flex items-center justify-between gap-4 mb-4">
+                        <div className="p-3 rounded-2xl bg-primary/10 text-primary">
+                          <IconComponent className="w-6 h-6" />
                         </div>
                         {cert.verified && (
-                          <span className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-emerald-500/90 text-white text-[10px] font-bold flex items-center gap-1 shadow-md">
-                            <CheckCircle2 className="w-3 h-3" /> {isAr ? "معتمدة" : "Verified"}
+                          <span className="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-bold flex items-center gap-1.5 border border-emerald-500/20">
+                            <CheckCircle2 className="w-3.5 h-3.5" /> {isAr ? "معتمد وموثق" : "Verified Credential"}
                           </span>
                         )}
                       </div>
 
-                      {/* Content */}
-                      <div className="p-6">
-                        <div className="flex items-center gap-2 mb-2 text-xs text-primary font-semibold">
-                          <Calendar className="w-3.5 h-3.5" />
-                          <span>{cert.date}</span>
-                          <span className="text-muted-foreground">•</span>
-                          <span className="text-muted-foreground">{issuer}</span>
-                        </div>
-
-                        <h3 className="text-xl font-bold font-display leading-snug mb-3 group-hover:text-primary transition-colors">
-                          {title}
-                        </h3>
-
-                        <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3 mb-4">
-                          {description}
-                        </p>
-
-                        {grade && (
-                          <div className="mb-3">
-                            <span className="text-[11px] font-medium text-emerald-500 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20">
-                              {grade}
-                            </span>
-                          </div>
-                        )}
+                      <div className="flex items-center gap-2 mb-2 text-xs text-primary font-semibold">
+                        <Calendar className="w-3.5 h-3.5" />
+                        <span>{cert.date}</span>
                       </div>
+
+                      <h3 className="text-xl font-bold font-display leading-snug mb-2 group-hover:text-primary transition-colors">
+                        {title}
+                      </h3>
+
+                      <p className="text-xs font-semibold text-muted-foreground mb-3">
+                        {issuer}
+                      </p>
+
+                      <p className="text-xs text-muted-foreground leading-relaxed mb-4">
+                        {description}
+                      </p>
+
+                      {grade && (
+                        <div className="mb-4">
+                          <span className="text-[11px] font-medium text-emerald-500 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20">
+                            {grade}
+                          </span>
+                        </div>
+                      )}
                     </div>
 
-                    <div className="px-6 pb-6 pt-0 flex items-center justify-between border-t border-border/20 mt-auto">
+                    <div className="pt-4 border-t border-border/20 flex items-center justify-between">
                       <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
                         {category}
                       </span>
-                      {cert.pdf && (
-                        <a
-                          href={cert.pdf}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs font-bold text-primary hover:underline flex items-center gap-1"
-                        >
-                          <Download className="w-3.5 h-3.5" /> {isAr ? "تحميل PDF" : "PDF"}
-                        </a>
-                      )}
                     </div>
                   </motion.div>
                 );
@@ -233,64 +201,6 @@ const CertificatesView = () => {
             </AnimatePresence>
           </motion.div>
         )}
-
-        {/* Certificate Modal Dialog */}
-        <Dialog open={!!activeCertificate} onOpenChange={() => setActiveCertificate(null)}>
-          <DialogContent className="max-w-3xl glass-effect border border-border/50">
-            {activeCertificate && (
-              <div>
-                <DialogHeader className="mb-4">
-                  <DialogTitle className="text-2xl font-bold font-display">
-                    {isAr && activeCertificate.titleAr ? activeCertificate.titleAr : activeCertificate.title}
-                  </DialogTitle>
-                  <p className="text-sm text-primary font-medium">
-                    {isAr && activeCertificate.issuerAr ? activeCertificate.issuerAr : activeCertificate.issuer} — {activeCertificate.date}
-                  </p>
-                </DialogHeader>
-                <div className="relative aspect-video rounded-xl overflow-hidden bg-muted/40 mb-4 border border-border/40">
-                  {activeCertificate.image && (
-                    <img
-                      src={activeCertificate.image}
-                      alt={isAr && activeCertificate.titleAr ? activeCertificate.titleAr : activeCertificate.title}
-                      className="w-full h-full object-contain"
-                    />
-                  )}
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                  {isAr && activeCertificate.descriptionAr ? activeCertificate.descriptionAr : activeCertificate.description}
-                </p>
-                {activeCertificate.expirationDate && (
-                  <p className="text-xs text-muted-foreground mb-3">
-                    {isAr ? "تاريخ الانتهاء:" : "Expiration date:"} {activeCertificate.expirationDate}
-                  </p>
-                )}
-                {activeCertificate.validationNumber && (
-                  <a
-                    href={activeCertificate.validationUrl || "https://aws.amazon.com/verification"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-xs font-semibold text-primary hover:underline mb-5"
-                  >
-                    <ExternalLink className="w-3.5 h-3.5" />
-                    {isAr ? "رقم التحقق: " : "Validation number: "}{activeCertificate.validationNumber}
-                  </a>
-                )}
-                <div className="flex justify-end gap-3">
-                  <Button variant="outline" onClick={() => setActiveCertificate(null)}>
-                    {isAr ? "إغلاق" : "Close"}
-                  </Button>
-                  {activeCertificate.pdf && (
-                    <Button asChild>
-                      <a href={activeCertificate.pdf} target="_blank" rel="noopener noreferrer">
-                        <Download className="w-4 h-4 mr-2 rtl:ml-2 rtl:mr-0" /> {isAr ? "تحميل الوثيقة" : "Download Document"}
-                      </a>
-                    </Button>
-                  )}
-                </div>
-              </div>
-            )}
-          </DialogContent>
-        </Dialog>
       </div>
     </div>
   );

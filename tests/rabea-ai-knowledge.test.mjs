@@ -31,11 +31,11 @@ for (const scenario of cases) {
   });
 }
 
-test("ATHAR retrieval surfaces the documented source conflict", () => {
-  const result = searchRabeaFaq(faq, "احكيلي عن مشروع ATHAR", { limit: 1, minScore: 3.5 })[0];
+test("Avicena retrieval surfaces the verified healthcare platform", () => {
+  const result = searchRabeaFaq(faq, "احكيلي عن منصة Avicena (Avicena Platform).", { limit: 1, minScore: 3.5 })[0];
   assert.equal(result?.entry.id, 29);
-  assert.equal(result?.entry.status, "UNCONFIRMED");
-  assert.match(result.entry.answerAr, /تعارض/);
+  assert.equal(result?.entry.status, "VERIFIED");
+  assert.match(result.entry.answerAr, /Avicena|الرعاية الصحية/i);
 });
 
 test("the FAQ corpus has 95 records and all private answer text is redacted", () => {

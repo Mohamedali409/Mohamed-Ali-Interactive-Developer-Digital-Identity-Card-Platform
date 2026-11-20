@@ -1,9 +1,10 @@
 import { experience } from "@/Data/experience";
 
-export const verifiedExperience = experience.map(({ title, period, description, skills }) => ({
+export const verifiedExperience = experience.map(({ title, period, description, descriptionAr, skills }) => ({
   title,
   period,
   description,
+  descriptionAr,
   skills,
 }));
 

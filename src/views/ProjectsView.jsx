@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Filter, Github, Search, X, Check, Code, Layers } from "lucide-react";
+import { ExternalLink, Github, Search, X, Check, Code, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { projects } from "@/Data/projects";
@@ -16,24 +16,21 @@ const ProjectsView = () => {
 
   useSEO({
     title: isAr 
-      ? "معرض المشروعات | ربيع شعبان — مهندس برمجيات وتطوير ويب شامل" 
-      : "Projects | Rabea Shaban — Full Stack Software Engineer",
+      ? "معرض المشروعات | محمد علي — مطور Full-Stack ومهندس برمجيات" 
+      : "Projects | Mohamed Ali — Full-Stack Developer & Backend Engineer",
     description: isAr
-      ? "استعرض مشروعات وتطبيقات ويب متكاملة قمت بتطويرها تشمل EduSphere و Pharmacy POS و Zein Hub و Sy2antek باستخدام Next.js و React و Node.js و MongoDB و AWS."
-      : "Explore full-stack web applications and software platforms developed by Rabea Shaban including EduSphere, Pharmacy POS, Zein Hub, and Sy2antek.",
+      ? "استعرض مشروعات وتطبيقات برمجية واقعية قام بتطويرها محمد علي تشمل منصة Avicena الطبية، وتطبيق FitMate AI للياقة والتغذية الذكية، ومحرك ImpersonaGuard الأمني."
+      : "Explore real-world software engineering platforms built by Mohamed Ali including Avicena (Healthcare & WebSockets), FitMate AI (Fitness & Nutrition AI App), and ImpersonaGuard (Cybersecurity Engine).",
     keywords: isAr
-      ? "مشاريع ربيع شعبان, EduSphere, Pharmacy POS, Zein Hub, Sy2antek, مهندس برمجيات, مطور ويب شامل"
-      : "Rabea Shaban Projects, EduSphere, Pharmacy POS, Zein Hub, Sy2antek, Full Stack Software Engineer, MERN Stack Projects"
+      ? "مشاريع محمد علي, Avicena, FitMate AI, ImpersonaGuard, مهندس برمجيات, مطور ويب, Backend Developer"
+      : "Mohamed Ali Projects, Avicena Platform, FitMate AI, ImpersonaGuard, Full Stack Developer, Backend Software Engineer"
   });
 
   const projectCategories = [
     { id: "all", label: isAr ? "جميع المشروعات" : "All Projects" },
-    { id: "Next.js", label: "Next.js" },
-    { id: "React", label: "React" },
+    { id: "Backend", label: isAr ? "أنظمة خلفية" : "Backend" },
     { id: "Full Stack", label: isAr ? "تطوير شامل" : "Full Stack" },
     { id: "web-app", label: isAr ? "تطبيقات ويب" : "Web Apps" },
-    { id: "e-commerce", label: isAr ? "متاجر إلكترونية" : "E-Commerce" },
-    { id: "website", label: isAr ? "مواقع ويب" : "Websites" },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -105,7 +102,7 @@ const ProjectsView = () => {
                   onClick={() => setSelectedCategory(cat.id)}
                   className={`px-4 py-2 rounded-full text-xs font-bold transition-all duration-200 ${
                     isSelected
-                      ? "bg-primary text-white shadow-[0_4px_15px_rgba(var(--primary-rgb),0.35)] scale-105"
+                      ? "bg-primary text-white shadow-[0_4px_15px_rgba(37,99,235,0.35)] scale-105"
                       : "glass-effect border border-border/40 text-muted-foreground hover:text-foreground hover:border-primary/40"
                   }`}
                 >
@@ -152,7 +149,7 @@ const ProjectsView = () => {
                         {project.img ? (
                           <img
                             src={typeof project.img === 'string' ? project.img : project.img.src || project.img}
-                            alt={project.alt || `${projectTitle} - Rabea Shaban`}
+                            alt={project.alt || `${projectTitle} - Mohamed Ali`}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                         ) : (
@@ -202,20 +199,16 @@ const ProjectsView = () => {
 
                     {/* Actions Footer */}
                     <div className="px-6 pb-6 pt-0 flex items-center gap-3 border-t border-border/20 pt-4 mt-auto">
-                      {project.demo && (
-                        <Button asChild size="sm" className="flex-1 shadow-sm text-xs">
-                          <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                            {t.common.liveDemo} <ExternalLink className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
-                          </a>
-                        </Button>
-                      )}
                       {project.github && project.github !== "#" && (
-                        <Button variant="outline" size="sm" asChild className="glass-effect text-xs">
+                        <Button variant="outline" size="sm" asChild className="flex-1 glass-effect text-xs">
                           <a href={project.github} target="_blank" rel="noopener noreferrer">
                             {t.common.sourceCode} <Github className="w-3.5 h-3.5 ml-1.5 rtl:mr-1.5 rtl:ml-0" />
                           </a>
                         </Button>
                       )}
+                      <Button size="sm" onClick={() => setActiveProject(project)} className="flex-1 text-xs">
+                        {isAr ? "التفاصيل" : "Details"}
+                      </Button>
                     </div>
                   </motion.div>
                 );
@@ -241,7 +234,7 @@ const ProjectsView = () => {
                     <div className="relative aspect-video rounded-2xl overflow-hidden bg-muted">
                       <img
                         src={typeof activeProject.img === 'string' ? activeProject.img : activeProject.img.src || activeProject.img}
-                        alt={activeProject.alt || `${modalTitle} - Rabea Shaban`}
+                        alt={activeProject.alt || `${modalTitle} - Mohamed Ali`}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -275,15 +268,8 @@ const ProjectsView = () => {
                   )}
 
                   <div className="flex gap-4 pt-4 border-t border-border/30">
-                    {activeProject.demo && (
-                      <Button asChild size="lg" className="flex-1">
-                        <a href={activeProject.demo} target="_blank" rel="noopener noreferrer">
-                          {t.common.liveDemo} <ExternalLink className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
-                        </a>
-                      </Button>
-                    )}
                     {activeProject.github && activeProject.github !== "#" && (
-                      <Button variant="outline" size="lg" asChild className="flex-1 glass-effect">
+                      <Button size="lg" asChild className="flex-1">
                         <a href={activeProject.github} target="_blank" rel="noopener noreferrer">
                           {t.common.sourceCode} <Github className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" />
                         </a>

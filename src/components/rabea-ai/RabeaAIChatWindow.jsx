@@ -98,19 +98,20 @@ function formatTime(value, isArabic) {
 export default function RabeaAIChatWindow({ onClose, onMinimize, open }) {
   const { settings } = useSettings();
   const isArabic = settings.language === "ar";
+
   const copy = isArabic ? {
-    title: "ربيع AI",
-    subtitle: "مساعدك للتعرّف على خبرة ربيع ومشروعاته",
+    title: "محمد AI",
+    subtitle: "مساعدك للتعرّف على خبرة محمد علي ومشروعاته",
     online: "متصل",
-    welcome: "أهلًا! أنا مساعد ربيع الذكي.",
-    welcomeDetails: "اسألني عن خلفيته المهنية ومهاراته ومشروعاته وشهاداته. أقدر أساعدك تكتشف المناسب لك بسرعة.",
+    welcome: "أهلًا! أنا مساعد محمد علي الذكي.",
+    welcomeDetails: "اسألني عن هندسة الـ Backend، وواجهات REST APIs، ومشروعاته الواقعية (Avicena، FitMate AI، ImpersonaGuard)، ودبلومة الذكاء الاصطناعي (Digilians).",
     welcomeTime: "الآن",
     suggestions: "أسئلة مقترحة",
     viewAll: "عرض الكل",
     viewLess: "عرض أقل",
     clear: "مسح المحادثة",
     close: "إغلاق المحادثة",
-    placeholder: "اسأل عن ربيع...",
+    placeholder: "اسأل عن محمد علي...",
     send: "إرسال",
     thinking: "يكتب الآن",
     tooLong: "الرسالة طويلة جدًا.",
@@ -120,30 +121,30 @@ export default function RabeaAIChatWindow({ onClose, onMinimize, open }) {
     copied: "تم النسخ",
     charCount: "حرف",
     enterHint: "Enter للإرسال · Shift + Enter لسطر جديد",
-    assistant: "مساعد ربيع",
+    assistant: "مساعد محمد الذكي",
     sideEyebrow: "مساعد الملف المهني بالذكاء الاصطناعي",
-    sideTitle: "اسأل ربيع AI",
-    sideDescription: "دليلك للتعرّف على خبرة ربيع ومشروعاته ومهاراته وإنجازاته.",
-    sideBadge: "Rabea AI Assistant",
+    sideTitle: "اسأل محمد AI",
+    sideDescription: "دليلك للتعرّف على خبرة محمد علي في هندسة البرمجيات والـ Backend ومشروعاته المعتمدة.",
+    sideBadge: "Mohamed AI Assistant",
     sidebarLinks: [
-      { href: "/projects", icon: Zap, title: "تعرّف على أعمالي", description: "المشروعات والخبرة والأثر" },
-      { href: "/about", icon: Layers3, title: "اكتشف مهاراتي", description: "التقنيات والأدوات التي أستخدمها" },
-      { href: "/certificates", icon: Award, title: "شاهد شهاداتي", description: "اعتمادات AWS وMeta وغيرها" },
-      { href: "/contact", icon: UsersRound, title: "فرص التعاون", description: "التواصل والعمل معًا" },
+      { href: "/projects", icon: Zap, title: "المشروعات الواقعية", description: "Avicena · FitMate AI · ImpersonaGuard" },
+      { href: "/about", icon: Layers3, title: "المهارات والتقنيات", description: "Node.js · Express · Docker · PostgreSQL" },
+      { href: "/certificates", icon: Award, title: "المؤهلات والشهادات", description: "دبلومة Digilians وبكالوريوس نظم المعلومات" },
+      { href: "/contact", icon: UsersRound, title: "فرص التعاون", description: "التواصل ومناقشة فرص العمل والتعاقد" },
     ],
   } : {
-    title: "Rabea AI",
-    subtitle: "Explore Rabea’s professional journey",
+    title: "Mohamed AI",
+    subtitle: "Explore Mohamed Ali’s software engineering journey",
     online: "Online",
-    welcome: "Hello! 👋 I’m Rabea’s AI portfolio assistant.",
-    welcomeDetails: "I can help you explore his professional background, projects, technical skills, certifications, and experience.",
+    welcome: "Hello! 👋 I’m Mohamed Ali’s AI portfolio assistant.",
+    welcomeDetails: "I can help you explore his backend engineering expertise, real projects (Avicena, FitMate AI, ImpersonaGuard), technical stack, and credentials.",
     welcomeTime: "Now",
     suggestions: "Suggested questions",
     viewAll: "View all",
     viewLess: "View less",
     clear: "Clear chat",
     close: "Close chat",
-    placeholder: "Ask anything about Rabea...",
+    placeholder: "Ask anything about Mohamed Ali...",
     send: "Send message",
     thinking: "Writing",
     tooLong: "That message is too long.",
@@ -153,16 +154,16 @@ export default function RabeaAIChatWindow({ onClose, onMinimize, open }) {
     copied: "Copied",
     charCount: "characters",
     enterHint: "Enter to send · Shift + Enter for a new line",
-    assistant: "Rabea’s AI assistant",
+    assistant: "Mohamed’s AI Assistant",
     sideEyebrow: "AI PORTFOLIO ASSISTANT",
-    sideTitle: "Ask Rabea’s AI",
-    sideDescription: "Your guide to Rabea’s professional journey, projects, skills, and achievements.",
-    sideBadge: "Rabea AI Assistant",
+    sideTitle: "Ask Mohamed AI",
+    sideDescription: "Your guide to Mohamed Ali’s backend engineering expertise, projects, and credentials.",
+    sideBadge: "Mohamed AI Assistant",
     sidebarLinks: [
-      { href: "/projects", icon: Zap, title: "Get to know my work", description: "Projects, experience, and impact" },
-      { href: "/about", icon: Layers3, title: "Explore my skills", description: "Technologies and tools I use" },
-      { href: "/certificates", icon: Award, title: "View my certifications", description: "AWS, Meta, and more" },
-      { href: "/contact", icon: UsersRound, title: "Find collaboration opportunities", description: "Roles, projects, and contact details" },
+      { href: "/projects", icon: Zap, title: "Real Projects", description: "Avicena · FitMate AI · ImpersonaGuard" },
+      { href: "/about", icon: Layers3, title: "Technical Stack", description: "Node.js · Express · Docker · PostgreSQL" },
+      { href: "/certificates", icon: Award, title: "Education & Diploma", description: "Digilians Diploma · MIS Degree" },
+      { href: "/contact", icon: UsersRound, title: "Collaboration", description: "Direct contact and project inquiries" },
     ],
   };
 
@@ -323,7 +324,7 @@ export default function RabeaAIChatWindow({ onClose, onMinimize, open }) {
         role="dialog"
         aria-modal="true"
         aria-hidden={!open}
-        aria-labelledby="rabea-ai-title"
+        aria-labelledby="mohamed-ai-title"
         dir="ltr"
         className="flex h-[100dvh] w-full max-w-[1320px] overflow-hidden border border-border/70 bg-background text-foreground shadow-2xl md:h-[min(900px,calc(100dvh-2rem))] md:rounded-[30px]"
       >
@@ -341,7 +342,7 @@ export default function RabeaAIChatWindow({ onClose, onMinimize, open }) {
 
           <div className="relative mx-auto my-7 flex h-48 w-48 shrink-0 items-center justify-center rounded-full border border-border/70 bg-background/20 xl:h-52 xl:w-52">
             <span className="absolute inset-3 rounded-full border border-primary/15" />
-            <Image src="/rabea-ai-robot.png" alt="" aria-hidden="true" width={1024} height={1024} priority className="relative z-10 h-52 w-52 object-contain drop-shadow-[0_0_22px_rgba(59,130,246,0.22)] xl:h-56 xl:w-56" />
+            <Image src="/mohamed-ai-robot.svg" alt="" aria-hidden="true" width={1024} height={1024} priority className="relative z-10 h-52 w-52 object-contain drop-shadow-[0_0_22px_rgba(59,130,246,0.22)] xl:h-56 xl:w-56" />
           </div>
 
           <div className="mx-auto mb-7 inline-flex items-center gap-2 rounded-full border border-border/70 px-4 py-2 text-xs font-semibold text-muted-foreground">
@@ -368,10 +369,10 @@ export default function RabeaAIChatWindow({ onClose, onMinimize, open }) {
 
         <div className="flex min-h-0 min-w-0 flex-1 flex-col" dir={isArabic ? "rtl" : "ltr"}>
           <header dir="ltr" className="flex shrink-0 items-center gap-3 border-b border-border/70 bg-card/70 px-4 py-3.5 sm:px-6">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full border border-primary/30 bg-primary/10 shadow-sm"><Image src="/rabea-ai-robot.png" alt="" aria-hidden="true" width={1024} height={1024} className="h-full w-full object-contain" /></div>
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full border border-primary/30 bg-primary/10 shadow-sm"><Image src="/mohamed-ai-robot.svg" alt="" aria-hidden="true" width={1024} height={1024} className="h-full w-full object-contain" /></div>
             <div className="min-w-0 flex-1" dir={isArabic ? "rtl" : "ltr"}>
               <div className={`flex items-center gap-2 ${isArabic ? "justify-start" : "justify-start"}`}>
-                <h2 id="rabea-ai-title" className="truncate font-bold">{copy.title}</h2>
+                <h2 id="mohamed-ai-title" className="truncate font-bold">{copy.title}</h2>
                 <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-emerald-500" aria-label={copy.online} title={copy.online} />
               </div>
               <p className="truncate text-xs text-muted-foreground">{copy.subtitle}</p>
@@ -386,7 +387,7 @@ export default function RabeaAIChatWindow({ onClose, onMinimize, open }) {
 
           <div ref={listRef} className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 py-5 sm:px-6 sm:py-6" aria-live="polite" aria-relevant="additions text">
             <div className={`flex items-start gap-3 ${isArabic ? "flex-row" : "flex-row"}`}>
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-primary/25 bg-primary/10"><Image src="/rabea-ai-robot.png" alt="" aria-hidden="true" width={1024} height={1024} className="h-full w-full object-contain" /></div>
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-primary/25 bg-primary/10"><Image src="/mohamed-ai-robot.svg" alt="" aria-hidden="true" width={1024} height={1024} className="h-full w-full object-contain" /></div>
               <div className="max-w-[min(760px,92%)] rounded-2xl border border-border/70 bg-card/80 px-5 py-4 text-sm leading-relaxed shadow-sm sm:px-6 sm:py-5">
                 <p className="font-semibold">{copy.welcome}</p>
                 <p className="mt-3 text-muted-foreground">{copy.welcomeDetails}</p>
@@ -420,7 +421,7 @@ export default function RabeaAIChatWindow({ onClose, onMinimize, open }) {
                 const rowAlignment = isUser ? (isArabic ? "justify-start" : "justify-end") : (isArabic ? "justify-end" : "justify-start");
                 return (
                   <div key={message.id} className={`flex items-start gap-3 ${rowAlignment}`}>
-                    {!isUser && <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-primary/25 bg-primary/10"><Image src="/rabea-ai-robot.png" alt="" aria-hidden="true" width={1024} height={1024} className="h-full w-full object-contain" /></div>}
+                    {!isUser && <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-primary/25 bg-primary/10"><Image src="/mohamed-ai-robot.svg" alt="" aria-hidden="true" width={1024} height={1024} className="h-full w-full object-contain" /></div>}
                     <article className={`w-fit max-w-[min(760px,88%)] rounded-2xl px-4 py-3.5 text-sm leading-relaxed sm:px-5 sm:py-4 ${isUser ? "bg-primary text-primary-foreground" : "border border-border/70 bg-card/80 shadow-sm"}`}>
                       {!isUser && (
                         <div className="mb-3 flex items-center justify-between gap-4 border-b border-border/50 pb-2.5">
@@ -449,10 +450,10 @@ export default function RabeaAIChatWindow({ onClose, onMinimize, open }) {
             {error && <p role="alert" className="mb-2 px-2 text-xs text-destructive">{error}</p>}
             <div className="flex items-end gap-2 rounded-2xl border border-input bg-background p-2.5 shadow-inner focus-within:ring-2 focus-within:ring-ring/40 sm:p-3">
               <MessageSquareText className="mb-2 ml-1 h-5 w-5 shrink-0 text-primary/80" aria-hidden="true" />
-              <label className="sr-only" htmlFor="rabea-ai-input">{copy.placeholder}</label>
+              <label className="sr-only" htmlFor="mohamed-ai-input">{copy.placeholder}</label>
               <textarea
                 ref={inputRef}
-                id="rabea-ai-input"
+                id="mohamed-ai-input"
                 value={draft}
                 onChange={(event) => { setDraft(event.target.value); setError(""); }}
                 onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); sendDraft(); } }}

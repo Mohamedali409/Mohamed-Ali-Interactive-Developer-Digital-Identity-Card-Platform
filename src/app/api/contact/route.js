@@ -12,7 +12,7 @@ export async function POST(request) {
       );
     }
 
-    const recipientEmail = process.env.CONTACT_EMAIL || 'rabea.elzayate@gmail.com';
+    const recipientEmail = process.env.CONTACT_EMAIL || 'contact@mohamed-ali.dev';
 
     // 1. If SMTP environment variables exist, use Nodemailer
     if (process.env.SMTP_USER && process.env.SMTP_PASS) {

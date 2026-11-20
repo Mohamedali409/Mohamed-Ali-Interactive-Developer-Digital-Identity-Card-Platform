@@ -1,57 +1,57 @@
 import Image from "next/image";
 import {
   Database,
-  Download,
   ExternalLink,
   Globe,
   Layers3,
+  Mail,
   Monitor,
 } from "lucide-react";
 
 export const metadata = {
-  title: { absolute: "Rabea Shaban | Digital CV" },
+  title: { absolute: "Mohamed Ali | Digital CV" },
   description:
-    "Explore Rabea Shaban's professional information and download his Frontend, Backend, or Full Stack Developer CV.",
-  alternates: { canonical: "https://rabea-shaban.com/cv" },
+    "Explore Mohamed Ali's professional background, education, and technical profile as a Full-Stack Developer and Backend-Focused Software Engineer.",
+  alternates: { canonical: "https://mohamed-ali-portfolio.vercel.app/cv" },
   openGraph: {
-    title: "Rabea Shaban | Digital CV",
+    title: "Mohamed Ali | Digital CV",
     description:
-      "Explore Rabea Shaban's professional information and download his Frontend, Backend, or Full Stack Developer CV.",
-    url: "https://rabea-shaban.com/cv",
+      "Explore Mohamed Ali's professional background, education, and technical profile as a Full-Stack Developer and Backend-Focused Software Engineer.",
+    url: "https://mohamed-ali-portfolio.vercel.app/cv",
     type: "profile",
   },
 };
 
 const cvs = [
   {
-    title: "Frontend Developer",
-    subtitle: "React · Next.js · TypeScript",
-    href: "/cv/frontend.pdf",
-    icon: Monitor,
-    color: "frontend",
-  },
-  {
-    title: "Backend Developer",
-    subtitle: "Node.js · Express.js · MongoDB",
-    href: "/cv/backend.pdf",
+    title: "Backend Engineer",
+    subtitle: "Node.js · Express.js · PostgreSQL · MongoDB · Redis",
+    href: "/contact",
     icon: Database,
     color: "backend",
   },
   {
-    title: "Full Stack Developer",
-    subtitle: "Frontend + Backend",
-    href: "/cv/fullstack.pdf",
+    title: "Full-Stack Developer",
+    subtitle: "TypeScript · React · Next.js · Node.js · REST APIs",
+    href: "/contact",
     icon: Layers3,
     color: "fullstack",
+  },
+  {
+    title: "Cloud & DevOps Integration",
+    subtitle: "Docker · AWS · CI/CD · Microservices Architecture",
+    href: "/contact",
+    icon: Monitor,
+    color: "frontend",
   },
 ];
 
 const socials = [
-  { label: "Personal Website", href: "https://rabea-shaban.com", icon: Globe },
-  { label: "GitHub", href: "https://github.com/rabea-shaban", icon: null },
+  { label: "Personal Website", href: "https://mohamed-ali-portfolio.vercel.app", icon: Globe },
+  { label: "GitHub", href: "https://github.com/Mohamedali409", icon: null },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/rabea-sh-elzayat",
+    href: "https://www.linkedin.com/in/mohamed-ali409",
     icon: null,
   },
 ];
@@ -85,44 +85,41 @@ export default function CvPage() {
         <header className="cv-hero">
           <Image
             className="cv-portrait"
-            src="/cv/portrait.webp"
-            alt="Rabea Shaban Ibrahim in a black suit"
+            src="/mohamed-ali-avatar.svg"
+            alt="Mohamed Ali - Full-Stack Developer & Backend-Focused Software Engineer"
             width={184}
             height={184}
             priority
           />
-          <h1>Rabea Shaban Ibrahim</h1>
-          <p className="cv-title">Software Developer</p>
-          <p className="cv-specialization">AI-based Software Development</p>
+          <h1>Mohamed Ali</h1>
+          <p className="cv-title">Full-Stack Developer | Backend-Focused Software Engineer</p>
+          <p className="cv-specialization">Backend Engineering · Cloud & AI Integration</p>
         </header>
 
         <section className="cv-personal" aria-labelledby="personal-heading">
-          <h2 id="personal-heading">Personal Information</h2>
-          <p><strong>Date of Birth:</strong> June 2, 2002</p>
-          <p><strong>Education:</strong> Management Information Systems — 2024</p>
-          <p><strong>English Level:</strong> A2</p>
+          <h2 id="personal-heading">Professional Credentials</h2>
+          <p><strong>Education:</strong> Bachelor of Management Information Systems — El Shorouk Academy (2019 – 2023)</p>
+          <p><strong>Specialized Diploma:</strong> Digital Pioneers Initiative (Digilians) — AI-Powered Software Development Track (9-Month Diploma)</p>
+          <p><strong>Core Focus:</strong> Node.js, Express.js, TypeScript, RESTful APIs, PostgreSQL, MongoDB, Docker, AWS</p>
         </section>
 
         <section className="cv-select" aria-labelledby="cv-heading">
           <div className="cv-divider" />
-          <h2 id="cv-heading">Choose Your CV</h2>
+          <h2 id="cv-heading">Specialization Tracks</h2>
           <div className="cv-list">
             {cvs.map(({ title, subtitle, href, icon: Icon, color }) => (
               <article className="cv-card" key={title}>
                 <a
                   className="cv-download"
                   href={href}
-                  download
-                  aria-label={`Download ${title} CV as PDF`}
+                  aria-label={`Inquire about ${title}`}
                 >
-                  <Download aria-hidden="true" />
+                  <Mail aria-hidden="true" />
                 </a>
                 <a
                   className="cv-card-copy"
                   href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Open ${title} CV PDF in a new tab`}
+                  aria-label={`Inquire about ${title}`}
                 >
                   <span className="cv-card-title">{title}</span>
                   <span className="cv-card-subtitle">{subtitle}</span>
@@ -131,7 +128,7 @@ export default function CvPage() {
               </article>
             ))}
           </div>
-          <p className="cv-hint">View or download the CV that best matches your needs.</p>
+          <p className="cv-hint">CV document is available upon direct request. Reach out via the contact form or LinkedIn.</p>
         </section>
 
         <nav className="cv-socials" aria-label="Social links">
@@ -149,10 +146,10 @@ export default function CvPage() {
               <span className="cv-social-label">{label}</span>
               <span className="cv-social-url">
                 {label === "Personal Website"
-                  ? "rabea-shaban.com"
+                  ? "mohamed-ali-portfolio.vercel.app"
                   : label === "GitHub"
-                    ? "github.com/rabea-shaban"
-                    : "linkedin.com/in/rabea-sh-elzayat"}
+                    ? "github.com/Mohamedali409"
+                    : "linkedin.com/in/mohamed-ali409"}
                 <ExternalLink aria-hidden="true" />
               </span>
             </a>

@@ -1,24 +1,22 @@
-const EN_STOP = new Set(["a", "about", "an", "and", "are", "as", "at", "can", "did", "do", "does", "for", "from", "he", "his", "how", "i", "in", "is", "it", "me", "of", "on", "or", "rabea", "rabea's", "shaban", "tell", "that", "the", "their", "them", "this", "to", "was", "what", "when", "where", "which", "who", "why", "with", "work", "you", "your"]);
-const AR_STOP = new Set(["الى", "أنا", "انت", "انتم", "ايه", "ازاي", "عن", "في", "قال", "كان", "ما", "ماذا", "من", "مين", "هل", "هو", "هي", "هذا", "هذه", "ربيع", "شعبان", "عنده", "عند", "على", "كيف", "ممكن", "احكيلي", "حدثني", "كل", "له", "لديه", "بتاعه", "مع", "و"]);
+const EN_STOP = new Set(["a", "about", "an", "and", "are", "as", "at", "can", "did", "do", "does", "for", "from", "he", "his", "how", "i", "in", "is", "it", "me", "of", "on", "or", "mohamed", "mohamed's", "ali", "rabea", "rabea's", "shaban", "tell", "that", "the", "their", "them", "this", "to", "was", "what", "when", "where", "which", "who", "why", "with", "work", "you", "your"]);
+const AR_STOP = new Set(["الى", "أنا", "انت", "انتم", "ايه", "ازاي", "عن", "في", "قال", "كان", "ما", "ماذا", "من", "مين", "هل", "هو", "هي", "هذا", "هذه", "محمد", "علي", "ربيع", "شعبان", "عنده", "عند", "على", "كيف", "ممكن", "احكيلي", "حدثني", "كل", "له", "لديه", "بتاعه", "مع", "و"]);
 
 const TOPIC_TERMS = {
   profile: ["profile", "bio", "background", "identity", "نبذة", "تعريف", "خلفية", "شخصية"],
-  education: ["education", "degree", "university", "study", "academic", "تعليم", "دراسة", "مؤهل", "جامعة"],
-  training: ["training", "course", "diploma", "تدريب", "دورة", "كورسات", "دبلومة"],
-  certification: ["certificate", "certification", "aws", "شهادة", "شهادات", "اعتماد"],
+  education: ["education", "degree", "university", "study", "academic", "mis", "التعليم", "دراسة", "مؤهل", "جامعة", "الشروق", "نظم معلومات"],
+  training: ["training", "course", "diploma", "digilians", "تدريب", "دورة", "كورسات", "دبلومة", "رواد مصر الرقمية", "ديجيليانز"],
+  certification: ["certificate", "certification", "شهادة", "شهادات", "اعتماد"],
   experience: ["experience", "career", "employment", "internship", "job", "خبرة", "وظيفة", "تاريخ مهني"],
-  skills: ["skills", "technology", "technologies", "tech stack", "مهارات", "تقنيات", "ستاك"],
+  skills: ["skills", "technology", "technologies", "tech stack", "backend", "مهارات", "تقنيات", "ستاك", "باك اند"],
   projects: ["project", "projects", "portfolio", "work samples", "مشروع", "مشاريع", "مشروعات", "أعمال"],
   ai: ["artificial intelligence", "generative ai", "llm", "gemini", "ذكاء اصطناعي", "الذكاء الاصطناعي", "جيمناي"],
-  architecture: ["architecture", "clean architecture", "system design", "scalable", "بنية", "معمارية", "تصميم الأنظمة"],
-  content: ["content creation", "educational content", "خمسة برمجة", "صناعة المحتوى", "محتوى تعليمي"],
-  business: ["business", "agency", "digital transformation", "نهج الرقمية", "عمل تجاري", "تحول رقمي"],
+  architecture: ["architecture", "clean architecture", "system design", "scalable", "rest api", "بنية", "معمارية", "تصميم الأنظمة"],
   career: ["availability", "remote", "hybrid", "relocation", "hire", "توظيف", "متاح", "عن بعد", "انتقال"],
-  contact: ["contact", "email", "linkedin", "github", "reach", "تواصل", "بريد", "لينكد"],
+  contact: ["contact", "email", "linkedin", "github", "reach", "phone", "تواصل", "بريد", "لينكد", "هاتف", "تليفون", "موبايل"],
 };
 
 const PROJECT_NAMES = [
-  "athar", "impersonaguard", "impersona guard", "medimind", "eduSphere", "pharmacy pos", "sy2antek", "ecommerce", "e-commerce", "crime prediction", "agrsup", "tarahoj", "e-learning dashboard", "zein hub", "sanad", "nahj alraqamia", "نهج الرقمية", "خمسة برمجة",
+  "avicena", "avicena platform", "منصة افيسينا", "افيسينا", "fitmate", "fitmate ai", "فيت ميت", "impersonaguard", "impersona guard", "امبيرسونا جارد", "امبيرسونا",
 ];
 
 function normalize(value) {
@@ -47,10 +45,10 @@ function tokens(value) {
     .filter((token) => token.length > 1 && !EN_STOP.has(token) && !AR_STOP.has(token));
 }
 
-function isAboutRabea(query) {
+function isAboutOwner(query) {
   const normalized = normalize(query);
   const queryTokens = new Set(normalized.split(" "));
-  if (["rabea", "شعبان", "ربيع", "his", "he", "him", "you", "your", "هو", "عنده", "لديه", "بتاعه", "انت", "معاك"].some((term) => queryTokens.has(normalize(term)))) return true;
+  if (["mohamed", "ali", "محمد", "علي", "rabea", "shaban", "ربيع", "شعبان", "his", "he", "him", "you", "your", "هو", "عنده", "لديه", "بتاعه", "انت", "معاك"].some((term) => queryTokens.has(normalize(term)))) return true;
   return PROJECT_NAMES.some((name) => normalized.includes(normalize(name)));
 }
 
@@ -85,7 +83,7 @@ export function searchRabeaFaq(records, query, { limit = 4, minScore = 3, requir
     .filter((entry) => entry.access !== "PRIVATE" && entry.answerAr && normalize(entry.questionAr) === normalize(query))
     .map((entry) => ({ entry, score: 100, directMatch: true, coverage: 1, questionHits: 0, tagHits: 0 }));
   if (exactMatches.length) return exactMatches.slice(0, limit);
-  if (requireAboutRabea && !isAboutRabea(query)) return [];
+  if (requireAboutRabea && !isAboutOwner(query)) return [];
   const queryTokens = tokens(query);
   if (!queryTokens.length) return [];
   const queryTopics = matchedTopics(query);
@@ -96,3 +94,5 @@ export function searchRabeaFaq(records, query, { limit = 4, minScore = 3, requir
     .sort((a, b) => b.score - a.score || a.entry.id - b.entry.id)
     .slice(0, limit);
 }
+
+export const searchMohamedFaq = searchRabeaFaq;

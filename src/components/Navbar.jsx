@@ -40,12 +40,12 @@ const Navbar = () => {
       >
         <Link href="/" className="flex items-center space-x-2 md:space-x-3 rtl:space-x-reverse group">
           <img 
-            src={resolvedTheme === "dark" ? "/logoWhite.png" : "/logo.png"} 
-            alt="Rabea Shaban Logo" 
+            src="/logo.svg" 
+            alt="Mohamed Ali Logo" 
             className="h-7 md:h-8 w-auto object-contain rounded-md group-hover:scale-105 transition-transform" 
           />
           <span className="font-bold text-sm md:text-base gradient-text font-display">
-            {settings.language === 'ar' ? 'ربيع شعبان' : 'Rabea Shaban'}
+            {settings.language === 'ar' ? 'محمد علي' : 'Mohamed Ali'}
           </span>
         </Link>
   

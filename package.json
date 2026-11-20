@@ -1,5 +1,5 @@
 {
-  "name": "rabea-portfolio",
+  "name": "mohamed-ali-portfolio",
   "type": "module",
   "version": "1.0.0",
   "private": true,
@@ -7,6 +7,8 @@
     "dev": "next dev",
     "build": "next build --webpack",
     "start": "next start",
+    "test": "node --test tests/rabea-ai-knowledge.test.mjs",
+    "test:ai": "node --test tests/rabea-ai-knowledge.test.mjs",
     "test:rabea-ai": "node --test tests/rabea-ai-knowledge.test.mjs",
     "lint": "eslint ."
   },

@@ -4,13 +4,10 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  Briefcase,
   Github,
-  Globe,
-  Instagram,
   Linkedin,
   Mail,
-  Phone,
+  Globe,
 } from "lucide-react";
 
 import { useSettings } from "@/context/SettingsContext";
@@ -20,30 +17,13 @@ const Footer = () => {
   const isAr = settings.language === 'ar';
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/rabea-shaban", label: "GitHub" },
+    { icon: Github, href: "https://github.com/Mohamedali409", label: "GitHub" },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/rabea-sh-elzayat",
+      href: "https://www.linkedin.com/in/mohamed-ali409",
       label: "LinkedIn",
     },
-    {
-      icon: Instagram,
-      href: "https://instagram.com/rabea_sh_elzayat",
-      label: "Instagram",
-    },
-    { icon: Mail, href: "mailto:rabea.elzayate@gmail.com", label: "Email" },
-    { icon: Phone, href: "https://wa.me/201156807072", label: "WhatsApp" },
-    { icon: Globe, href: "https://www.rabea-shaban.com", label: "Website" },
-    {
-      icon: Briefcase,
-      href: "https://upwork.com/freelancers/~01d2bd68b7d6e8fbce",
-      label: "Upwork",
-    },
-    {
-      icon: Briefcase,
-      href: "https://mostaql.com/u/rabea_elzayat",
-      label: "Mostaql",
-    },
+    { icon: Mail, href: "/contact", label: "Contact Form" },
   ];
 
   const quickLinks = [
@@ -57,12 +37,12 @@ const Footer = () => {
   ];
 
   const techStack = [
+    "Node.js & Express.js",
+    "PostgreSQL & MongoDB",
+    "TypeScript & REST APIs",
+    "Docker & Redis",
+    "AWS & CI/CD",
     "React & Next.js",
-    "Tailwind CSS",
-    "Framer Motion",
-    "Node.js & MongoDB",
-    "Docker & Kubernetes",
-    "AWS & Terraform",
   ];
 
   return (
@@ -74,20 +54,20 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="md:col-span-2">
             <Link href="/" className="text-2xl font-bold font-display gradient-text">
-              {isAr ? "ربيع شعبان" : "Rabea Shaban"}
+              {isAr ? "محمد علي" : "Mohamed Ali"}
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground max-w-sm">
               {isAr
-                ? "مهندس برمجيات وتطوير ويب شامل، متخصص في بناء الأنظمة السحابية والواجهات الحديثة والبنى التحتية المؤتمتة وفق أفضل المعايير الهندسية."
-                : "Full Stack Software Engineer designing high-performance web systems, containerized orchestration pipelines, and scalable cloud architectures."}
+                ? "مطور Full-Stack ومهندس برمجيات بتركيز على الأنظمة الخلفية، متخصص في بناء الأنظمة القابلة للتوسع وإدارة الحاويات بـ Docker والخدمات السحابية AWS ودمج تقنيات الذكاء الاصطناعي."
+                : "Full-Stack Developer & Backend-Focused Software Engineer designing high-performance backend systems, microservices architectures, and dependable cloud deployments."}
             </p>
             <div className="mt-6 flex flex-wrap gap-2.5">
               {socialLinks.map((link, index) => (
                 <motion.a
                   key={index}
                   href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="p-2 rounded-lg glass-effect border border-border/60 hover:bg-primary/10 hover:text-primary transition-all text-muted-foreground"
@@ -135,7 +115,7 @@ const Footer = () => {
 
         {/* Bottom Banner */}
         <div className="mt-12 pt-8 border-t border-border/30 text-center flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} {isAr ? "ربيع شعبان" : "Rabea Shaban"}. {t.common.allRightsReserved}</p>
+          <p>© {new Date().getFullYear()} {isAr ? "محمد علي" : "Mohamed Ali"}. {t.common.allRightsReserved}</p>
           <p className="font-mono">
             {t.common.builtWith}
           </p>
